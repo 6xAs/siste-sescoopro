@@ -1,0 +1,6303 @@
+body {
+  background: #f5f5f5;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body #banner {
+  background: url("../img/background.jpg") center 0px fixed no-repeat;
+  background-size: cover;
+  padding: 120px 0 40px;
+}
+body #banner {
+  background: url("../img/background-principal.jpg") center 0px;
+  background-size: cover;
+  background-attachment:scroll;
+}
+
+.link{
+  cursor: pointer;
+}
+
+body #banner p {
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin: 5px 0 50px;
+  font-weight: 500;
+  line-height: 1.35em;
+}
+body #banner .list-icons {
+  padding-top: 100px;
+}
+body #banner .list-icons a {
+  text-decoration: none;
+}
+body #banner .list-icons a p {
+  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.375em;
+  line-height: 2.18182em;
+  line-height: 1.2em;
+}
+body #banner .list-icons a p strong {
+  display: block;
+}
+body #banner .list-icons .icon {
+  width: 49px;
+  height: 49px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  position: relative;
+  top: 7px;
+}
+body #banner .list-icons .icon.icon-help {
+  background: url("../img/icon-help.png") no-repeat center center;
+}
+body #banner .list-icons .icon.icon-idea {
+  background: url("../img/icon-idea.png") no-repeat center center;
+}
+body #banner .list-icons .icon.icon-house {
+  background: url("../img/icon-house.png") repeat-x center center;
+  background-size: cover;
+}
+body #destaques {
+  background: #f5f5f5;
+  padding-bottom: 40px;
+}
+body #destaques .btn {
+  margin-top: 15px;
+}
+body #destaques:before {
+  content: "";
+  height: 40px;
+  display: block;
+  position: relative;
+  top: -25px;
+  background: url("../img/grafismo.png") no-repeat top center;
+}
+body #destaques #noticia-destaque a {
+  display: block;
+  height: 510px;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-position: center center;
+}
+body #destaques #noticia-destaque a:hover .area-overlay {
+  background-color: rgba(40, 40, 40, 0.43);
+}
+body #destaques #noticia-destaque a:hover .play {
+  background-color: #0083d8;
+}
+body #destaques #noticia-destaque a .area-overlay {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: url("../img/line-gradient.png") repeat-x bottom center;
+  z-index: 0;
+}
+body #destaques #noticia-destaque a .play {
+  background: #006aaf url("../img/icon-play.png") no-repeat center center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+  width: 64px;
+  height: 64px;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -32px 0 0 -32px;
+}
+body #destaques #noticia-destaque a .informacoes {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+body #destaques #noticia-destaque a .informacoes .category-title {
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 700;
+}
+body #destaques #noticia-destaque a .informacoes .data {
+  font-size: 0.75em;
+  line-height: 2em;
+  line-height: 1.05em;
+  margin: -3px 0 10px;
+  display: block;
+}
+body #destaques #noticia-destaque a .informacoes p {
+  color: #FFFFFF;
+  max-width: 80%;
+}
+body #lista-noticias h4 {
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  line-height: 1.05em;
+  color: #282828;
+}
+body #lista-noticias .item-noticia a {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  height: 240px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  position: relative;
+}
+body #lista-noticias .item-noticia a h3 {
+  font-weight: 700;
+}
+body #lista-noticias .item-noticia a:before {
+  border: 4px solid #FFFFFF;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body #lista-noticias .item-noticia a:hover:before {
+  border: 4px solid #006aaf;
+}
+body #lista-noticias .item-noticia a .category-title {
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 700;
+}
+body #lista-noticias .item-noticia a .data {
+  font-size: 0.75em;
+  line-height: 2em;
+  line-height: 1.05em;
+  margin: -3px 0 10px;
+  display: block;
+}
+body #acessos {
+  background: #FFFFFF;
+  padding: 40px 0;
+}
+body #acessos.no-bg {
+  background: none;
+}
+body #acessos .item-acesso a {
+  display: block;
+  height: 310px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #4b4b4b;
+  position: relative;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.info-servicos {
+  background-image: url('../img/img-servicos.jpg');
+  background-position: center center;
+}
+
+.info-conheca {
+  background-image: url('../img/img-ramos.jpg');
+  background-position: top right; 
+}
+
+body #acessos .item-acesso a:hover {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background-size: 106% 106%;
+  background-position: center center;
+}
+body #acessos .item-acesso a .informacoes {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+body #acessos .item-acesso a .informacoes .category-title {
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 700;
+}
+body #acessos .item-acesso a .informacoes .data {
+  font-size: 0.75em;
+  line-height: 2em;
+  line-height: 1.05em;
+  margin: -3px 0 10px;
+  display: block;
+}
+body #acessos .item-acesso a .informacoes h3 {
+  color: #003a60;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+body #acessos .item-acesso a .informacoes p {
+  color: #282828;
+  max-width: 80%;
+}
+body .lista-banners .item-banner a {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+}
+body .lista-banners .item-banner a:before {
+  border: 1px solid #F2F2F2;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body #lista-publicacoes h4 {
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  line-height: 1.05em;
+  color: #282828;
+}
+
+body #lista-publicacoes .item-publicacao a {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  min-height: 365px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px 15px 0;
+  text-decoration: none;
+  position: relative;
+}
+
+.item-publicacao .informacoes {
+  min-height: 400px;
+}
+
+body #lista-publicacoes .item-publicacao a p {
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.35em;
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #282828;
+  text-align: center;
+}
+body #lista-publicacoes .item-publicacao a img {
+  max-height: 300px;
+}
+body #lista-publicacoes .item-publicacao a p strong {
+  font-weight: 500;
+}
+
+body #noticias-list .item-noticia a {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  min-height: 240px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  position: relative;
+}
+body #noticias-list .item-noticia a h3 {
+  font-weight: 700;
+  margin-top: 10px;
+  line-height: 1.2em;
+  color: #003a60;
+}
+body #noticias-list .item-noticia a:before {
+  border: 4px solid #FFFFFF;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body #noticias-list .item-noticia a:hover:before {
+  border: 4px solid #006aaf;
+}
+body #noticias-list .item-noticia a .category-title {
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  font-weight: 700;
+}
+body #noticias-list .item-noticia a .data {
+  font-size: 0.75em;
+  line-height: 2em;
+  line-height: 1.05em;
+  margin: 0 10px;
+}
+body.noticias .custom-select {
+  background-color: #f5f5f5 !important;
+}
+
+.legenda{
+  background: rgba(255, 255, 255, 0.67);
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.central-da-marca h4{
+  color: #000000;
+  font-size: 3.55em;
+}
+.central-da-marca .carousel-control{
+  background: transparent !important;
+  width: 15%;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  opacity: 1;
+}
+.central-da-marca .carousel-indicators{
+  bottom: -50px;
+  margin-left: -31%;
+}
+.central-da-marca .carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #373a3c;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.central-da-marca .carousel-indicators .active {
+  background-color: #003f7a;
+  border: 1px solid #fff;
+}
+.central-da-marca .carousel-inner{
+  min-height: 500px;
+}
+.central-da-marca .carousel .right{
+  right: -50px;
+}
+.central-da-marca .carousel .left{
+  left: -50px;
+}
+.central-da-marca .carousel .right span{
+  font-size: 50px;
+}
+.central-da-marca .carousel .left span{
+  font-size: 50px;
+}
+.central-da-marca #resolucoes .confira-resolucoes{
+  margin-top: 50px;
+}
+.central-da-marca #resolucoes ul{
+  margin: 20px 0 35px;
+  list-style: none;
+}
+.central-da-marca #resolucoes li{
+  margin-top: 15px;
+}
+.central-da-marca #evolucoes{
+  padding: 80px 0;
+}
+
+.central-da-marca #evolucoes h5{
+  font-size: 2.05rem;
+  font-weight: 500;
+  color: #304871;
+
+}
+.central-da-marca #evolucoes .primeira-marca{
+  margin-top: 60px
+
+}
+.central-da-marca #evolucoes .evolucao-da-marca {
+  margin-top: 40px;
+}
+.central-da-marca #evolucoes .anos-evolucao p{
+  margin-top: 0;
+}
+.central-da-marca #evolucoes .anos-evolucao{
+  padding-left: 70px;
+  border-left: 2px solid #b7b7b7;
+  padding-bottom: 70px;
+
+}
+.central-da-marca #evolucoes h4{
+  padding-left: 70px;
+  font-size: 2.75em;
+  font-weight: 500;
+}
+#manual-da-marca .manual h4{
+  font-size: 1.85rem;
+  font-weight: 500;
+  margin-top: 0px;
+}
+#manual-da-marca .manual p{
+  line-height: 1.7em;
+  font-size: 1.055em;
+}
+#manual-da-marca .manual .btn-download{
+  background: url(../img/icon-download-light-blue.png) no-repeat;
+  padding: 11px 35px;
+}
+#manual-da-marca .manual .btn-download a{
+  color: #0064ac;
+  text-decoration: none;
+}
+
+#lista-servicos {
+  padding-bottom: 40px;
+}
+#lista-servicos .item-servicos .informacoes {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  min-height: 304px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 30px;
+  text-decoration: none;
+  position: relative;
+}
+#lista-servicos .item-servicos .informacoes h4 {
+  font-size: 1.6em !important;
+  line-height: 1.2em !important;
+  position: relative;
+  top: 0px;
+  text-align: center !important;
+  margin: 20px 0 50px !important;
+}
+#lista-servicos .item-servicos .informacoes p {
+  margin: 5px 0 35px;
+}
+#lista-servicos .item-servicos .informacoes .btn {
+  position: absolute;
+  bottom: 30px;
+  left: 30%;
+}
+#lista-servicos .item-servicos .informacoes button {
+  background: #FFFFFF;
+  color: #003a60;
+  padding: 10px 45px;
+  margin-left: 55px;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #003a60;
+}
+
+.conteudo h5 {
+  font-size: 1.85rem;
+  color: #003a60;
+  margin-bottom: 30px;
+}
+.conteudo #introducao {
+  padding-bottom: 20px;
+  min-height: 100px;
+}
+
+.conteudo .intropub {
+  min-height: 150px !important;
+}
+
+
+.conteudo #mapa-estrategico .quadro-propostas {
+  background: #003a60;
+  display: block;
+  min-height: 304px;
+  margin-bottom: 0px;
+  padding: 20px 30px 25px 30px;
+  border-bottom: 6px solid #006aaf;
+  text-decoration: none;
+  position: relative;
+  font-family: "Exo", sans-serif;
+}
+.conteudo #mapa-estrategico .quadro-propostas p {
+  color: #FFFFFF;
+}
+.conteudo #mapa-estrategico .quadro-propostas h3 {
+  font-weight: 500;
+  font-size: 1.725em;
+  line-height: 1.35em;
+  margin: 20px 0;
+}
+.conteudo #mapa-estrategico .btn-flat {
+  color: #FFFFFF;
+  padding: 10px 45px;
+  margin-left: 55px;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+}
+.conteudo #mapa-estrategico .btn-flat:hover {
+  border: 1px solid #003a60;
+}
+.conteudo #estrutura {
+  padding: 10px 0 50px 0;
+}
+.conteudo #lista-sistemas {
+  padding-bottom: 40px;
+}
+.conteudo #lista-sistemas .item-servicos .sistemas {
+  background: #FFFFFF;
+  color: #003a60;
+  display: block;
+  min-height: 610px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 30px;
+  text-decoration: none;
+  position: relative;
+}
+.conteudo #lista-sistemas .item-servicos .sistemas figure {
+  min-height: 90px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.conteudo #lista-sistemas .item-servicos .sistemas p {
+  margin: 5px 0 35px;
+}
+.conteudo #lista-sistemas .item-servicos .sistemas button {
+  background: #FFFFFF;
+  color: #003a60;
+  padding: 10px 45px;
+  margin-left: 55px;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #003a60;
+}
+
+.page-ocb h5 {
+  font-family: "Exo", sans-serif;
+  color: #006aaf;
+  font-weight: 500;
+}
+.page-ocb #missao quote {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Exo", sans-serif;
+  padding: 25px 0 0 33px;
+  position: relative;
+  display: block;
+  left: 20px;
+  top: 20px;
+  min-width: 310px;
+  line-height: 35px;
+  background: url("../img/aspas-light-blue.png") no-repeat;
+}
+.page-ocb #mapa-estrategico {
+  padding: 70px 0;
+}
+.page-ocb #mapa-estrategico .btn-download {
+  background: url("../img/icon-download-light-blue.png") no-repeat;
+}
+.page-ocb #mapa-estrategico .btn-download a {
+  color: #006aaf;
+}
+
+#servicos-ocb {
+  padding-top: 40px;
+}
+
+#unidades-estaduais-ocb {
+  padding-top: 40px;
+}
+
+#quem-quem {
+  padding-top: 40px;
+}
+
+#lista-atuacoes {
+  padding: 30px 0 40px;
+}
+#lista-atuacoes .item-atuacoes .atuacoes {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  min-height: 335px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px 10px 20px 15px;
+  text-decoration: none;
+  position: relative;
+}
+#lista-atuacoes .item-atuacoes .atuacoes h3 {
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 1.825em;
+  line-height: 1.84615em;
+  font-family: "Exo", sans-serif;
+  color: #282828;
+}
+#lista-atuacoes .item-atuacoes .atuacoes p {
+  margin: 5px 0 35px;
+}
+#lista-atuacoes .item-atuacoes .atuacoes .btn-block {
+  width: 140px;
+}
+#lista-atuacoes #organizacao {
+  background: #FFFFFF;
+}
+#lista-atuacoes #banners-footer {
+  padding: 50px 0 60px;
+}
+
+#fale-com-ocb {
+  background: url("../img/banner-fale-com-ocb.jpg") center no-repeat;
+  background-size: cover !important;
+  height: 200px;
+  margin-bottom: 80px;
+}
+#fale-com-ocb h4 {
+  color: #FFFFFF;
+  margin: 40px 0 20px;
+}
+#fale-com-ocb a {
+  background: transparent;
+  color: #FFFFFF;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+  padding: 10px 45px;
+  text-decoration: none;
+}
+
+.filtro-transparencia {
+  height: 110px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  background: #e2ede5;
+  padding: 35px 25px;
+  background: #dce7ee;
+}
+.filtro-transparencia button {
+  padding: 0 20px;
+  height: 40px;
+  width: 100%;
+}
+.filtro-transparencia.filtro-green {
+  background: #e2ede5;
+}
+.filtro-transparencia.filtro-yellow {
+  background: #e2ede5;
+}
+
+#pessoal-estrutura #paginacao.green-paginacao .page-link i {
+  color: #009a4e;
+}
+#pessoal-estrutura #paginacao.green-paginacao .page-item.active .page-link {
+  background-color: #009a4e;
+}
+#pessoal-estrutura #paginacao.yellow-paginacao .page-link i {
+  color: #f6a723;
+}
+#pessoal-estrutura #paginacao.yellow-paginacao .page-item.active .page-link {
+  background-color: #f6a723;
+}
+#pessoal-estrutura .area-conteudo {
+  margin-top: 15px;
+  padding-right: 10%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(75, 75, 75, 0.2);
+}
+#pessoal-estrutura .area-conteudo h5 {
+  color: #003a60;
+  font-weight: 600;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+#pessoal-estrutura .area-conteudo a {
+  text-decoration: none;
+}
+#pessoal-estrutura.green-page h5 {
+  color: #009a4e;
+}
+#pessoal-estrutura.green-page ul {
+  padding-bottom: 30px;
+}
+#pessoal-estrutura.green-page ul li {
+  list-style: none;
+  height: 60px !important;
+}
+#pessoal-estrutura.green-page ul li a {
+  text-decoration: none;
+}
+#pessoal-estrutura.green-page ul .icon-donwload {
+  background: url("../img/icon-download-green.png") center no-repeat;
+  margin-top: 0;
+  width: 45px;
+  display: block;
+  height: 35px;
+  position: relative;
+  top: 0px;
+  left: -10px;
+}
+#pessoal-estrutura.green-page ul p {
+  margin: 0 40px;
+  position: relative;
+  top: -25px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+#pessoal-estrutura.page-blue ul {
+  padding-bottom: 30px;
+}
+#pessoal-estrutura.page-blue ul li {
+  list-style: none;
+  height: 60px !important;
+}
+#pessoal-estrutura.page-blue ul li a {
+  text-decoration: none;
+}
+#pessoal-estrutura.page-blue ul .icon-donwload {
+  background: url("../img/icon-download-blue.png") center no-repeat;
+  margin-top: 0;
+  width: 45px;
+  display: block;
+  height: 35px;
+  position: relative;
+  top: 0px;
+  left: -10px;
+}
+#pessoal-estrutura.page-blue ul p {
+  margin: 0 40px;
+  position: relative;
+  top: -25px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+#pessoal-estrutura.yellow-page h5 {
+  color: #f6a723;
+}
+#pessoal-estrutura.yellow-page ul {
+  padding-bottom: 30px;
+}
+#pessoal-estrutura.yellow-page ul li {
+  list-style: none;
+  height: 60px !important;
+}
+#pessoal-estrutura.yellow-page ul li a {
+  text-decoration: none;
+}
+#pessoal-estrutura.yellow-page ul .icon-donwload {
+  background: url("../img/icon-download-yellow.png") center no-repeat;
+  margin-top: 0;
+  width: 45px;
+  display: block;
+  height: 35px;
+  position: relative;
+  top: 0px;
+  left: -10px;
+}
+#pessoal-estrutura.yellow-page ul p {
+  margin: 0 40px;
+  position: relative;
+  top: -25px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+#pessoal-estrutura.yellow-page .icon-donwload {
+  background: url("../img/icon-download-yellow.png") center no-repeat;
+}
+
+#fale-com-sescoop {
+  background: url("../img/fale-com-sescoop.jpg") center no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+#fale-com-sescoop h4 {
+  color: #ffffff;
+  margin: 40px 0 20px;
+}
+#fale-com-sescoop button {
+  background: transparent;
+  color: #FFFFFF;
+  padding: 10px 45px;
+  margin-left: 55px;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+  padding: 5px 45px;
+}
+
+.page-legislacao #legislacao-list .thin {
+  margin: 60px 0 -10px !important;
+  color: #282828;
+  font-weight: 300;
+  font-family: "Exo", sans-serif;
+}
+.page-legislacao #legislacao-list .estadual {
+  margin-bottom: 40px;
+}
+.page-legislacao #legislacao-list .lista-legislacao {
+  border-bottom: 1px solid #cacaca;
+  margin-top: 50px;
+}
+.page-legislacao #legislacao-list .lista-legislacao a {
+  text-decoration: none;
+}
+.page-legislacao #legislacao-list .lista-legislacao a:hover h5 {
+  text-decoration: underline;
+}
+.page-legislacao #legislacao-list .lista-legislacao a:hover p {
+  color: #003a60;
+}
+.page-legislacao #legislacao-list .lista-legislacao h5 {
+  color: #003a60;
+  margin-bottom: 20px;
+}
+.page-legislacao #legislacao-list .lista-legislacao p {
+  margin-bottom: 20px;
+}
+.page-legislacao #fale-com-ocb {
+  background: url("../img/fale-com-ocb.jpg") center no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+.page-legislacao #fale-com-ocb h4 {
+  color: #FFFFFF;
+  margin: 40px 0 20px;
+}
+.page-legislacao #fale-com-ocb button {
+  background: transparent;
+  color: #FFFFFF;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+  padding: 5px 45px;
+}
+.page-legislacao #lista-noticias {
+  padding: 90px 0 60px;
+}
+.page-legislacao #download-agenda button {
+  background: transparent;
+  color: #003a60;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 22px;
+  border: 1px solid #003a60;
+  padding: 5px 45px;
+  font-family: "Exo", sans-serif;
+}
+.page-legislacao #download-agenda h5 {
+  font-size: 31px;
+  margin: 25px 0;
+  font-weight: 400;
+  font-family: "Exo", sans-serif;
+}
+
+.destaque {
+  background: url("../img/img-destaque-interna.jpg") center center;
+  min-height: 400px;
+  margin: -40px 0 60px;
+}
+
+.image-publicacao {
+  margin-bottom: 30px;
+}
+.image-publicacao img {
+  width: 70%;
+}
+.manuais {
+  background: #0076c3;
+  color: #FFFFFF;
+  padding: 6px;
+  line-height: 28px;
+  font-weight: 600;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  overflow: visible;
+}
+.contato .conteudo #introducao {
+  margin-top: -40px;
+  padding-bottom: 20px;
+}
+
+#enderecos p {
+  color: #282828;
+}
+#enderecos .endereco-title {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  font-weight: bold;
+}
+#enderecos .custom-select {
+  border: 1px solid #cccccc;
+  color: #282828;
+}
+
+.enviar-mensagem {
+  margin: 80px 0 0 0;
+}
+.enviar-mensagem h5 {
+  font-family: "Exo", sans-serif;
+  color: #282828;
+}
+
+.quadrado {
+  background-color: #f5f5f5;
+  margin-bottom: -10px;
+  height: 35px;
+  width: 35px;
+  transform: rotate(45deg);
+}
+
+.area-branca {
+  background-color: #FFFFFF;
+  padding: 50px 0;
+}
+
+.endereco-title {
+  color: #282828;
+}
+
+#formulario-contato h6 {
+  color: #282828;
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  font-family: "Roboto", sans-serif;
+}
+#formulario-contato .celular, #formulario-contato .fixo {
+  padding-left: 0px !important;
+}
+#formulario-contato .fixo {
+  padding-right: 0px !important;
+}
+#formulario-contato input, #formulario-contato select, #formulario-contato textarea {
+  border-radius: 0;
+  border: 1px solid #666666;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 7px 10px;
+}
+#formulario-contato textarea {
+  resize: none;
+  width: 100%;
+}
+#formulario-contato select {
+  background-color: #fff;
+}
+
+.editais-legislacoes {
+  background-color: #009a4e;
+  color: #FFFFFF;
+  padding: 50px 30px;
+}
+.editais-legislacoes h4 {
+  font-size: 1.5625em;
+  line-height: 1.92em;
+  line-height: 1.35em;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin: 0px 15px 30px;
+}
+.editais-legislacoes p {
+  color: #FFFFFF !important;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+.editais-legislacoes a {
+  background: none;
+  border: 1px solid #FFFFFF;
+  padding: 10px 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.editais-legislacoes a:hover {
+  background: none;
+}
+
+.filtro-licitacoes {
+  background: #e2ede5;
+  height: 110px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  padding: 35px 25px;
+}
+.filtro-licitacoes button {
+  width: 120px;
+  height: 40px;
+}
+
+#edital-listagem #paginacao .page-link i {
+  color: #009a4e;
+}
+#edital-listagem #paginacao .page-item.active .page-link {
+  background-color: #009a4e;
+}
+#edital-listagem .area-conteudo {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(75, 75, 75, 0.2);
+}
+#edital-listagem .area-conteudo h5 {
+  color: #009a4e;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#edital-listagem .area-conteudo a {
+  text-decoration: none;
+}
+#edital-listagem .area-conteudo a:hover h5 {
+  text-decoration: underline;
+}
+#edital-listagem .area-conteudo .status {
+  font-style: italic;
+  color: #009a4e;
+  font-weight: 600;
+  padding: 10px 0 0;
+  display: block;
+  margin-bottom: -5px;
+}
+#edital-listagem .area-conteudo .status.encerrado {
+  color: #c34906;
+}
+
+#fale-com-sescoop {
+  background: url("../img/fale-com-sescoop.jpg") center no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+#fale-com-sescoop h4 {
+  color: #ffffff;
+  margin: 40px 0 20px;
+}
+#fale-com-sescoop button {
+  background: transparent;
+  color: #FFFFFF;
+  padding: 10px 45px;
+  margin-left: 55px;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+  padding: 5px 45px;
+}
+
+body #resultados-list .item-resultado a {
+  color: #4b4b4b;
+  display: block;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 1px solid rgba(75, 75, 75, 0.2);
+}
+body #resultados-list .item-resultado a h3 {
+  font-weight: 700;
+  margin-top: 5px;
+  font-size: 1.3125em;
+  line-height: 2.28571em;
+  line-height: 1.05em;
+  color: #4b4b4b;
+}
+body #resultados-list .item-resultado a:hover {
+  color: #003a60;
+}
+body #resultados-list .item-resultado a:hover h3, body #resultados-list .item-resultado a:hover p {
+  color: #003a60;
+}
+body #resultados-list .item-resultado a:hover h3 {
+  text-decoration: underline;
+}
+body #resultados-list .item-resultado a .category-title {
+  font-size: 1.0625em;
+  line-height: 1.41176em;
+  line-height: 1.05em;
+  font-weight: 700;
+}
+body #resultados-list .item-resultado a .data {
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.05em;
+  margin: 0 10px;
+}
+
+.historia-do-sistema-ocb .area-historia {
+  padding-left: 50px;
+  border-left: 2px solid #b7b7b7;
+}
+.historia-do-sistema-ocb p {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  color: #282828;
+}
+
+#acesso-historias {
+  padding: 40px 0;
+}
+#acesso-historias .item-acesso a {
+  display: block;
+  height: 310px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #4b4b4b;
+  position: relative;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+#acesso-historias .item-acesso a:hover {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background-size: 106% 106%;
+  background-position: center center;
+}
+#acesso-historias .item-acesso a .informacoes {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+#acesso-historias .item-acesso a .informacoes h3 {
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+#acesso-historias .item-acesso a .informacoes p {
+  color: #FFFFFF;
+  max-width: 80%;
+}
+
+.historia-do-cooperativismo .area-historia {
+  padding-left: 50px;
+  border-left: 2px solid #b7b7b7;
+}
+.historia-do-cooperativismo p {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  color: #282828;
+}
+
+#acesso-historias {
+  padding: 40px 0;
+}
+#acesso-historias .item-acesso a {
+  display: block;
+  height: 310px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #4b4b4b;
+  position: relative;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+#acesso-historias .item-acesso a:hover {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background-size: 106% 106%;
+  background-position: center center;
+}
+#acesso-historias .item-acesso a .informacoes {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+#acesso-historias .item-acesso a .informacoes h3 {
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+#acesso-historias .item-acesso a .informacoes p {
+  color: #FFFFFF;
+  max-width: 90%;
+  font-weight: 400;
+}
+
+#sescoop-trabalhe-conosco {
+  margin-top: 50px;
+}
+#sescoop-trabalhe-conosco .banner-sescoop {
+  background: url("../img/banner-sescoop-trabalhe.jpg") center no-repeat;
+  height: 300px;
+}
+#sescoop-trabalhe-conosco .banner-sescoop img {
+  position: relative;
+  bottom: -210px;
+  left: 50px;
+}
+#sescoop-trabalhe-conosco .info-trabalhe-sescoop {
+  background: white;
+  height: auto;
+  padding: 40px 50px;
+}
+#sescoop-trabalhe-conosco .btn-green {
+  margin-top: 30px;
+}
+
+#cncoop-trabalhe-conosco {
+  margin-top: 65px;
+  margin-bottom: 95px;
+}
+#cncoop-trabalhe-conosco .banner-cncoop {
+  background: url("../img/banner-cncoop-trabalhe.jpg") center no-repeat;
+  height: 300px;
+}
+#cncoop-trabalhe-conosco .banner-cncoop .logo-cncoop-trabalhe {
+  position: relative;
+  bottom: -200px;
+  left: 50px;
+}
+#cncoop-trabalhe-conosco .banner-cncoop .logo-ocb-trabalhe {
+  position: relative;
+  bottom: -200px;
+  left: 110px;
+}
+#cncoop-trabalhe-conosco .info-trabalhe-cncoop {
+  background: white;
+  height: auto;
+  padding: 40px 50px;
+}
+#cncoop-trabalhe-conosco .anexar {
+  position: relative;
+  top: 34px;
+}
+
+.ramo-item {
+  background-color: #FFFFFF;
+  min-height: 390px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 40px 25px;
+}
+.ramo-item h5 {
+  font-family: "Exo", sans-serif;
+}
+.ramo-item .logo-ramo {
+  margin-bottom: 20px;
+}
+
+#lista-publicacoes .title {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  color: #282828;
+}
+
+.saiba-mais {
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.o-que-e-cooperativismo .title {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 20px 0;
+}
+.o-que-e-cooperativismo #introducao {
+  padding-bottom: 10px;
+  margin-top: -30px;
+}
+.o-que-e-cooperativismo #valores-humanos .item-valores {
+  margin-top: 50px;
+}
+.o-que-e-cooperativismo #valores-humanos .item-valores .informacoes {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  min-height: 310px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 60px 55px 40px 40px;
+  text-decoration: none;
+  position: relative;
+}
+.o-que-e-cooperativismo #valores-humanos .item-valores .informacoes h4 {
+  font-size: 1.95em;
+  line-height: 0.55em;
+  margin: 20px 0 25px;
+  font-weight: 400;
+}
+.o-que-e-cooperativismo #valores-humanos .item-valores .informacoes p {
+  margin: 5px 0 35px;
+  font-size: 15px;
+}
+.o-que-e-cooperativismo #valores-humanos .item-graus {
+  margin-top: 50px;
+}
+.o-que-e-cooperativismo #valores-humanos .item-graus .informacoes {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  min-height: 325px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 30px 25px 20px 32px;
+  text-decoration: none;
+  position: relative;
+}
+.o-que-e-cooperativismo #valores-humanos .item-graus .informacoes h4 {
+  font-size: 1.95em;
+  line-height: 0.55em;
+  margin: 20px 0 25px;
+  font-weight: 400;
+}
+.o-que-e-cooperativismo #valores-humanos .item-graus .informacoes p {
+  margin: 5px 0 35px;
+  font-size: 15px;
+}
+.o-que-e-cooperativismo #numeros-cooperativismo .title {
+  margin-top: 30px;
+}
+.o-que-e-cooperativismo #numeros-cooperativismo img {
+  margin: 20px 0;
+}
+.o-que-e-cooperativismo #numeros-cooperativismo p {
+  color: #999999;
+  margin-bottom: 40px;
+}
+.o-que-e-cooperativismo #principios-cooperativismo {
+  padding: 40px 0 0 0;
+}
+.o-que-e-cooperativismo #sete-principios {
+  background: #FFFFFF;
+}
+.o-que-e-cooperativismo #sete-principios .principios {
+  margin: 45px 0;
+}
+.o-que-e-cooperativismo #sete-principios .principios h4 {
+  font-size: 23px;
+  font-weight: 500;
+  margin-top: 10px;
+  height: 80px;
+  margin-bottom: 0;
+}
+.o-que-e-cooperativismo #sete-principios .principios .participacao-economica {
+  margin-top: 0;
+}
+.o-que-e-cooperativismo #sete-principios .principios .intercooperacao {
+  margin-top: 20px;
+}
+.o-que-e-cooperativismo #sete-principios .principios .number {
+  width: 60px;
+  height: 60px;
+  background: #3e68aa;
+  border-radius: 50%;
+}
+.o-que-e-cooperativismo #sete-principios .principios .number p {
+  position: relative;
+  top: 2px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 600;
+}
+.o-que-e-cooperativismo #sociedades {
+  padding-top: 50px;
+}
+.o-que-e-cooperativismo #sociedades h5 {
+  margin: 15px 0 20px;
+}
+.o-que-e-cooperativismo #sociedades #valores-humanos h4 {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.o-que-e-cooperativismo #sociedades #valores-humanos h5 {
+  font-size: 1.5625em;
+  line-height: 1.92em;
+  line-height: 1.05em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.page-cncoop #missao quote {
+  font-size: 30px;
+  padding: 25px 0 0 33px;
+  position: relative;
+  display: block;
+  font-family: "Exo", sans-serif;
+  left: 20px;
+  top: 20px;
+  min-width: 310px;
+  line-height: 35px;
+  background: url("../img/aspas-cncoop.png") no-repeat;
+}
+.page-cncoop h5 {
+  color: #006780;
+}
+.page-cncoop #diretrizes {
+  margin-top: 70px;
+}
+.page-cncoop #contribuicao-sindical h5 {
+  margin-top: 60px;
+}
+.page-cncoop #contribuicao-sindical .quadro-diretrizes {
+  background: #006780;
+  display: block;
+  min-height: 304px;
+  margin-bottom: 0px;
+  padding: 20px 20px 20px 30px;
+  border-bottom: none;
+  text-decoration: none;
+  position: relative;
+  font-family: "Exo", sans-serif;
+  width: 350px;
+}
+.page-cncoop #contribuicao-sindical .quadro-diretrizes p {
+  color: #FFFFFF;
+}
+.page-cncoop #contribuicao-sindical .quadro-diretrizes h3 {
+  font-weight: 500;
+  font-size: 1.725em;
+  line-height: 1.35em;
+  margin: 20px 0;
+}
+.page-cncoop #contribuicao-sindical .quadro-diretrizes .btn-flat {
+  margin-left: 50px;
+}
+.page-cncoop .btn-download {
+  color: #006780;
+  margin-top: 10px;
+  background-image: url("../img/icon-download-cncoop.png");
+}
+.page-cncoop #quem-quem {
+  margin-top: 80px;
+}
+.page-cncoop #lista-atuacoes {
+  padding: 30px 0 40px;
+}
+.page-cncoop #lista-atuacoes .item-atuacoes .atuacoes {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  min-height: 335px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 40px 20px 50px 30px;
+  text-decoration: none;
+  position: relative;
+}
+.page-cncoop #lista-atuacoes .item-atuacoes .atuacoes h3 {
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 30px;
+  line-height: 1.35em;
+  font-family: "Exo", sans-serif;
+  color: #006780;
+}
+.page-cncoop #lista-atuacoes .item-atuacoes .atuacoes p {
+  margin: 5px 0 35px;
+}
+.page-cncoop #lista-atuacoes .item-atuacoes .atuacoes button {
+  background: #FFFFFF;
+  color: #006780;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #006780;
+  margin-left: 10px;
+  width: 180px;
+}
+.page-cncoop #banners-footer {
+  margin: 40px 0 50px;
+}
+
+#fale-com-cncoop {
+  background: url("../img/banner-fale-com-cncoop.jpg") center no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 80px;
+}
+#fale-com-cncoop h4 {
+  color: #FFFFFF;
+  margin: 40px 0 20px;
+}
+#fale-com-cncoop a {
+  background: transparent;
+  color: #FFFFFF;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+  padding: 10px 45px;
+  text-decoration: none;
+}
+
+.o-que-e-cooperativismo #numeros-cooperativismo img{
+  margin-bottom: 60px
+}
+.o-que-e-cooperativismo #numeros-cooperativismo h5.title{
+  margin-bottom: 0px
+}
+
+.page-sescoop h5 {
+  color: #009a4e;
+  padding: 20px 0 0;
+}
+.page-sescoop #missao quote {
+  font-size: 30px;
+  padding: 25px 0 0 33px;
+  position: relative;
+  display: block;
+  font-family: "Exo", sans-serif;
+  left: 20px;
+  top: 20px;
+  min-width: 310px;
+  line-height: 35px;
+  background: url("../img/aspas-green.png") no-repeat;
+}
+.page-sescoop #mapa-estrategico {
+  margin-top: 70px;
+}
+.page-sescoop .conteudo #introducao {
+  padding-bottom: 20px;
+}
+.page-sescoop #fale-com-sescoop a {
+  background: transparent;
+  color: #FFFFFF;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+  padding: 10px 45px;
+  text-decoration: none;
+}
+
+.promocao-social .conteudo .btn-green {
+  margin-bottom: 40px;
+}
+
+.revista-saber-cooperar h5 {
+  color: #282828;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.revista-saber-cooperar #ultima-edicao {
+  padding-bottom: 80px;
+}
+
+#lista-publicacoes .edicoes-anteriores {
+  margin-top: 50px;
+}
+
+.biblioteca #biblioteca-brasileira .btn {
+  background: #003a60;
+  font-weight: 400;
+  padding: 10px 20px;
+  top: 30px;
+}
+.biblioteca #introducao {
+  padding-bottom: 40px;
+}
+.biblioteca #banners-footer {
+  margin-top: 150px;
+}
+.biblioteca #como-usar {
+  margin-top: 80px;
+}
+.biblioteca #como-usar h4 {
+  font-weight: 500;
+  font-size: 1.15em;
+  margin: 20px 0 10px;
+}
+.biblioteca #como-usar li {
+  list-style: none;
+  margin-left: 20px;
+}
+.biblioteca #caso-duvidas {
+  margin-top: 40px;
+}
+
+.perguntas-frequentes #perguntas-list .thin {
+  margin: 70px 0 40px;
+  color: #282828;
+  font-weight: 300;
+  font-family: "Exo", sans-serif;
+}
+.perguntas-frequentes #perguntas-list .lista-perguntas {
+  border-bottom: 1px solid #cacaca;
+  margin-top: 50px;
+}
+.perguntas-frequentes #perguntas-list .lista-perguntas a {
+  text-decoration: none;
+}
+.perguntas-frequentes #perguntas-list .lista-perguntas a:hover h5 {
+  text-decoration: underline;
+}
+.perguntas-frequentes #perguntas-list .lista-perguntas a:hover p {
+  color: #003a60;
+}
+.perguntas-frequentes #perguntas-list .lista-perguntas h5 {
+  color: #003a60;
+  margin-bottom: 20px;
+}
+.perguntas-frequentes #perguntas-list .lista-perguntas p {
+  margin-bottom: 20px;
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(75, 75, 75, 0.2);
+  position: relative;
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo h5 {
+  color: #003a60;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo a {
+  text-decoration: none;
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo a:hover h5 {
+  text-decoration: underline;
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo .collapsed .material-icons {
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo .material-icons {
+  color: #003a60;
+  position: absolute;
+  right: 20px;
+  top: -2px;
+  font-size: 35px;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo .collapsed .material-icons {
+  transform: rotate(180deg);
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo .status {
+  font-style: italic;
+  color: #009a4e;
+  font-weight: 600;
+  padding: 10px 0 0;
+  display: block;
+  margin-bottom: -5px;
+}
+.perguntas-frequentes #perguntas-listagem .area-conteudo .status.encerrado {
+  color: #c34906;
+}
+
+.sou-cooperado .quadro-propostas {
+  background: #003a60;
+  display: block;
+  min-height: 304px;
+  margin-bottom: 0px;
+  padding: 15px 30px;
+  border-bottom: 6px solid #006aaf;
+  text-decoration: none;
+  position: relative;
+  font-family: "Exo", sans-serif;
+}
+.sou-cooperado .quadro-propostas p {
+  color: #FFFFFF;
+}
+.sou-cooperado .quadro-propostas h3 {
+  font-weight: 500;
+  font-size: 1.725em;
+  line-height: 1.35em;
+  margin: 20px 0;
+}
+.sou-cooperado .fique-por-dentro {
+  background: #006aaf;
+  color: white;
+  margin-top: 80px;
+}
+.sou-cooperado .fique-por-dentro i {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  line-height: 1.5em;
+}
+.sou-cooperado .fique-por-dentro .title-agenda {
+  display: block;
+  padding: 20px 20px 13px;
+  background: #003a60;
+  position: relative;
+}
+.sou-cooperado .fique-por-dentro .title-agenda h5 {
+  padding-left: 60px;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 25px;
+}
+.sou-cooperado .fique-por-dentro .content-agenda {
+  padding: 20px 35px;
+}
+.sou-cooperado .fique-por-dentro .content-agenda .btn-primary{
+  background: #0081C3;
+}
+.sou-cooperado .fique-por-dentro .content-agenda .fique-atento{
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 0.9em;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+  padding: 0;
+}
+.sou-cooperado #ultima-edicao {
+  margin: 60px 0 100px;
+}
+.sou-cooperado #destaques:before {
+  display: none;
+}
+.sou-cooperado #lista-noticias h4 {
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  line-height: 1.05em;
+  color: #282828;
+}
+.sou-cooperado #lista-noticias .item-noticia a {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  height: 240px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  position: relative;
+}
+.sou-cooperado #lista-noticias .item-noticia a h3 {
+  font-weight: 700;
+}
+.sou-cooperado #lista-noticias .item-noticia a:before {
+  border: 4px solid #FFFFFF;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sou-cooperado #lista-noticias .item-noticia a:hover:before {
+  border: 4px solid #006aaf;
+}
+.sou-cooperado #lista-noticias .item-noticia a .category-title {
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 700;
+}
+.sou-cooperado #lista-noticias .item-noticia a .data {
+  font-size: 0.75em;
+  line-height: 2em;
+  line-height: 1.05em;
+  margin: -3px 0 10px;
+  display: block;
+}
+.sou-cooperado #acessos {
+  background: #FFFFFF;
+  padding: 40px 0;
+}
+.sou-cooperado #acessos .item-acesso a {
+  display: block;
+  height: 310px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #4b4b4b;
+  position: relative;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.sou-cooperado #acessos .item-acesso a:hover {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background-size: 106% 106%;
+  background-position: center center;
+}
+.sou-cooperado #acessos .item-acesso a .informacoes {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.sou-cooperado #acessos .item-acesso a .informacoes .category-title {
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 700;
+}
+.sou-cooperado #acessos .item-acesso a .informacoes .data {
+  font-size: 0.75em;
+  line-height: 2em;
+  line-height: 1.05em;
+  margin: -3px 0 10px;
+  display: block;
+}
+.sou-cooperado #acessos .item-acesso a .informacoes h3 {
+  color: #003a60;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+.sou-cooperado #acessos .item-acesso a .informacoes p {
+  color: #282828;
+  max-width: 80%;
+}
+.sou-cooperado .lista-banners .item-banner a {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+}
+.sou-cooperado .lista-banners .item-banner a:before {
+  border: 1px solid #F2F2F2;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sou-cooperado #lista-publicacoes h4 {
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  line-height: 1.05em;
+  color: #282828;
+}
+.sou-cooperado #lista-publicacoes .item-publicacao a {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  min-height: 304px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  position: relative;
+}
+.sou-cooperado #lista-publicacoes .item-publicacao a p {
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.35em;
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #282828;
+}
+.sou-cooperado #lista-publicacoes .item-publicacao a p strong {
+  font-weight: 500;
+}
+
+#banner .modal-body{
+  padding: 0;
+}
+#banner .modal-dialog{
+  max-width: 80% !important;
+}
+#banner .close{
+  position: absolute;
+  right: 10px;
+  font-size: 70px;
+  color: white;
+  opacity: 1;
+  top: 10px;
+  z-index: 99;
+  background: none !important;
+}
+#banner .modal-content{
+  top: 40px;
+}
+#banner .modal-open .modal {
+  background: rgba(0, 38, 96, 0.9);
+}
+.modal-open .modal{
+  background: rgba(0, 58, 96, 0.9);
+}
+.modal-backdrop{
+  position: relative !important;
+}
+.modal-dialog{
+  max-width: 50% !important;
+}
+.modal-dialog p{
+  color: #003a60;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+.modal-dialog h4{
+  margin-top: 60px !important;
+  margin-bottom: 30px;
+
+}
+.modal-dialog tr{
+  max-width: 25% !important;
+}
+.modal-dialog .menu-titulos{
+  background: #003a60;
+}
+.modal-dialog .menu-titulos .titulos-tabela{
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid white;
+  border-right: none;
+  width: 25%;
+  text-align: center;
+}
+.modal-dialog .tabela-principal{
+  background: #e4f4ff;
+}
+
+.modal-dialog .tabela-secundaria{
+  background: #f9f9f9;
+}
+
+.modal-dialog .bg-tabela td{
+  border: 1px solid #003a60;
+  border-top: none;
+  border-right: none;
+}
+.modal-dialog .bg-tabela td:first-child{
+  border-left: none
+}
+
+.page-aci h5 {
+  font-family: "Exo", sans-serif;
+  color: #006aaf;
+  font-weight: 500;
+  font-size: 1.85rem;
+}
+.page-aci .visite-site {
+  background: #FFFFFF;
+  padding: 22px 27px;
+}
+.page-aci .visite-site .botao-visite-site {
+  width: 180px;
+  font-weight: 300;
+  margin: 10px 0 0 15px;
+  font-size: 20px;
+  border: 1px solid #003a60;
+  background: #003a60;
+  padding: 10px 30px;
+  line-height: 47px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.page-aci .visite {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.page-aci #banners-footer {
+  padding: 100px 0 60px;
+}
+.page-aci #representatividade {
+  margin-top: 50px;
+}
+.page-aci #representatividade li {
+  margin: 15px 30px;
+}
+
+@media (min-width: 0) and (max-width: 540px) {
+
+  body #banner {
+    background: url("../img/background-principal-responsivo.jpg") center 0px;
+    background-size: cover;
+    background-attachment:scroll;
+  }
+
+  .contato .editais-legislacoes h4 {
+    margin: 0px 0px 30px;
+  }
+
+  .transparencia a.btn.btn-flat.btn-flat-white.green-active, .transparencia a.btn.btn-flat.btn-flat-white.active, .editais-licitacoes a.btn.btn-flat.btn-flat-white.active{ 
+    top: 20px;
+    font-size: 0.885em;
+    padding: 10px 3px;
+  }
+
+}
+
+@media (min-width: 0) and (max-width: 1200px) {
+
+  #content-mobile .section-slide .numero span {
+    display: block;
+    -webkit-transform: none;
+    opacity: 1;
+  }
+ 
+  #content-mobile .section-slide .area-infografico {
+    top: 0px;
+    opacity: 1;
+    height: auto;
+  }
+
+  #content-mobile .section-slide .item-solto {
+    position: relative;
+  }
+
+  #content-mobile .section-slide .item-solto p{
+    font-size: 17px;
+  }
+
+  #areas-ebpc .btn-ebpc {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+
+
+@media (min-width: 0) and (max-width: 768px) {
+
+  #acesso-historias .item-acesso a, #acesso-historias .item-acesso a:hover, 
+  body #acessos .item-acesso a, body #acessos .item-acesso a:hover {
+    background-size: cover;
+  }
+ 
+  #content-mobile .section-slide-1 .area-infografico {
+    background-image: url(../img/slide-cooperativa-1.png);
+    padding-top: 320px;
+    background-size: 100%;
+  }
+
+ 
+  #content-mobile .section-slide-2 .area-infografico {
+    background-image: url(../img/slide-cooperativa-2.png);
+    padding-top: 250px;
+    background-size: 100%;
+  }
+
+ 
+  #content-mobile .section-slide-3 .area-infografico {
+    background-image: url(../img/slide-cooperativa-3.png);
+    padding-top: 350px;
+    background-size: 100%;
+  }
+
+ 
+  #content-mobile .section-slide-4 .area-infografico {
+    background-image: url(../img/slide-cooperativa-4.png);
+    padding-top: 200px;
+    background-size: 100%;
+  }
+
+  .publicacoes #breadcrumb .container h4, .publicacoes-single #breadcrumb .container h4, .livro-cooperativismo-de-credito #breadcrumb .container h4, .manual-operacional-do-ramo-transporte #breadcrumb .container h4, .manual-contabil-do-ramo-transporte #breadcrumb .container h4, .manual-tributario-do-ramo-transporte #breadcrumb .container h4, .manual-contabilidade-do-ramo-agropecuario #breadcrumb .container h4, .manual-de-recolhimento-I #breadcrumb .container h4, .manual-de-recolhimento-II #breadcrumb .container h4, .cartilha-cooperativismo-e-eleicoes #breadcrumb .container h4, .agenda-institucional-do-cooperativismo #breadcrumb .container h4, .cartilha-guia-de-seguros-rurais-e-proagro #breadcrumb .container h4, .diagnostico-do-ramo-educacional #breadcrumb .container h4, .diagnostico-do-ramo-mineral #breadcrumb .container h4, .diagnostico-do-ramo-consumo #breadcrumb .container h4, .guia-pratico-para-dirigentes-de-cooperativas #breadcrumb .container h4, .manual-de-governanca-cooperativa #breadcrumb .container h4, .manual-de-orientacao-para-conselho-fiscal #breadcrumb .container h4, .compendio-de-boas-praticas-de-governanca-cooperativa #breadcrumb .container h4 {
+    top: 0px !important;
+  }
+
+  .noticias #breadcrumb, .noticia-single #breadcrumb {
+    height: 330px;
+  }
+  
+  #lista-publicacoes {
+    margin-top: 40px;
+  }
+
+  .sistemas-ocb #breadcrumb {
+    height: auto !important;
+  }
+
+  #localize-unidade .area-unidade {
+    padding: 40px 20px;
+  }
+
+
+  .como-funciona-uma-cooperativa .section-slide .numero {
+    margin-top: 0px !important;
+  }
+
+
+  .como-funciona-uma-cooperativa #breadcrumb {
+    height: 150px !important;
+    margin-bottom: 150px;
+  }
+
+  #breadcrumb .container {
+    padding-bottom: 30px !important;
+  } 
+
+  .o-que-e-cooperativismo #breadcrumb {
+    height: 360px !important;
+  }
+
+  .servicos #breadcrumb .container, .servico-single #breadcrumb .container, .servicos-result #breadcrumb .container {
+    padding-bottom: 30px !important;
+  }
+
+  #ultima-edicao h5 {
+    font-size: 1.75rem;
+    color: #006aaf;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #localize-unidade .area-unidade #info-outros {
+    font-size: 0.855em;
+  }
+
+  .servico-single #single p {
+    margin: 20px 0;
+    font-size: 1.025em;
+    line-height: 1.33333em;
+    line-height: 1.65em;
+    font-weight: 400;
+    text-align: left !important;
+  }
+
+  .servico-single #single .btn-flat{
+    font-size: 0.925em;
+  }
+
+  .servico-single h1 {
+    font-size: 2.1rem;
+  }
+  .servico-single .conteudo h5 {
+    font-size: 1.65rem;
+    color: #006aaf;
+    text-align: left !important;
+  }
+
+  .ramos-da-ocb .associados-cooperativismo {
+    border: none !important;
+  }
+
+  .ramos-da-ocb .numeros-do-cooperativismo img {
+    width: 90% !important;
+  }
+
+  .ramos-da-ocb .numeros-do-cooperativismo h3 {
+    font-size: 1.325em !important;
+  }
+
+  .ramos-da-ocb .numeros-do-cooperativismo p {
+    font-size: 0.875em !important;
+  }
+
+  .sou-cooperado .modal-dialog {
+    max-width: 100% !important;
+    margin: 0;
+  }
+  .o-que-e-cooperativismo #numeros-cooperativismo img {
+    margin: 0px 0;
+  }
+
+  #banner .modal-body{
+    padding: 0;
+  }
+  #banner .modal-dialog{
+    max-width: 95% !important;
+  }
+  #banner .close{
+    position: absolute;
+    right: 20px;
+    font-size: 70px;
+    color: white;
+    opacity: 1;
+    top: -10px;
+    z-index: 99;
+    background: none !important;
+  }
+  #banner .modal-content{
+    top: 40px;
+  }
+  #banner .modal-open .modal {
+    background: rgba(0, 38, 96, 0.9);
+  }
+
+  body #destaques #noticia-destaque a .area-overlay iframe{
+    max-width: 100% !important;
+  }
+
+  .conteudo h4{
+    font-size: 2.95em !important;
+  }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .ramo-credito #breadcrumb , .ramo-agropecuario #breadcrumb , .ramo-consumo #breadcrumb , .ramo-educacional #breadcrumb , .ramo-especial #breadcrumb , .ramo-habitacional #breadcrumb , .ramo-infraestrutura #breadcrumb , .ramo-mineral #breadcrumb , .ramo-producao #breadcrumb , .ramo-saude #breadcrumb , .ramo-trabalho #breadcrumb , .ramo-transporte #breadcrumb , .ramo-turismo #breadcrumb {
+    height: 300px;
+  }
+
+  .topo .logo{
+    width: 20%;
+    top: 5px;
+  }
+  .formulario-contato button{
+    width: 33.333333%;
+    margin-left: 33.333333%;
+  }
+  .page-aci .visite-site {
+    padding: 22px 8px;
+  }
+  
+  .editais-legislacoes {
+    padding: 50px 0px;
+  }
+
+  .item-atuacoes.col-md-6.col-lg-3.ng-scope {
+    width: 50%;
+  }
+
+  #lista-atuacoes .item-atuacoes .atuacoes {
+    min-height: 280px;
+  }
+
+  header .topo nav > ul > li > a{
+    padding: 42px 6px !important;
+  }
+  .sou-cooperado .modal-dialog {
+    max-width: 90% !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico{
+    background-size: contain;
+  }
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico{
+    background-size: contain;
+    top: -30px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico{
+    background-size: contain;
+    top: -20px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico{
+    background-size: contain;
+  }
+
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .votos {
+    top: 210px !important;
+    width: 225px !important;
+    left: 30px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .periodicidade {
+    right: 20px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico .hierarquia{
+    top: 160px !important;
+    right: 0px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico .capacitacao{
+    top: 120px !important;
+    left: 0px !important;
+    width: 260px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .ficaadica{
+    top: 340px !important;
+    width: 415px !important;
+    left: 240px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico .executivo {
+    top: 65px !important;
+    width: 245px !important;
+    left: 5px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico .diretores {
+    top: 80px !important;
+    width: 260px !important;
+    right: 5px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto.check-2 {
+    top: 127px !important;
+    left: 280px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto.check-1 {
+    top: 16px !important;
+    left: 388px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto.check-3 {
+    top: 41px !important;
+    left: 560px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico .mascara-hierarquia {
+    top: 135px !important;
+    right: 13px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line1 {
+    top: 21px !important;
+    left: 487px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line2 {
+    top: 31px !important;
+    left: 488px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line3 {
+    top: 41px !important;
+    left: 489px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line4 {
+    top: 51px !important;
+    left: 490px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line5 {
+    top: 61px !important;
+    left: 491px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line6 {
+    top: 37px !important;
+    left: 344px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line7 {
+    top: 47px !important;
+    left: 345px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line8 {
+    top: 57px !important;
+    left: 346px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line9 {
+    top: 67px !important;
+    left: 347px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line10 {
+    top: 77px !important;
+    left: 348px !important;
+  }
+
+  body #lista-noticias .item-noticia a {
+    padding: 10px;
+  }
+  body #lista-publicacoes .item-publicacao a {
+    min-height: 380px !important;
+    padding: 10px;
+  }
+}
+@media (min-width: 545px) and (max-width: 768px) {
+  .topo {
+    height: 80px !important;
+  }
+
+
+  .filtro-servicos button {
+    width: 100% !important;
+  }
+
+  .navbar {
+    z-index: 99;
+    padding: 0 !important;
+  }
+  .navbar .logo {
+    height: 80px;
+  }
+  .navbar .logo a {
+    padding: 15px 0 !important;
+  }
+  .navbar .navbar-toggler {
+    color: #006aaf;
+    position: relative;
+    top: 20px;
+    text-align: right;
+    background: none !important;
+  }
+  .navbar .collapse {
+    padding: 0 !important;
+  }
+  .navbar .collapsing {
+    padding: 0 !important;
+  }
+  .navbar ul {
+    text-align: center !important;
+    background: white;
+  }
+  .navbar ul li {
+    list-style: none;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+  }
+  .navbar .dropdown-menu {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    float: none;
+  }
+
+  #search {
+    top: 110px !important;
+  }
+  #search i {
+    z-index: 99;
+  }
+  #banner h2{
+      font-size: 4em
+  }
+
+  footer .ng-scope ul{
+    min-height: 140px
+  }
+
+}
+
+@media (min-width: 580px) and (max-width: 768px) {
+  header .topo nav .dropdown:hover a{
+    background: white !important;
+    color: #0275d8 !important;
+  }
+
+  header .topo nav .dropdown:hover .dropdown-menu a{
+    background: #006aaf !important;
+    color: white !important;
+  }
+  .navbar .dropdown-menu {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    float: none;
+  }
+
+  .topo .responsivo-tablet {
+    max-width: 100%;
+  }
+  .topo .responsivo-tablet .mostra-tablet {
+    display: block !important;
+    position: absolute !important;
+    z-index: 99;
+    padding: 0 !important;
+  }
+  .topo .responsivo-tablet .mostra-tablet .logo {
+    height: 80px;
+  }
+  .topo .responsivo-tablet .mostra-tablet .logo a img {
+    max-width: 90%;
+  }
+  .topo .responsivo-tablet .mostra-tablet .navbar-toggler {
+    color: #006aaf;
+    position: relative;
+    top: 15px;
+    text-align: right;
+    background: none !important;
+    z-index: 99;
+  }
+  .topo .responsivo-tablet .mostra-tablet .navbar-toggler img {
+    width: 35px;
+    max-width: 140%;
+  }
+  .topo .responsivo-tablet .mostra-tablet .collapse {
+    padding: 0 !important;
+  }
+  .topo .responsivo-tablet .mostra-tablet .collapsing {
+    padding: 0 !important;
+  }
+  .topo .responsivo-tablet .mostra-tablet ul {
+    text-align: center !important;
+    background: white;
+  }
+  .topo .responsivo-tablet .mostra-tablet ul li {
+    list-style: none;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .topo .responsivo-tablet .mostra-tablet ul li a {
+    text-decoration: none;
+  }
+  .topo .responsivo-tablet .mostra-tablet .dropdown-menu {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    float: none;
+  }
+  .navbar .logo a {
+   /* padding: 15px 60px!important;*/
+  }
+
+  footer .sistema-parceiros{
+    min-height: 40px !important;
+  }
+  footer .link-coopemail ul{
+    min-height: 0;
+  }
+
+  #lista-banners .item-banner img{
+    max-height: 250px;
+  }
+
+  .servicos #breadcrumb .container h4 {
+    margin: 50px 0 0 !important;
+  }
+
+}
+
+
+
+@media (min-width: 360px) and (max-width: 380px) {
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .ficaadica{
+    top: 220px !important;
+    width: 100% !important;
+    left: 0 !important;
+  }
+  
+  #acesso-historias .item-acesso a, #acesso-historias .item-acesso a:hover, 
+  body #acessos .item-acesso a, body #acessos .item-acesso a:hover {
+    background-size: cover;
+  }
+
+  .info-servicos { 
+    background-position: center center;
+  }
+
+  .info-conheca { 
+    background-position: center center;
+  }
+
+  #lista-noticias .item-noticia:first-child {
+    margin-top: 20px
+  }
+
+}
+
+@media (min-width: 0) and (max-width: 359px) {
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .ficaadica{
+    top: 190px !important;
+    width: 100% !important;
+    left: 0 !important;
+
+  }
+}
+@media (min-width: 380px) and (max-width: 450px) {
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .ficaadica{
+    top: 260px !important;
+    width: 100% !important;
+    left: 0 !important;
+
+  }
+}
+@media (min-width: 0) and (max-width: 544px) {
+
+  quote {
+    font-size: 18px !important;
+    left: 0px !important;
+    min-width: 100% !important;
+  }
+
+  #organizacao .tabs-organizacao div.active:before {
+    display: none
+  }
+
+  .destaque {
+    background: url(../img/img-destaque-interna.jpg) center center;
+    min-height: 400px;
+    margin: 0px 0 40px;
+  }
+
+  .sou-cooperado .sistemas {
+    margin: 40px auto 0;
+  }
+
+  .contato .editais-legislacoes {
+    margin-top: 40px;
+  }
+
+
+  .EBPC-submissao #breadcrumb h4 {
+    font-size: 2.05em;
+  }
+
+  .EBPC-submissao #formulario-inscricao .anexos .upload-arquivos .upload {
+    width: 50%;
+  }
+
+  .EBPC-submissao #formulario-inscricao .anexos .btn-uploads input[type=file] {
+    bottom: -35px !important;
+    height: 35px !important;
+    width: 35%;
+  }
+ 
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico{
+    background-size: contain;
+  }
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico{
+    background-size: contain;
+    top: -30px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico{
+    background-size: contain;
+    top: -20px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico{
+    background-size: contain;
+  }
+
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .votos {
+    top: 200px !important;
+    left: 0!important;
+    width: 100% !important;
+  }
+  
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .periodicidade {
+    top: 340px !important;
+    right: 0px !important;
+    width: 100% !important;
+  }
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico .hierarquia{
+    top: 170px !important;
+    right: 0px !important;
+    width: 100% !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico .capacitacao{
+    top: 290px !important;
+    left: 0px !important;
+    width: 100% !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .ficaadica h4{
+    font-size: 20px;
+    line-height: 0.85em;  
+  }
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico .executivo {
+    top: 125px !important;
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico .diretores {
+    top: 325px !important;
+    width: 100% !important;
+    right: 0px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-periodicidade, .como-funciona-uma-cooperativa #pin-3 .area-infografico .line, .como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto{
+    display: none;
+  }
+
+  .topo {
+    height: 80px !important;
+  }
+  body .lista-banners .item-banner a{
+    text-align: center
+  }
+
+  .navbar {
+    position: absolute !important;
+    z-index: 99;
+    padding: 0 !important;
+  }
+  .navbar .logo {
+    height: 80px;
+  }
+  .navbar .logo img{
+    width: 150px !important;
+  }
+  .navbar .navbar-toggler {
+    color: #006aaf;
+    position: relative;
+    top: 20px;
+    text-align: right;
+    background: none !important;
+  }
+  .navbar .collapse {
+    padding: 0 !important;
+  }
+  .navbar .collapsing {
+    padding: 0 !important;
+  }
+  .navbar ul {
+    text-align: center !important;
+    background: white;
+  }
+  .navbar ul li {
+    list-style: none;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+  }
+  .navbar .dropdown-menu {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    float: none;
+  }
+  header .topo nav .dropdown:hover a{
+    background: white !important;
+    color: #0275d8 !important;
+  }
+
+  header .topo nav .dropdown:hover .dropdown-menu a{
+    background: #006aaf !important;
+    color: white !important;
+  }
+  .navbar .dropdown-menu {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    float: none;
+  }
+
+  #search {
+    top: 490px !important;
+    padding: 0px !important;
+  }
+  #search i {
+    z-index: 99;
+  }
+
+  #banner {
+    background-size: cover !important;
+  }
+
+  #breadcrumb h4 {
+    font-size: 2.25em;
+    top: 0 !important;
+  }
+  #breadcrumb li {
+    margin: 0px 0px 0 5px !important;
+  }
+
+  .home h2 {
+    font-size: 2em;
+  }
+
+  #destaques .item-noticia .informacoes h3 {
+    font-size: 1.425em;
+  }
+
+  #acessos .item-acesso a {
+    background-size: cover;
+  }
+
+  footer #area-social li {
+    margin: 10px 25px;
+  }
+  footer #area-social .newsletter button {
+    padding: 8px 10px !important;
+  }
+  footer #assinatura .logo-coop {
+    margin-top: 25px !important;
+  }
+
+  .historia-do-cooperativismo h6 {
+    margin: 0;
+  }
+
+  .sistemas-ocb .quadro-propostas {
+    margin: 20px;
+    padding: 10px 40px 20px 20px !important;
+  }
+
+  .historia-do-sistema-ocb .area-historia {
+    padding: 15px;
+  }
+
+  .page-sescoop .btn-flat-white {
+    top: 20px;
+    font-size: 0.885em;
+    padding: 10px 3px;
+  }
+
+  .page-cncoop .btn-flat-white {
+    font-size: 1.05em;
+  }
+  .page-cncoop #organizacao .tabs-organizacao a {
+    font-size: 1.1375em;
+  }
+
+  .page-ocb #breadcrumb h4, .page-sescoop #breadcrumb h4, .page-cncoop #breadcrumb h4 {
+    font-size: 2.05em;
+  }
+  .page-ocb #missao quote, .page-sescoop #missao quote, .page-cncoop #missao quote {
+    font-size: 22px;
+    font-family: "Exo", sans-serif;
+    padding: 25px 0 0 30px;
+    position: relative;
+    display: block;
+    left: 0px;
+    top: 10px;
+  }
+  .page-ocb #lista-atuacoes, .page-sescoop #lista-atuacoes, .page-cncoop #lista-atuacoes {
+    padding: 20px 50px 0px;
+  }
+
+  #fale-com-ocb h4 {
+    font-size: 2.75em;
+  }
+  #fale-com-ocb .contato {
+    top: 50px;
+  }
+
+  #fale-com-sescoop button {
+    margin-left: 0;
+  }
+  #fale-com-sescoop h4 {
+    font-size: 2.2em;
+  }
+
+  #fale-com-cncoop h4 {
+    font-size: 2.75em;
+    margin: 20px 0 20px;
+  }
+  #fale-com-cncoop h4 #fale-com-sescoop h4 {
+    font-size: 2.75em;
+  }
+  #fale-com-cncoop h4 #fale-com-sescoop button {
+    margin: 0;
+  }
+  #fale-com-cncoop #localize-unidade .area-unidade {
+    padding: 10px;
+  }
+  #fale-com-cncoop #localize-unidade .area-unidade .panel-form {
+    padding: 40px 40px 80px 40px;
+  }
+  #fale-com-cncoop #localize-unidade .area-unidade button {
+    margin-bottom: 30px;
+  }
+
+  .servicos .filtro-servicos {
+    height: 240px;
+  }
+  .servicos .filtro-servicos button {
+    width: 100%;
+  }
+
+  .publicacoes .filtro-servicos, .publicacoes-single .filtro-servicos {
+    height: 300px;
+  }
+  .publicacoes .filtro-servicos button, .publicacoes-single .filtro-servicos button {
+    width: 275px;
+    margin-left: 15px;
+  }
+
+  .noticias #paginacao .page-link {
+    margin: 0 0px;
+  }
+
+  .noticia-single #breadcrumb nav li:last-child {
+    width: 210px;
+  }
+  .noticia-single #single quote {
+    font-size: 28px;
+    padding: 25px 0 40px 33px;
+  }
+
+  .transparencia-ocb .filtro-transparencia {
+    height: 240px;
+  }
+  .transparencia-ocb .filtro-transparencia button {
+    width: 275px;
+    margin-left: 15px;
+  }
+  .transparencia-ocb #paginacao .page-link {
+    margin: 0 0px;
+  }
+
+  .transparencia-cncoop .filtro-transparencia {
+    height: 240px;
+  }
+  
+  .transparencia-cncoop #paginacao .page-link {
+    margin: 0 0px;
+  }
+
+  .transparencia-sescoop .filtro-transparencia {
+    height: 240px;
+  }
+  .transparencia-sescoop .filtro-transparencia button {
+    width: 275px;
+    margin-left: 15px;
+  }
+  .transparencia-sescoop .btn-flat-white {
+    top: 20px;
+    font-size: 0.895em;
+    padding: 12px 11px;
+  }
+  .transparencia-sescoop #paginacao .page-link {
+    margin: 0 0px;
+  }
+  .transparencia-sescoop #fale-com-sescoop h4 {
+    font-size: 2.75em;
+    margin: 20px 0 20px;
+  }
+  .transparencia-sescoop #fale-com-sescoop button {
+    margin: 0;
+  }
+
+  .editais-licitacoes .filtro-transparencia {
+    height: 300px;
+  }
+  .editais-licitacoes .filtro-transparencia button {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .editais-licitacoes .btn-flat-white {
+    top: 20px;
+    font-size: 0.895em;
+    padding: 10px 3px;
+  }
+  .editais-licitacoes #paginacao .page-link {
+    margin: 0 0px;
+  }
+
+  #fale-conosco h4 {
+    font-size: 2.75em;
+  }
+  #fale-conosco button {
+    margin: 0;
+  }
+
+  .sou-cooperado #header-personalizado h2 {
+    position: relative;
+    top: 20px;
+    margin-top: 0 !important;
+    font-size: 3em;
+    margin: 20px 0;
+  }
+  .sou-cooperado #header-personalizado .fique-por-dentro {
+    margin-top: 0 !important;
+  }
+  .sou-cooperado #noticia-destaque .informacoes h3 {
+    font-size: 1.325em;
+  }
+  .sou-cooperado #ultima-edicao .quadro-propostas {
+    margin-top: 80px;
+  }
+
+  .trabalhe-conosco .info-trabalhe-sescoop, .trabalhe-conosco .info-trabalhe-cncoop {
+    padding: 20px !important;
+  }
+  .trabalhe-conosco #sescoop-trabalhe-conosco .banner-sescoop {
+    background-size: contain;
+    height: 120px;
+  }
+  .trabalhe-conosco #sescoop-trabalhe-conosco .banner-sescoop img {
+    bottom: -50px;
+    left: 50px;
+  }
+  .trabalhe-conosco #cncoop-trabalhe-conosco .banner-cncoop {
+    background-size: contain;
+    height: 120px;
+  }
+  .trabalhe-conosco #cncoop-trabalhe-conosco .banner-cncoop .logo-cncoop-trabalhe {
+    bottom: -55px;
+    left: 15px;
+    width: 48%;
+  }
+  .trabalhe-conosco #cncoop-trabalhe-conosco .banner-cncoop .logo-ocb-trabalhe {
+    bottom: -60px;
+    left: 40px;
+    width: 35%;
+  }
+  .trabalhe-conosco #cncoop-trabalhe-conosco .anexar {
+    top: 0;
+    margin-bottom: 20px;
+  }
+}/*
+@media (min-width: 0) and (max-width: 767px) {
+  .mostra-tablet{
+    display: none
+  }
+    
+}*/
+
+@media (min-width: 541px) and (max-width: 851px) {
+
+  body #banner {
+    background: url("../img/background-principal-tablet.jpg") center 0px;
+    background-size: cover;
+    background-attachment:scroll
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  .home #acessos .item-acesso { 
+    width: 100% !important;
+  }
+ 
+  #content-mobile .section-slide-1 .area-infografico {
+    background-image: url(../img/slide-cooperativa-1.png);
+    padding-top: 400px !important;
+    background-size: 100%;
+  }
+
+ 
+  #content-mobile .section-slide-2 .area-infografico {
+    background-image: url(../img/slide-cooperativa-2.png);
+    padding-top: 320px !important;
+    background-size: 100%;
+  }
+
+ 
+  #content-mobile .section-slide-3 .area-infografico {
+    background-image: url(../img/slide-cooperativa-3.png);
+    padding-top: 410px !important;
+    background-size: 100%;
+  }
+
+ 
+  #content-mobile .section-slide-3 .area-infografico .item-solto h4{
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+ 
+  #content-mobile .section-slide-4 .area-infografico {
+    background-image: url(../img/slide-cooperativa-4.png);
+    padding-top: 280px !important;
+    background-size: 100%;
+  }
+
+  .como-funciona-uma-cooperativa .section-slide .numero {
+    margin-top: 0px !important;
+  }
+
+
+  body #lista-publicacoes .item-publicacao a {
+    min-height: 260px !important;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico{
+    background-size: contain;
+  }
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico{
+    background-size: contain;
+    top: -30px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico{
+    background-size: contain;
+    top: -20px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico{
+    background-size: contain;
+  }
+
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .votos {
+    top: 410px !important;
+    left: -40px !important;
+    width: 285px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .periodicidade {
+    top: 410px !important;
+    right: -10px !important;
+    width: 380px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico .hierarquia{
+    top: 290px !important;
+    right: 25px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-2 .area-infografico .capacitacao{
+    top: 290px !important;
+    left: 10px !important;
+    width: 380px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-3 .area-infografico .ficaadica{
+    top: 340px !important;
+    width: 415px !important;
+    left: 130px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico .executivo {
+    top: 265px !important;
+    width: 365px !important;
+    left: -35px !important;
+  }
+
+  .como-funciona-uma-cooperativa #pin-4 .area-infografico .diretores {
+    top: 265px !important;
+    width: 410px !important;
+    right: -60px !important;
+  }
+  .como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-periodicidade, .como-funciona-uma-cooperativa #pin-3 .area-infografico .line, .como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto{
+    display: none;
+  }
+
+  .o-que-e-cooperativismo #valores-humanos .item-graus {
+  margin-top: 50px;
+  width: 100%; 
+  }
+
+  .conteudo #lista-sistemas .item-servicos .sistemas {
+    min-height: 420px;
+
+  }
+  .page-cncoop #contribuicao-sindical{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .page-cncoop #contribuicao-sindical h5 {
+    margin-top: 0px;
+  }
+  .noticias #paginacao .page-link i {
+    font-size: 54px;
+    font-weight: 100;
+    top: -10px;
+    left: -5px;
+    position: absolute;
+    color: #003a60;
+  }
+
+  .noticias #paginacao .page-link {
+    width: 30px;
+    height: 30px;
+    font-size: 0.825em;
+    margin: 0 3px;
+  }
+  .page-aci .visite-site .botao-visite-site {
+    font-size: 13px
+  }
+  .page-aci .visite-site {
+    background: #FFFFFF;
+    padding: 50px 27px;
+  }
+  #lista-servicos .item-servicos .informacoes {
+    min-height: 300px !important;
+  }
+
+  .sou-cooperado .quadro-propostas {
+    margin-top: 30px;
+  }
+
+  .sou-cooperado .modal-dialog {
+    max-width: 100% !important;
+  }
+}
+
+
+@media (max-width: 767px){
+  .filtro-transparencia {
+    height: 240px;
+  }
+  .filtro-transparencia button {
+    padding: 0;
+    height: 40px;
+    width: 100%;
+  }
+
+  
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .o-que-e-cooperativismo #valores-humanos .item-graus .informacoes {
+    min-height: 390px;
+  }
+
+
+  .noticias #breadcrumb, .noticia-single #breadcrumb {
+    height: 320px !important;
+  }
+
+  #lista-servicos .item-servicos .informacoes h4 {
+    font-size: 1.5em !important;
+  }
+
+  .o-que-e-cooperativismo #valores-humanos .item-valores .informacoes {
+    min-height: 390px;
+  }
+
+  .o-que-e-cooperativismo #valores-humanos .item-valores .informacoes h4 {
+    font-size: 1.45em;
+    line-height: 0.55em;
+    margin: 20px 0 25px;
+    font-weight: 400;
+  }
+
+  .editais-licitacoes .conteudo .filtro-transparencia .custom-select.green-arrow {
+    font-size: 12px;
+  }
+
+  .editais-licitacoes .conteudo .filtro-transparencia button {
+    width: 100%;
+  }
+
+
+  .page-ocb #lista-atuacoes .item-atuacoes .atuacoes .btn-block {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .page-ocb #lista-atuacoes .item-atuacoes { 
+    width: 50% !important;
+  }
+
+  .page-ocb #lista-atuacoes .item-atuacoes .atuacoes {
+    min-height: 255px;
+  }
+
+  body #lista-noticias .item-noticia a h3 {
+    font-weight: 700;
+    font-size: 1.05em;
+    line-height: 1.15em;
+  }
+
+  .ramos-da-ocb .numeros-do-cooperativismo h3 {
+    font-size: 2.325em !important;
+  }
+
+
+  .sou-cooperado #ultima-edicao .informacoes-da-revista{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .sou-cooperado #ultima-edicao .quadro-propostas{
+    width: 90%;
+    margin: 30px 7.5%;
+  }
+  .sou-cooperado #ultima-edicao .informacoes-da-revista h5 {
+    font-size: 3rem;
+    color: #006aaf;
+    margin-bottom: 40px;
+  }
+
+  .sou-cooperado #ultima-edicao .informacoes-da-revista p {
+    font-size: 1.225em;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 2000px){
+  .o-que-e-cooperativismo #breadcrumb {
+    height: 340px !important;
+  }
+
+  .servicos .filtro-servicos button {
+    width: 100%;
+  }
+
+  .sistemas-ocb #breadcrumb, .como-funciona-uma-cooperativa #breadcrumb {
+    height: 280px !important;
+  }
+  .como-funciona-uma-cooperativa .section-slide .numero span {
+    display: initial;
+  }
+  .como-funciona-uma-cooperativa #como-funciona {
+    margin-top: -50px;
+  }
+
+  .como-funciona-uma-cooperativa #breadcrumb .container h4 {
+    margin-top: 100px !important;
+  }
+  .o-que-e-cooperativismo #breadcrumb .container h4 {
+    margin-top: 0px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  header .topo nav .dropdown:hover a{
+    background: white !important;
+    color: #0275d8 !important;
+  }
+
+  .o-que-e-cooperativismo .title {
+    margin-top: 50px;
+  }
+
+  #acesso-historias .item-acesso a {
+    height: 220px;
+  }
+
+  .o-que-e-cooperativismo #valores-humanos .item-valores .informacoes {
+    min-height: 200px;
+    padding: 20px 55px 20px 40px;
+    margin-bottom: 0;
+  }
+
+  .o-que-e-cooperativismo #valores-humanos .item-graus .informacoes {
+    min-height: 240px;
+    margin-bottom: 0;
+  }
+
+  .o-que-e-cooperativismo #numeros-cooperativismo img {
+    margin: 0px 0;
+  }
+
+  .o-que-e-cooperativismo #numeros-cooperativismo .title-numeros-cooperativismo { 
+    margin: 20px 0 10px
+  }
+
+  .servicos #breadcrumb, .servico-single #breadcrumb, .servicos-result #breadcrumb {
+    /*height: 300px;*/
+    margin-bottom: 20px;
+  }
+
+  .sistemas-ocb #breadcrumb, .como-funciona-uma-cooperativa #breadcrumb {
+    height: 300px !important;
+  }
+  .servicos #breadcrumb, .servico-single #breadcrumb, .servicos-result #breadcrumb {
+    height: 300px;
+  }
+
+  .o-que-e-cooperativismo #breadcrumb {    
+    height: 400px !important;
+  }
+
+  .editais-licitacoes .filtro-transparencia {
+    height: 310px;
+  }
+
+  .editais-licitacoes .filtro-transparencia button {
+    padding: 0 20px;
+    height: 40px;
+    width: 100%;
+  }
+
+  header .topo nav .dropdown:hover .dropdown-menu a{
+    background: #006aaf !important;
+    color: white !important;
+  }
+
+  .contribuicoes-cooperativistas h4{
+    font-size: 3.15em;
+    margin: 0;
+  }
+  .contribuicoes-cooperativistas #header-personalizado .container.logo-interna{
+    padding-bottom: 0
+  }
+  .contribuicoes-cooperativistas #header-personalizado{
+    height: 450px;
+    min-height: 450px;
+  }
+  .navbar .dropdown-menu {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    float: none;
+  }
+  #banner h2 {
+    font-size: 3.4em;
+  }
+  #banner .list-icons a {
+    font-size: 0.775em !important;
+  }
+  #banner .list-icons a p {
+    margin: 10px 20px 10px;
+  }
+
+  #noticia-destaque {
+    width: 100%;
+  }
+  #noticia-destaque a {
+    background-size: cover;
+  }
+
+  #lista-noticias {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .esconde-tablet {
+    display: none;
+  }
+
+  .topo .responsivo-tablet {
+    max-width: 100%;
+  }
+  .topo .responsivo-tablet .mostra-tablet {
+    display: block !important;
+    position: absolute !important;
+    z-index: 99;
+    padding: 0 !important;
+  }
+  .topo .responsivo-tablet .mostra-tablet .logo {
+    height: 80px;
+  }
+  .topo .responsivo-tablet .mostra-tablet .logo a img {
+    max-width: 90%;
+  }
+  .topo .responsivo-tablet .mostra-tablet .navbar-toggler {
+    color: #006aaf;
+    position: relative;
+    /*top: 30px;*/
+    text-align: right;
+    background: none !important;
+    z-index: 99;
+  }
+  .topo .responsivo-tablet .mostra-tablet .navbar-toggler img {
+    width: 35px;
+    max-width: 140%;
+  }
+  .topo .responsivo-tablet .mostra-tablet .collapse {
+    padding: 0 !important;
+  }
+  .topo .responsivo-tablet .mostra-tablet .collapsing {
+    padding: 0 !important;
+  }
+  .topo .responsivo-tablet .mostra-tablet ul {
+    text-align: center !important;
+    background: white;
+  }
+  .topo .responsivo-tablet .mostra-tablet ul li {
+    list-style: none;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .topo .responsivo-tablet .mostra-tablet ul li a {
+    text-decoration: none;
+  }
+  .topo .responsivo-tablet .mostra-tablet .dropdown-menu {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    float: none;
+  }
+
+  .ramos-da-ocb .numeros-do-cooperativismo img {
+    width: 60%;
+  }
+  .ramos-da-ocb .numeros-do-cooperativismo h3 {
+    color: #407fb4;
+    letter-spacing: -1.6px;
+    font-size: 1.925em !important;
+    font-family: "Exo", sans-serif;
+  }
+  .ramos-da-ocb .associados-cooperativismo {
+    border: none;
+  }
+
+
+  footer .ng-scope ul .link-item ol li{
+    font-size: 0.9375em;
+  }
+  footer ul li strong {
+    font-size: 0.8375em !important;
+  }
+}
+.ramos-da-ocb h6 {
+  font-size: 1.4875em;
+  font-weight: 500;
+}
+.ramos-da-ocb img {
+  margin: 30px 0;
+}
+.ramos-da-ocb ul {
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+.ramos-da-ocb .numeros-do-cooperativismo {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.ramos-da-ocb .numeros-do-cooperativismo img {
+  width: 40%;
+}
+.ramos-da-ocb .numeros-do-cooperativismo h3 {
+  color: #407fb4;
+  letter-spacing: -1.6px;
+  font-size: 3.125em;
+  font-family: "Exo", sans-serif;
+}
+.ramos-da-ocb .numeros-do-cooperativismo p {
+  font-size: 1.075em;
+  color: #407fb4;
+}
+.ramos-da-ocb .associados-cooperativismo {
+  border-left: 1px dotted #407fb4;
+  border-right: 1px dotted #407fb4;
+}
+
+.executivo .atuacoes-ocb nav {
+  margin-bottom: 70px;
+}
+.executivo h4 {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin: 20px 0 50px;
+  line-height: 1.05em;
+}
+.executivo h5 {
+  font-size: 1.85rem;
+  color: #006aaf;
+}
+.executivo .nota-rodape {
+  margin-top: 60px;
+}
+.executivo #produtos {
+  padding-bottom: 50px;
+}
+.executivo #produtos .lista-produtos {
+  margin-top: 60px;
+}
+.executivo #produtos .btn-download {
+  background: url("../img/icon-download-light-blue.png") no-repeat;
+}
+.executivo #produtos .btn-download a {
+  color: #006aaf;
+}
+
+.legislativo .atuacoes-ocb nav {
+  margin-bottom: 70px;
+}
+.legislativo h4 {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin: 20px 0 50px;
+  line-height: 1.05em;
+}
+.legislativo h5 {
+  font-size: 1.85rem;
+  color: #006aaf;
+}
+.legislativo #introducao .nota-rodape {
+  margin-bottom: 60px;
+}
+.legislativo #produtos {
+  padding-bottom: 50px;
+}
+.legislativo #produtos .lista-produtos {
+  margin-top: 60px;
+}
+.legislativo #produtos .btn-download {
+  background: url("../img/icon-download-light-blue.png") no-repeat;
+}
+.legislativo #produtos .btn-download a {
+  color: #006aaf;
+}
+
+.judiciario .atuacoes-ocb nav {
+  margin-bottom: 70px;
+}
+.judiciario h4 {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin: 20px 0 50px;
+  line-height: 1.05em;
+}
+.judiciario h5 {
+  font-size: 1.85rem;
+  color: #006aaf;
+}
+.judiciario #introducao .nota-rodape {
+  margin-bottom: 60px;
+}
+.judiciario #produtos {
+  padding-bottom: 50px;
+}
+.judiciario #produtos .lista-produtos {
+  margin-top: 60px;
+}
+.judiciario #produtos .btn-download {
+  background: url("../img/icon-download-light-blue.png") no-repeat;
+}
+.judiciario #produtos .btn-download a {
+  color: #006aaf;
+}
+.judiciario ul {
+  margin-left: 20px;
+}
+.judiciario ul li {
+  list-style: none;
+}
+
+.internacional .atuacoes-ocb nav {
+  margin-bottom: 70px;
+}
+.internacional h4 {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin: 20px 0 50px;
+  line-height: 1.05em;
+}
+.internacional h5 {
+  font-size: 1.85rem;
+  color: #006aaf;
+}
+.internacional #introducao .nota-rodape {
+  margin-bottom: 60px;
+}
+.internacional #produtos {
+  padding-bottom: 50px;
+}
+.internacional #produtos .lista-produtos {
+  margin-top: 60px;
+}
+.internacional #produtos .btn-download {
+  background: url("../img/icon-download-light-blue.png") no-repeat;
+}
+.internacional #produtos .btn-download a {
+  color: #006aaf;
+}
+
+#header-personalizado .container {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 60px;
+  z-index: 1;
+}
+#header-personalizado .container.middle-top {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+#header-personalizado .container.logo-interna {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#header-personalizado .container .orientacao-interna {
+  padding-bottom: 100px;
+}
+#header-personalizado .container h4 {
+  color: #282828;
+  margin-top: 130px;
+}
+#header-personalizado .container h5 {
+  font-family: "Exo", sans-serif;
+  font-size: 1.75em;
+  line-height: 1.71429em;
+}
+#header-personalizado .container h5 strong {
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+}
+#header-personalizado .container nav ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+#header-personalizado .container nav ul li {
+  float: left;
+  margin: 0px 5px 0 5px;
+  list-style: none;
+  color: #282828;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+#header-personalizado .container nav ul li a {
+  color: #282828;
+  font-weight: 700;
+  text-decoration: none;
+}
+#header-personalizado .container nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.conteudo h4 {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin: 20px 0 50px;
+  line-height: 1.05em;
+}
+.conteudo h5 {
+  font-size: 1.85rem;
+  color: #006aaf;
+}
+.conteudo #lista-contribuicoes ul, .conteudo #contribuicoes ul {
+  margin-left: 30px;
+}
+.conteudo #lista-contribuicoes h6, .conteudo #contribuicoes h6 {
+  font-size: 1.5875em;
+  margin-top: 25px;
+}
+.conteudo #lista-contribuicoes h5, .conteudo #contribuicoes h5 {
+  margin-top: 70px;
+}
+.conteudo #lista-contribuicoes a, .conteudo #contribuicoes a {
+  color: #282828;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contribuicao-sindical table {
+  margin-bottom: 60px;
+}
+.contribuicao-sindical h5 {
+  color: #282828 !important;
+  margin-top: 50px;
+}
+.contribuicao-sindical ul {
+  margin-left: 10px;
+  list-style: none;
+}
+.contribuicao-sindical ul a {
+  color: #003a60;
+  text-decoration: none;
+}
+.contribuicao-sindical ul a:hover {
+  color: #006aaf;
+}
+
+#header-personalizado .container {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 60px;
+  z-index: 1;
+}
+#header-personalizado .container.middle-top {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+#header-personalizado .container.logo-interna {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#header-personalizado .container .orientacao-interna {
+  padding-bottom: 100px;
+}
+#header-personalizado .container h4 {
+  color: #282828;
+  margin-top: 130px;
+}
+#header-personalizado .container h5 {
+  font-family: "Exo", sans-serif;
+  font-size: 1.75em;
+  line-height: 1.71429em;
+}
+#header-personalizado .container h5 strong {
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+}
+#header-personalizado .container nav ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+#header-personalizado .container nav ul li {
+  float: left;
+  margin: 0px 5px 0 5px;
+  list-style: none;
+  color: #282828;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+#header-personalizado .container nav ul li a {
+  color: #282828;
+  font-weight: 700;
+  text-decoration: none;
+}
+#header-personalizado .container nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.conteudo h4 {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin: 20px 0 50px;
+  line-height: 1.05em;
+}
+.conteudo h5 {
+  font-size: 1.85rem;
+  color: #006aaf;
+}
+.conteudo #lista-contribuicoes ul, .conteudo #contribuicoes ul {
+  margin-left: 30px;
+}
+.conteudo #lista-contribuicoes h6, .conteudo #contribuicoes h6 {
+  font-size: 1.5875em;
+  margin-top: 25px;
+}
+.conteudo #lista-contribuicoes h5, .conteudo #contribuicoes h5 {
+  margin-top: 70px;
+}
+.conteudo #lista-contribuicoes a, .conteudo #contribuicoes a {
+  color: #282828;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#header-personalizado .container {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 60px;
+  z-index: 1;
+}
+#header-personalizado .container.middle-top {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+#header-personalizado .container.logo-interna {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#header-personalizado .container .orientacao-interna {
+  padding-bottom: 100px;
+}
+#header-personalizado .container h4 {
+  color: #282828;
+  margin-top: 130px;
+}
+#header-personalizado .container h5 {
+  font-family: "Exo", sans-serif;
+  font-size: 1.75em;
+  line-height: 1.71429em;
+}
+#header-personalizado .container h5 strong {
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+}
+#header-personalizado .container nav ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+#header-personalizado .container nav ul li {
+  float: left;
+  margin: 0px 5px 0 5px;
+  list-style: none;
+  color: #282828;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+#header-personalizado .container nav ul li a {
+  color: #282828;
+  font-weight: 700;
+  text-decoration: none;
+}
+#header-personalizado .container nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.conteudo h4 {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin: 20px 0 50px;
+  line-height: 1.05em;
+}
+.conteudo h5 {
+  font-size: 1.85rem;
+  color: #006aaf;
+}
+.conteudo #lista-contribuicoes ul, .conteudo #contribuicoes ul {
+  margin-left: 30px;
+}
+.conteudo #lista-contribuicoes h6, .conteudo #contribuicoes h6 {
+  font-size: 1.5875em;
+  margin-top: 25px;
+}
+.conteudo #lista-contribuicoes h5, .conteudo #contribuicoes h5 {
+  margin-top: 30px;
+}
+.conteudo #lista-contribuicoes a, .conteudo #contribuicoes a {
+  color: #282828;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.premiacoes .conteudo #estrutura ul {
+  margin: 20px 30px 35px;
+}
+
+.EBPC .conteudo #estrutura ul {
+  margin: 20px 30px 35px;
+}
+
+.EBPC-sobre .conteudo #estrutura ul {
+  margin: 20px 30px 35px;
+}
+
+.EBPC-diretrizes .conteudo #estrutura ul {
+  margin: 20px 30px 35px;
+}
+
+.EBPC-programacao .conteudo #estrutura ul {
+  margin: 20px 30px 35px;
+}
+
+.EBPC-submissao .conteudo #estrutura ul {
+  margin: 20px 30px 35px;
+}
+
+.EBPC-material .conteudo #estrutura ul {
+  margin: 20px 30px 35px;
+}
+
+.EBPC-contato .conteudo #estrutura ul {
+  margin: 20px 30px 35px;
+}
+
+.EBPC-submissao .btn-enviar-ebpc{
+  background: #006aaf;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.EBPC-submissao .form-combo-select{
+  background: #fff url(../img/icon-select.png) top right no-repeat;
+}
+
+
+.EBPC-submissao .btn-enviar-ebpc:hover{
+  background: #0a84d4;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+#areas-ebpc{
+  padding: 40px;
+}
+
+.EBPC-programacao table tbody tr td {
+  color: #4b4b4b;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.2em;
+  padding: 15px 25px;
+  border-bottom: 1px solid #D8D8D8;
+  }
+
+
+.EBPC-programacao table tbody tr .periodos-ebpc {
+  padding: 15px 20px 15px 10px;
+  }
+
+.EBPC-programacao table tbody tr .horarios-ebpc {
+  padding: 15px 5px 15px 5px;
+  }
+
+.EBPC-programacao table tbody tr .eventos-dia {
+  width: 65%;
+  }
+
+#areas-ebpc .btn-ebpc{
+  margin-right: 15px;
+  padding: 10px 25px;
+  background: #303D58;
+  color: white;
+}
+
+#areas-ebpc .active{
+  background: white;
+  color: #303D58 !important;
+}
+
+.EBPC-submissao #formulario-inscricao h4{
+  font-size: 2.05rem;
+  color: #006aaf;
+  font-weight: 500;
+  margin: 20px 0 0;
+}
+.EBPC-submissao #formulario-inscricao .btn-adicionar-autor {
+  float: right;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0px 14px;
+  font-size: 40px;
+  text-align: center;
+}
+.EBPC-submissao #formulario-inscricao .anexos .btn-uploads input[type=file]{
+  position: absolute;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+  bottom: 0px;
+  height: 35px;
+}
+
+.EBPC-submissao #formulario-inscricao .anexos .upload-arquivos .upload{
+  width: 30%;
+  float: left;
+}
+
+
+.EBPC-submissao #formulario-inscricao .anexos .btn-uploads{
+  display: block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #006aaf;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0;
+  padding: 7px;
+  color: white;
+  background: #006aaf;
+  float: left;
+}
+
+.EBPC-submissao #formulario-inscricao .anexos .anexo-1, .EBPC-submissao #formulario-inscricao .anexos .anexo-2{
+  width: 100%;
+  margin-bottom: 40px
+}
+
+
+.EBPC-submissao #formulario-inscricao h5{
+  font-size: 1.55rem;
+  color: #006aaf;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.EBPC-submissao #formulario-inscricao .adicionar-autor span{
+  text-align: right;
+    position: relative;
+    top: 15px;
+    right: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #003a60;
+}
+
+#areas-ebpc .btn-ebpc{
+  margin-right: 15px;
+  padding: 10px 25px;
+}
+
+.conteudo .banner-ebpc {
+ margin-bottom: 30px;
+}
+
+.timeline-montar-cooperativa {
+  margin-top: 0px;
+}
+.timeline-montar-cooperativa .area-historia {
+  border-left: 2px solid #b7b7b7;
+  padding-left: 50px;
+}
+.timeline-montar-cooperativa .area-historia p {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  color: #282828;
+}
+.timeline-montar-cooperativa .area-historia .card h5 {
+  margin: 30px 0 10px;
+  font-size: 1.45em;
+}
+
+.como-funciona-uma-cooperativa body {
+  background: #f5f5f5;
+}
+.como-funciona-uma-cooperativa #como-funciona {
+  background: #f5f5f5;
+  margin-top: 50px;
+}
+.como-funciona-uma-cooperativa .section-slide {
+  padding: 40px 0;
+}
+.como-funciona-uma-cooperativa .section-slide h3, .como-funciona-uma-cooperativa .section-slide p {
+  color: #f68b1f;
+}
+.como-funciona-uma-cooperativa .section-slide .item-solto {
+  position: absolute;
+  padding: 15px 10px;
+}
+.como-funciona-uma-cooperativa .section-slide .item-solto h4 {
+  color: #7c9cc9;
+  font-size: 30px;
+  text-transform: none;
+  font-weight: 800;
+  margin: 0;
+}
+.como-funciona-uma-cooperativa .section-slide .item-solto p {
+  color: #7c9cc9;
+  font-size: 13px;
+  line-height: 1.2em;
+}
+.como-funciona-uma-cooperativa .section-slide .area-infografico {
+  height: 500px;
+  position: relative;
+  top: 500px;
+  opacity: 0;
+  background: no-repeat top center;
+  text-align: center;
+}
+.como-funciona-uma-cooperativa .section-slide .numero {
+  height: 83px;
+  background: url("../img/slide-numero-bg.png") no-repeat top center;
+  color: white;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 84px;
+  text-align: center;
+  margin-top: 100px;
+}
+.como-funciona-uma-cooperativa .section-slide .numero span {
+  display: block;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  opacity: 0;
+}
+.como-funciona-uma-cooperativa .section-slide .resumo {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px 0;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid #f6b97d;
+}
+.como-funciona-uma-cooperativa #pin-1 .area-infografico {
+  background-image: url("../img/slide-cooperativa-1.png");
+}
+.como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto {
+  background: #dbe2f0;
+  position: absolute;
+  width: 27px;
+  height: 25px;
+  opacity: 1;
+}
+.como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto.check-1 {
+  top: 16px;
+  left: 488px;
+}
+.como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto.check-2 {
+  top: 127px;
+  left: 380px;
+}
+.como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-voto.check-3 {
+  top: 41px;
+  left: 666px;
+}
+.como-funciona-uma-cooperativa #pin-1 .area-infografico .mascara-periodicidade {
+  background: url("../img/slide-infografico.png") no-repeat top center;
+  opacity: 1;
+  top: 401px;
+  left: 496px;
+  position: absolute;
+  width: 53px;
+  height: 34px;
+}
+.como-funciona-uma-cooperativa #pin-1 .area-infografico .votos {
+  top: 210px;
+  width: 225px;
+  left: 130px;
+  opacity: 0;
+}
+.como-funciona-uma-cooperativa #pin-1 .area-infografico .periodicidade {
+  top: 180px;
+  width: 300px;
+  right: 130px;
+  opacity: 0;
+}
+.como-funciona-uma-cooperativa #pin-2 .area-infografico {
+  background-image: url("../img/slide-cooperativa-2.png");
+}
+.como-funciona-uma-cooperativa #pin-2 .area-infografico .capacitacao {
+  top: 140px;
+  width: 300px;
+  left: 80px;
+  opacity: 0;
+}
+.como-funciona-uma-cooperativa #pin-2 .area-infografico .mascara-capacitacao-livro {
+  background: url("../img/slide-o-cooperado.png") no-repeat top center;
+  position: absolute;
+  top: 55px;
+  width: 360px;
+  height: 290px;
+  right: 424px;
+}
+.como-funciona-uma-cooperativa #pin-2 .area-infografico .hierarquia {
+  top: 170px;
+  width: 280px;
+  right: 85px;
+  opacity: 0;
+}
+.como-funciona-uma-cooperativa #pin-2 .area-infografico .mascara-hierarquia {
+  position: absolute;
+  top: 140px;
+  width: 260px;
+  height: 40px;
+  right: 93px;
+  background: #eff2f8;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico {
+  background-image: url("../img/slide-cooperativa-3.png");
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .ficaadica {
+  top: 265px;
+  width: 385px;
+  left: 360px;
+  opacity: 0;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line {
+  background: url("../img/slide-line.png");
+  position: absolute;
+  width: 0;
+  height: 15px;
+  opacity: 0;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line1 {
+  top: 21px;
+  left: 577px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line2 {
+  top: 31px;
+  left: 578px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line3 {
+  top: 41px;
+  left: 579px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line4 {
+  top: 51px;
+  left: 580px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line5 {
+  top: 61px;
+  left: 581px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line6 {
+  top: 37px;
+  left: 454px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line7 {
+  top: 47px;
+  left: 455px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line8 {
+  top: 57px;
+  left: 456px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line9 {
+  top: 67px;
+  left: 457px;
+}
+.como-funciona-uma-cooperativa #pin-3 .area-infografico .line.line10 {
+  top: 77px;
+  left: 458px;
+}
+.como-funciona-uma-cooperativa #pin-4 .area-infografico {
+  background-image: url("../img/slide-cooperativa-4.png");
+}
+.como-funciona-uma-cooperativa #pin-4 .area-infografico .executivo {
+  top: 65px;
+  width: 245px;
+  left: 90px;
+  opacity: 0;
+}
+.como-funciona-uma-cooperativa #pin-4 .area-infografico .diretores {
+  top: 85px;
+  width: 260px;
+  right: 100px;
+  opacity: 0;
+}
+
+form .mensagem-validacao {
+  position: absolute;
+  right: -27%;
+  top: 34px;
+  color: #ff003c;
+  letter-spacing: 0;
+  font-weight: bold;
+  font-size: 0.75em;
+  line-height: 2em;
+  display: none;
+}
+form#reserva-de-sala {
+  max-width: 480px;
+  overflow: visible;
+}
+form#reserva-de-sala .form-input {
+  position: relative;
+}
+form#reserva-de-sala .form-input.data-form {
+  display: inline-block;
+}
+form#reserva-de-sala .form-input.data-form .mensagem-validacao {
+  top: 34px;
+  right: -37%;
+}
+form#reserva-de-sala .form-input.radio {
+  display: inline-block;
+}
+form#reserva-de-sala .form-input.radio .mensagem-validacao {
+  top: 30px;
+  right: -37%;
+}
+form#reserva-de-sala .error {
+  border: 1px solid #ff003c;
+}
+form#filtrar-edicoes.formulario .form-input.data-form span {
+  padding-top: 34px;
+}
+form#filtrar-eventos.formulario {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+form#filtrar-eventos.formulario .form-input {
+  float: left;
+  margin-right: 11.28px;
+  width: 200px;
+}
+form#filtrar-eventos.formulario .form-input.grande {
+  width: 345px;
+}
+form#filtrar-eventos.formulario .form-input.grande span {
+  padding: 33px 9.4px 0;
+}
+form#filtrar-eventos.formulario .btn-primary.filtrar {
+  margin: 23px 0;
+}
+form.formulario {
+  margin-bottom: 40px;
+  overflow: hidden;
+  *zoom: 1;
+}
+form.formulario .form-input {
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #4b4b4b;
+}
+form.formulario .form-input label {
+  color: #4b4b4b;
+  font-weight: 900;
+  display: block;
+  letter-spacing: -0.5px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+form.formulario .form-input input[type="text"], form.formulario .form-input textarea {
+  letter-spacing: 0;
+  resize: none;
+  padding: 13px;
+  width: 100%;
+  display: block;
+  margin: 0 0 15px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  line-height: 1.5em;
+  color: #4b4b4b;
+  border: 1px solid #848177;
+}
+form.formulario .form-input select {
+  letter-spacing: 0;
+  padding: 13px;
+  width: 100%;
+  display: block;
+  background: #FFFFFF url("../img/icon-select.jpg") no-repeat center right;
+  margin: 0 0 15px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  line-height: 1.5em;
+  color: #4b4b4b;
+  border: 1px solid #848177;
+}
+form.formulario .form-input.error input[type="text"] {
+  border: 1px solid #ff003c;
+}
+form.formulario .form-input.radio {
+  padding-bottom: 10px;
+}
+form.formulario .form-input.radio label {
+  padding-bottom: 5px;
+}
+form.formulario .form-input.radio input[type=radio] {
+  margin-left: 40px;
+}
+form.formulario .form-input.radio input[type=radio].first-item {
+  margin-left: 1px;
+}
+form.formulario .form-input.data-form input[type="text"] {
+  float: left;
+}
+form.formulario .form-input.data-form input[type="text"].datepicker, form.formulario .form-input.data-form input[type="text"]#data_inicial, form.formulario .form-input.data-form input[type="text"]#data_final {
+  background: url("../img/icon-date.jpg") no-repeat top right;
+}
+form.formulario .form-input.data-form input[type="text"].pequeno {
+  width: 52px;
+}
+form.formulario .form-input.data-form input[type="text"].medio {
+  width: 150px;
+}
+form.formulario .form-input.data-form span {
+  display: block;
+  padding: 10px 9.4px;
+  float: left;
+}
+form.formulario .form-input.data-form .area-data {
+  display: block;
+  float: left;
+}
+form.formulario .link {
+  float: left;
+}
+form.formulario .link:hover {
+  text-decoration: underline;
+}
+
+header .link-rapido {
+  background: #003a60;
+}
+header .link-rapido ul > li {
+  list-style: none;
+  float: right;
+  display: inline-block;
+  color: #FFFFFF;
+  line-height: 45px;
+}
+header .link-rapido ul > li > a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: block;
+  margin: 5px 0;
+  padding: 0px 18px;
+  font-weight: 900;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  line-height: 1.5em;
+}
+header .link-rapido ul > li > a i {
+  float: left;
+  position: relative;
+  top: -2px;
+  left: -4px;
+}
+header .link-rapido .nav-esquerda {
+  float: left;
+}
+header .topo {
+  background: #FFFFFF;
+  height: 100px;
+}
+header .topo .logo a {
+  padding: 25px 0;
+  display: block;
+}
+header .topo nav {
+  position: relative;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+header .topo nav ul {
+  text-align: right;
+}
+header .topo nav > ul > li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 0px;
+  color: #003a60;
+}
+header .topo nav > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #003a60;
+  display: block;
+  padding: 42px 12px;
+  font-weight: 600;
+  background: transparent;
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1em;
+  -moz-transition: color 0.05s ease-in-out;
+  -o-transition: color 0.05s ease-in-out;
+  -webkit-transition: color 0.05s ease-in-out;
+  transition: color 0.05s ease-in-out;
+}
+header .topo nav > ul > li > a i {
+  position: relative;
+  top: 6px;
+  font-size: 2em;
+  line-height: 1.5em;
+  line-height: 0.525em;
+}
+header .topo nav > ul > li > a:hover {
+  color: #FFFFFF;
+  background: #006aaf;
+}
+header .topo nav > ul > li.search-button a {
+  padding: 36px 15px;
+  position: relative;
+  top: 4px;
+}
+header .topo nav > ul > li.search-button a:hover {
+  color: #006aaf;
+  background: transparent;
+}
+header .topo nav > ul > li.active a {
+  text-decoration: underline;
+}
+header .topo nav .dropdown .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  border: none !important;
+}
+header .topo nav .dropdown .dropdown-menu .dropdown-item {
+  padding: 12px 15px;
+  font-weight: 600;
+  min-width: 230px;
+}
+header .topo nav .dropdown .dropdown-menu .dropdown-item:hover {
+  background: #005b96;
+}
+header .topo nav .dropdown:hover a {
+  color: #FFFFFF;
+  background: #006aaf;
+}
+header .topo nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#search {
+  background: #006aaf;
+  position: absolute;
+  top: 131px;
+  padding: 20px 0;
+  width: 100%;
+  min-height: 200px;
+  z-index: 9;
+  -moz-placeholder-color: #FFFFFF;
+  -ms-input-placeholder-color: #FFFFFF;
+}
+#search ::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+#search ::-moz-placeholder {
+  color: #FFFFFF;
+}
+#search input {
+  font-size: 1.625em;
+  line-height: 1.84615em;
+  color: white;
+  width: 95%;
+  padding: 10px 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-weight: bold;
+  line-height: 0.525em;
+  background: none;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 20px;
+}
+#search i {
+  color: #FFFFFF;
+  font-size: 2em;
+  line-height: 1.5em;
+  line-height: 0.525em;
+  text-align: right;
+  position: relative;
+  top: 10px;
+  left: -11px;
+}
+#search .resultados ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#search .resultados ul a {
+  color: #FFFFFF;
+}
+
+#search #field::-webkit-input-placeholder {
+   opacity: 0.2;
+}
+
+#search #field:-moz-placeholder { /* Firefox 18- */
+   opacity: 0.2;
+}
+
+#search #field::-moz-placeholder {  /* Firefox 19+ */
+   opacity: 0.2;
+}
+
+#search #field:-ms-input-placeholder {
+   opacity: 0.2;
+}
+
+#search #field::-ms-clear {
+    display: none;
+}
+
+#breadcrumb .container {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 60px;
+  z-index: 1;
+}
+#breadcrumb .container.middle-top {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+#breadcrumb .container.logo-interna {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#breadcrumb .container .orientacao-interna {
+  padding-bottom: 100px;
+}
+#breadcrumb .container h4 {
+  color: #282828;
+  margin: 0;
+}
+#breadcrumb .container h5 {
+  font-family: "Exo", sans-serif;
+  font-size: 1.75em;
+  line-height: 1.71429em;
+}
+#breadcrumb .container h5 strong {
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+}
+#breadcrumb .container nav ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+#breadcrumb .container nav ul li {
+  float: left;
+  margin: 0px 5px 0 5px;
+  list-style: none;
+  color: #282828;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+#breadcrumb .container nav ul li a {
+  color: #282828;
+  font-weight: 700;
+  text-decoration: none;
+}
+#breadcrumb .container nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.como-montar-uma-cooperativa #breadcrumb {
+  background: url(../img/header-publicacoes.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.como-montar-uma-cooperativa #breadcrumb .container {
+  padding-bottom: 80px;
+}
+
+.noticias #breadcrumb, .noticia-single #breadcrumb {
+  background: url(../img/header-noticias.jpg) top center no-repeat;
+  background-size: cover;
+ /* height: 440px;*/
+}
+
+.servicos #breadcrumb, .servico-single #breadcrumb, .servicos-result #breadcrumb {
+  background: url(../img/header-servicos.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.servicos #breadcrumb .container, .servico-single #breadcrumb .container, .servicos-result #breadcrumb .container {
+  padding-bottom: 10px;
+}
+.servicos .container h4 , .servico-single .container h4 , .servicos-result  #breadcrumb .container h4 {
+    color: #282828;
+    margin: 150px 0 0 !important;
+}
+
+.servico-single #breadcrumb, .servicos-result #breadcrumb {
+  background: url(../img/header-servicos.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+.sistemas-ocb #breadcrumb, .como-funciona-uma-cooperativa #breadcrumb {
+  background: url(../img/header-sistema-ocb.jpg) bottom center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.sistemas-ocb #breadcrumb .container, .como-funciona-uma-cooperativa #breadcrumb .container {
+  padding-bottom: 150px;
+}
+.sistemas-ocb #breadcrumb .container #introducao, .como-funciona-uma-cooperativa #breadcrumb .container #introducao {
+  top: -20px;
+}
+
+.premiacoes #breadcrumb {
+  background: url(../img/header-premiacoes.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.premiacoes #breadcrumb .container {
+  padding-bottom: 90px;
+}
+
+.EBPC #breadcrumb ,.EBPC-submissao #breadcrumb , .EBPC-sobre #breadcrumb ,.EBPC-programacao #breadcrumb ,.EBPC-diretrizes #breadcrumb ,.EBPC-material #breadcrumb ,.EBPC-contato #breadcrumb {
+  background: url(../img/header-ebpc.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.EBPC #breadcrumb .container, .EBPC-submissao #breadcrumb .container , .EBPC-contato #breadcrumb .container , .EBPC-sobre #breadcrumb .container ,.EBPC-programacao #breadcrumb .container ,.EBPC-diretrizes #breadcrumb .container ,.EBPC-material #breadcrumb .container{
+  padding-bottom: 90px;
+}
+
+.page-ocb #breadcrumb, .transparencia-ocb #breadcrumb, .legislativo #breadcrumb, .judiciario #breadcrumb, .executivo #breadcrumb, .internacional #breadcrumb {
+  background: url(../img/header-ocb.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+.page-cncoop #breadcrumb, .transparencia-cncoop #breadcrumb, .contribuicao-sindical #breadcrumb {
+  background: url(../img/header-cncoop.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+.page-sescoop #breadcrumb, .transparencia-sescoop #breadcrumb, .editais-licitacoes #breadcrumb, .formacao-profissional #breadcrumb, .monitoramento #breadcrumb, .promocao-social #breadcrumb {
+  background: url(../img/header-sescoop.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+.page-legislacao #breadcrumb, .page-constituicao-federal #breadcrumb, .page-codigo-civil #breadcrumb {
+  background: url(../img/header-legislacao.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.page-legislacao #breadcrumb .container, .page-constituicao-federal #breadcrumb .container, .page-codigo-civil #breadcrumb .container {
+  padding-bottom: 145px;
+}
+.page-legislacao #breadcrumb .container h4, .page-constituicao-federal #breadcrumb .container h4, .page-codigo-civil #breadcrumb .container h4 {
+  margin-top: 80px;
+}
+
+.trabalhe-conosco #breadcrumb {
+  background: url(../img/header-trabalhe-conosco.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+.historia-do-sistema-ocb #breadcrumb, .central-da-marca #breadcrumb, .historia-do-cooperativismo #breadcrumb {
+  padding-bottom: 50px;
+  background: url(../img/header-historia.jpg) 0 center no-repeat;
+  background-size: cover;
+}
+
+.historia-do-cooperativismo #breadcrumb {
+  padding-bottom: 50px;
+  background: url(../img/bg-topo-historia-do-cooperativismo.jpg) 0 center no-repeat;
+  background-size: cover;
+}
+
+.contato #breadcrumb {
+  padding-bottom: 50px;
+  background: url(../img/header-contato.jpg) 0 center no-repeat;
+  background-size: cover;
+}
+
+.ramos #breadcrumb {
+  padding-bottom: 50px;
+  background: url(../img/header-ramos.jpg) 0 center no-repeat;
+  background-size: cover;
+}
+
+.ramos-detalhes #breadcrumb {
+  padding-bottom: 50px;
+  background: url(../img/header-ramos-detalhes.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.o-que-e-cooperativismo #breadcrumb{
+  background: url(../img/bg-topo-o-que-e-cooperativismo.jpg) bottom center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.revista-saber-cooperar #breadcrumb {
+  background: url(../img/header-publicacoes.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.revista-saber-cooperar #breadcrumb .container {
+  padding-bottom: 110px;
+}
+
+.biblioteca #breadcrumb {
+  background: url(../img/header-biblioteca.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.biblioteca #breadcrumb .container {
+  padding-bottom: 170px;
+}
+.biblioteca #breadcrumb .container h4 {
+  position: relative;
+  top: 100px;
+}
+
+.perguntas-frequentes #breadcrumb {
+  background: url(../img/header-perguntas.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+.ramo-agropecuario #breadcrumb {
+  background: url(../img/header-agropecuario.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-agropecuario #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-consumo #breadcrumb {
+  background: url(../img/header-consumo.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-consumo #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-credito #breadcrumb {
+  background: url(../img/header-credito.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-credito #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-educacional #breadcrumb {
+  background: url(../img/header-educacional.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-educacional #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-especial #breadcrumb {
+  background: url(../img/header-especial.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-especial #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-habitacional #breadcrumb {
+  background: url(../img/header-habitacional.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-habitacional #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-infraestrutura #breadcrumb {
+  background: url(../img/header-infraestrutura.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-infraestrutura #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-mineral #breadcrumb {
+  background: url(../img/header-mineral.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-mineral #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-trabalho #breadcrumb {
+  background: url(../img/header-trabalho.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-trabalho #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-transporte #breadcrumb {
+  background: url(../img/header-transporte.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-transporte #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-turismo #breadcrumb {
+  background: url(../img/header-turismo.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-turismo #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.ramo-saude #breadcrumb {
+  background: url(../img/header-saude.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.ramo-saude #breadcrumb .container {
+  padding-bottom: 150px;
+}
+
+.page-aci #breadcrumb {
+  background: url(../img/header-aci.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.page-aci #breadcrumb .container {
+  padding-bottom: 120px;
+}
+.page-aci #breadcrumb .container h4 {
+  top: 60px;
+  position: relative;
+}
+
+.publicacoes #breadcrumb, .publicacoes-single #breadcrumb, .livro-cooperativismo-de-credito #breadcrumb, .manual-operacional-do-ramo-transporte #breadcrumb, .manual-contabil-do-ramo-transporte #breadcrumb, .manual-tributario-do-ramo-transporte #breadcrumb, .manual-contabilidade-do-ramo-agropecuario #breadcrumb, .manual-de-recolhimento-I #breadcrumb, .manual-de-recolhimento-II #breadcrumb, .cartilha-cooperativismo-e-eleicoes #breadcrumb, .agenda-institucional-do-cooperativismo #breadcrumb, .cartilha-guia-de-seguros-rurais-e-proagro #breadcrumb, .diagnostico-do-ramo-educacional #breadcrumb, .diagnostico-do-ramo-mineral #breadcrumb, .diagnostico-do-ramo-consumo #breadcrumb, .guia-pratico-para-dirigentes-de-cooperativas #breadcrumb, .manual-de-governanca-cooperativa #breadcrumb, .manual-de-orientacao-para-conselho-fiscal #breadcrumb, .compendio-de-boas-praticas-de-governanca-cooperativa #breadcrumb {
+  background: url(../img/header-publicacoes.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.publicacoes #breadcrumb .container, .publicacoes-single #breadcrumb .container, .manual-operacional-do-ramo-transporte #breadcrumb .container, .manual-contabil-do-ramo-transporte #breadcrumb .container, .manual-tributario-do-ramo-transporte #breadcrumb .container, .manual-contabilidade-do-ramo-agropecuario #breadcrumb .container, .manual-de-recolhimento-I #breadcrumb .container, .manual-de-recolhimento-II #breadcrumb .container, .cartilha-cooperativismo-e-eleicoes #breadcrumb .container, .agenda-institucional-do-cooperativismo #breadcrumb .container, .cartilha-guia-de-seguros-rurais-e-proagro #breadcrumb .container, .diagnostico-do-ramo-educacional #breadcrumb .container, .diagnostico-do-ramo-mineral #breadcrumb .container, .diagnostico-do-ramo-consumo #breadcrumb .container, .guia-pratico-para-dirigentes-de-cooperativas #breadcrumb .container, .manual-de-governanca-cooperativa #breadcrumb .container, .manual-de-orientacao-para-conselho-fiscal #breadcrumb .container, .compendio-de-boas-praticas-de-governanca-cooperativa #breadcrumb .container {
+  padding-bottom: 170px;
+}
+.publicacoes #breadcrumb .container h4, .publicacoes-single #breadcrumb .container h4, .manual-operacional-do-ramo-transporte #breadcrumb .container h4, .manual-contabil-do-ramo-transporte #breadcrumb .container h4, .manual-tributario-do-ramo-transporte #breadcrumb .container h4, .manual-contabilidade-do-ramo-agropecuario #breadcrumb .container h4, .manual-de-recolhimento-I #breadcrumb .container h4, .manual-de-recolhimento-II #breadcrumb .container h4, .cartilha-cooperativismo-e-eleicoes #breadcrumb .container h4, .agenda-institucional-do-cooperativismo #breadcrumb .container h4, .cartilha-guia-de-seguros-rurais-e-proagro #breadcrumb .container h4, .diagnostico-do-ramo-educacional #breadcrumb .container h4, .diagnostico-do-ramo-mineral #breadcrumb .container h4, .diagnostico-do-ramo-consumo #breadcrumb .container h4, .guia-pratico-para-dirigentes-de-cooperativas #breadcrumb .container h4, .manual-de-governanca-cooperativa #breadcrumb .container h4, .manual-de-orientacao-para-conselho-fiscal #breadcrumb .container h4, .compendio-de-boas-praticas-de-governanca-cooperativa #breadcrumb .container h4 {
+  position: relative;
+  top: 120px;
+}
+
+.revista-dezembro-2010 #breadcrumb, .revista-dezembro-2015 #breadcrumb, .revista-janeiro-fevereiro-2013 #breadcrumb, .revista-julho-2011 #breadcrumb, .revista-julho-agosto-2012 #breadcrumb, .revista-julho-agosto-2013 #breadcrumb, .revista-julho-agosto-2014 #breadcrumb, .revista-julho-agosto-2015 #breadcrumb, .revista-junho-2011 #breadcrumb, .revista-maio-junho-2013 #breadcrumb, .revista-maio-junho-2014 #breadcrumb, .revista-marco-abril-2013-edicao-especial #breadcrumb, .revista-marco-abril-2013 #breadcrumb, .revista-marco-abril-2014 #breadcrumb, .revista-marco-abril-2015 #breadcrumb, .revista-novembro-2011 #breadcrumb, .revista-novembro-2012 #breadcrumb, .revista-novembro-2013 #breadcrumb, .revista-novembro-2014 #breadcrumb, .revista-novembro-dezembro-2012 #breadcrumb, .revista-novembro-dezembro-2013 #breadcrumb, .revista-novembro-dezembro-2015 #breadcrumb, .revista-setembro-outubro-2014 #breadcrumb, .revista-setembro-outubro-2012 #breadcrumb {
+  background: url(../img/header-publicacoes.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.revista-dezembro-2010 #breadcrumb .container, .revista-dezembro-2015 #breadcrumb .container, .revista-janeiro-fevereiro-2013 #breadcrumb .container, .revista-julho-2011 #breadcrumb .container, .revista-julho-agosto-2012 #breadcrumb .container, .revista-julho-agosto-2013 #breadcrumb .container, .revista-julho-agosto-2014 #breadcrumb .container, .revista-julho-agosto-2015 #breadcrumb .container, .revista-junho-2011 #breadcrumb .container, .revista-maio-junho-2013 #breadcrumb .container, .revista-maio-junho-2014 #breadcrumb .container, .revista-marco-abril-2013-edicao-especial #breadcrumb .container, .revista-marco-abril-2013 #breadcrumb .container, .revista-marco-abril-2014 #breadcrumb .container, .revista-marco-abril-2015 #breadcrumb .container, .revista-novembro-2011 #breadcrumb .container, .revista-novembro-2012 #breadcrumb .container, .revista-novembro-2013 #breadcrumb .container, .revista-novembro-2014 #breadcrumb .container, .revista-novembro-dezembro-2012 #breadcrumb .container, .revista-novembro-dezembro-2013 #breadcrumb .container, .revista-novembro-dezembro-2015 #breadcrumb .container, .revista-setembro-outubro-2014 #breadcrumb .container, .revista-setembro-outubro-2012 #breadcrumb .container {
+  padding-bottom: 170px;
+}
+.revista-dezembro-2010 #breadcrumb .container h4, .revista-dezembro-2015 #breadcrumb .container h4, .revista-janeiro-fevereiro-2013 #breadcrumb .container h4, .revista-julho-2011 #breadcrumb .container h4, .revista-julho-agosto-2012 #breadcrumb .container h4, .revista-julho-agosto-2013 #breadcrumb .container h4, .revista-julho-agosto-2014 #breadcrumb .container h4, .revista-julho-agosto-2015 #breadcrumb .container h4, .revista-junho-2011 #breadcrumb .container h4, .revista-maio-junho-2013 #breadcrumb .container h4, .revista-maio-junho-2014 #breadcrumb .container h4, .revista-marco-abril-2013-edicao-especial #breadcrumb .container h4, .revista-marco-abril-2013 #breadcrumb .container h4, .revista-marco-abril-2014 #breadcrumb .container h4, .revista-marco-abril-2015 #breadcrumb .container h4, .revista-novembro-2011 #breadcrumb .container h4, .revista-novembro-2012 #breadcrumb .container h4, .revista-novembro-2013 #breadcrumb .container h4, .revista-novembro-2014 #breadcrumb .container h4, .revista-novembro-dezembro-2012 #breadcrumb .container h4, .revista-novembro-dezembro-2013 #breadcrumb .container h4, .revista-novembro-dezembro-2015 #breadcrumb .container h4, .revista-setembro-outubro-2014 #breadcrumb .container h4, .revista-setembro-outubro-2012 #breadcrumb .container h4 {
+  position: relative;
+  top: 120px;
+}
+
+.pagina-nao-encontrada #breadcrumb {
+  //padding-bottom: 50px;
+  background: url(../img/OCB-header-not-found.jpg) 0 center no-repeat;
+  background-size: cover;
+}
+
+.mm-3column {
+  width: 33%;
+  float: left;
+  position: relative;
+}
+.mm-3column:after, .mm-3column:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background: #f5f5f5;
+  padding: 80px 0 0;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
+footer ul li.gutter-bottom {
+  margin-bottom: 20px;
+}
+footer ul li ol {
+  padding: 0;
+}
+footer ul li .link-in {
+  font-size: 15.5px !important;
+  margin: 0;
+  padding: 3px 0;
+}
+footer ul li strong {
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  line-height: 1.5em;
+}
+footer ul li > a {
+  text-decoration: none;
+  color: #282828;
+  display: block;
+  margin: 2px 0;
+  padding: 5px 0px;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  line-height: 1.5em;
+}
+footer ul li > a:hover {
+  text-decoration: underline;
+}
+footer #area-social {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+footer #area-social .sistema-parceiros, footer #area-social .social-midia {
+  clear: both;
+  padding: 0;
+  margin: 20px 0 0px;
+  display: block;
+  overflow: hidden;
+}
+footer #area-social .sistema-parceiros li, footer #area-social .social-midia li {
+  float: left;
+  margin-right: 6%;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  opacity: 0.85;
+}
+footer #area-social .sistema-parceiros li a, footer #area-social .social-midia li a {
+  display: block;
+  width: 100%;
+}
+footer #area-social .sistema-parceiros li:hover, footer #area-social .social-midia li:hover {
+  opacity: 1;
+}
+footer #area-social .social-midia {
+  clear: both;
+  padding: 0;
+  margin: 20px 0 0px;
+  display: block;
+  overflow: hidden;
+}
+footer #area-social .social-midia li {
+  float: left;
+  margin-right: 4%;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  opacity: 0.85;
+  width: 40px;
+  height: 40px;
+  background: #003a60 center center no-repeat;
+}
+footer #area-social .social-midia li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer #area-social .social-midia li.icon-facebook {
+  background-image: url(../img/icon-facebook.png);
+}
+footer #area-social .social-midia li.icon-twitter {
+  background-image: url(../img/icon-twitter.png);
+}
+footer #area-social .social-midia li.icon-google {
+  background-image: url(../img/icon-google.png);
+}
+footer #area-social .social-midia li.icon-flickr {
+  background-image: url(../img/icon-flickr.png);
+}
+footer #area-social .social-midia li.icon-youtube {
+  background-image: url(../img/icon-youtube.png);
+}
+footer #area-social .social-midia li:hover {
+  background-color: #006aaf;
+}
+footer #area-social .newsletter {
+  padding-top: 20px;
+}
+footer #area-social .newsletter p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+footer #area-social .newsletter h6 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  line-height: 0.75em;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  color: #282828;
+}
+footer #area-social .newsletter input {
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  line-height: 1.5em;
+  width: 73%;
+  padding: 8px 15px;
+  font-weight: 400;
+  margin-right: 1%;
+  border: 1px solid #4b4b4b;
+  -moz-box-shadow: inset 0px 0px 1px rgba(75, 75, 75, 0.5);
+  -webkit-box-shadow: inset 0px 0px 1px rgba(75, 75, 75, 0.5);
+  box-shadow: inset 0px 0px 1px rgba(75, 75, 75, 0.5);
+}
+footer #area-social .newsletter button {
+  background: #003a60;
+  border: 1px solid #003a60;
+  color: #FFFFFF;
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 8px 15px;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+footer #area-social .newsletter button:hover {
+  border: 1px solid #006aaf;
+  background: #006aaf;
+}
+footer #assinatura {
+  height: 110px;
+  margin-top: 50px;
+  background: #f5f5f5;
+}
+footer #assinatura .logo-coop {
+  margin-top: 10px;
+  text-align: right;
+}
+footer #assinatura p {
+  margin-top: 20px;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.5em;
+  color: rgba(75, 75, 75, 0.7);
+}
+footer #assinatura:before {
+  content: "";
+  height: 40px;
+  display: block;
+  position: relative;
+  background: url("../img/grafismo.png") repeat-x top center;
+  background-size: cover;
+}
+footer .link-coopemail {
+  margin-top: 13px;
+  text-align: left;
+  left: -20px;
+}
+footer .link-coopemail .link-coops {
+  display: inline-block;
+  margin-left: 20px;
+}
+footer .link-coopemail .link-coops a {
+  text-decoration: none;
+  color: #5f5f5f;
+  font-weight: bold;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #006aaf;
+}
+
+::-moz-selection {
+  color: #FFFFFF;
+  background: #006aaf;
+}
+
+*:active, *:focus, input:active, input:focus, button:active, button:focus {
+  outline: none;
+  outline: 0;
+  noFocusLine: expression(this.onFocus=this.blur());
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+ul, body {
+  margin: 0;
+  padding: 0;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+  height: auto;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+body, p, ul, ol, li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.8em;
+}
+
+input, select, button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+}
+
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+  font-size: 0.78125em;
+  line-height: 1.92em;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
+}
+
+input[type="radio"] {
+  -webkit-appearance: radio;
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+}
+
+span.data-slider {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  line-height: 1.5em;
+  color: #4b4b4b;
+  font-weight: 900;
+}
+
+.no-gutter {
+  padding: 0;
+}
+
+hr {
+  height: 1px;
+  background: #D8D8D8;
+  width: 100%;
+  border: none;
+  margin: 40px 0 50px 0;
+}
+hr.gutter {
+  margin: 20px 0 10px 0;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px black;
+  font-size: 5em;
+  line-height: 1.2em;
+  margin: 5px 0;
+  line-height: 1.05em;
+}
+h2 strong {
+  display: block;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-weight: 900;
+  letter-spacing: 0;
+  font-size: 1.625em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+}
+h3.small {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  line-height: 1.35em;
+  color: #282828;
+}
+
+h4 {
+  color: #003a60;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin: 20px 0 50px;
+  line-height: 1.05em;
+}
+
+h4 strong {
+  display: block;
+}
+
+h5 {
+  font-family: "Exo", sans-serif;
+}
+h5.title {
+  font-family: "Exo", sans-serif;
+  color: #282828;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 1.875em;
+  line-height: 1.6em;
+  margin: 20px 0 30px;
+  line-height: 1.05em;
+}
+h5.title strong {
+  font-weight: 700;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+}
+h5.bold {
+  margin: 60px 0 30px 0;
+  color: #003a60;
+  font-weight: 500;
+}
+
+h6 {
+  font-family: "Exo", sans-serif;
+  color: #003a60;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 2.1875em;
+  line-height: 1.37143em;
+  margin: 0px 50px 0px 0px;
+  line-height: 1.35em;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  line-height: 1.5em;
+  color: #4b4b4b;
+  margin: 5px 0 15px;
+}
+p.subtitle {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  line-height: 1.5em;
+  color: #282828;
+}
+p.subtitle.data {
+  padding: 14px 0 0;
+}
+p.title-aside {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+p.data-evento {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: -8px;
+}
+p strong {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+label {
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.5em;
+  padding-right: 10px;
+  color: #4b4b4b;
+}
+
+.btn-secondary {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.35em;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  font-weight: 900;
+  padding: 10px 30px;
+  border: none;
+  background: #004674;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border-bottom: 3px solid #002e4c;
+  position: relative;
+  margin-bottom: 20px;
+}
+.btn-secondary:hover {
+  color: #FFFFFF;
+  background: #0076c3;
+  border-bottom: 3px solid #003a60;
+  -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background: #003a60;
+  color: #FFFFFF;
+  padding: 6px;
+  line-height: 28px;
+  font-weight: 600;
+  padding: 15px 20px;
+  margin: 10px;
+}
+
+button:hover {
+  background: #0076c3;
+}
+
+.btn-primary {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  line-height: 1.2em;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  font-weight: 900;
+  padding: 15px 20px;
+  border: none;
+  background: #006aaf;
+  text-transform: uppercase;
+  border-bottom: 3px solid #003a60;
+  position: relative;
+}
+.btn-primary:hover {
+  background: #0076c3;
+  border-bottom: 3px solid #003a60;
+  -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-block {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-flat {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  line-height: 1.2em;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  font-weight: 500;
+  padding: 12px 25px;
+  font-family: "Exo", sans-serif;
+  border: none;
+  background: transparent;
+  color: #003a60;
+  border: 1px solid #003a60;
+  position: relative;
+}
+.btn-flat:hover {
+  border: 1px solid #0076c3;
+  background: #0076c3;
+  color: #FFFFFF;
+}
+
+.btn-flat-white {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+.btn-flat-white:hover {
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.35);
+  color: #FFFFFF;
+}
+.btn-flat-white.active {
+  border: 1px solid #FFFFFF;
+  background: white;
+  color: #003a60;
+}
+.btn-flat-white.active.green-active {
+  color: #009a4e;
+}
+.btn-flat-white.active.yellow-active {
+  color: #f6a723;
+}
+
+.btn-no-border {
+  border: none !important;
+}
+
+.btn-white {
+  background: #FFFFFF;
+  color: #003a60;
+  border: none;
+}
+.btn-white i {
+  position: relative;
+  top: 5px;
+  line-height: 10px;
+  left: -5px;
+}
+.btn-white:hover {
+  border: none;
+  background: white;
+  color: #003a60;
+}
+
+.btn-green {
+  background: #009a4e;
+  text-transform: uppercase;
+  border: none !important;
+  border-bottom: 3px solid #008141;
+  position: relative;
+  color: #FFFFFF !important;
+}
+.btn-green:hover {
+  background: #00ae58;
+  border-bottom: 3px solid #008141;
+}
+
+.btn-blue {
+  background: #303D58;
+  text-transform: uppercase;
+  border: none !important;
+  border-bottom: 3px solid #778098;
+  position: relative;
+  color: #FFFFFF !important;
+}
+.btn-blue:hover {
+  background: #495470;
+  border-bottom: 3px solid #778098;
+}
+
+.btn-yellow {
+  background: #f6a723;
+  text-transform: uppercase;
+  border: none !important;
+  border-bottom: 3px solid #f59d0b;
+  position: relative;
+  color: #FFFFFF !important;
+}
+.btn-yellow:hover {
+  background: #f7af37;
+  border-bottom: 3px solid #f59d0b;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 30px;
+}
+table thead tr td {
+  background: #003a60;
+  color: #FFFFFF;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.2em;
+  font-weight: 900;
+  padding: 15px;
+}
+table tbody tr td {
+  color: #4b4b4b;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.2em;
+  padding: 15px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.transparencia-cncoop .custom-select {
+  background-color: #f5f5f5;
+  background: #fff url("../img/icon-select-yellow.png") top right no-repeat;
+  border: none;
+  color: #282828;
+  margin: 0 0 10px;
+  font-weight: 400;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+
+.custom-select {
+  background-color: #f5f5f5;
+  background: #fff url("../img/icon-select.png") top right no-repeat;
+  border: none;
+  color: #282828;
+  margin: 0 0 10px;
+  font-weight: 400;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.custom-select.smoke {
+  background-color: #f5f5f5 !important;
+}
+.custom-select.green-arrow {
+  background: #fff url("../img/icon-select-green.png") top right no-repeat;
+}
+.custom-select.yellow-arrow {
+  background: #fff url("../img/icon-select-yellow.png") top right no-repeat;
+}
+
+#tags {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  position: relative;
+}
+#tags h6 {
+  font-family: "Exo", sans-serif;
+  color: #282828;
+  font-size: 1.625em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+#tags a {
+  color: #003a60;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+#paginacao {
+  margin: 60px 0 100px;
+}
+#paginacao .page-link {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-weight: 500;
+  border-radius: 50%;
+  color: #282828;
+  font-family: "Exo", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  line-height: 1.35em;
+  text-decoration: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+#paginacao .page-link i {
+  font-size: 54px;
+  font-weight: 100;
+  top: -4px;
+  left: -10px;
+  position: absolute;
+  color: #003a60;
+}
+#paginacao .page-item.active .page-link {
+  background-color: #003a60;
+  color: #FFFFFF;
+  border: none;
+}
+
+#filtro {
+  background: #FFFFFF;
+  color: #4b4b4b;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+  text-decoration: none;
+  position: relative;
+}
+#filtro h6 {
+  font-family: "Exo", sans-serif;
+  color: #282828;
+  font-size: 1.625em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+#filtro label {
+  display: block;
+  text-transform: uppercase;
+  color: #003a60;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  line-height: 1.05em;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+#filtro .area-group {
+  display: block;
+  margin: 10px 0;
+}
+#filtro .area-group .form-span {
+  font-family: "Exo", sans-serif;
+  color: #282828;
+  font-weight: 700;
+  width: 50px;
+  float: left;
+  display: block;
+}
+#filtro input[type=text] {
+  font-size: 1em;
+  line-height: 1.5em;
+  line-height: 1.05em;
+  width: 100px;
+}
+#filtro input[type=radio] {
+  opacity: 0;
+  margin-left: -20px;
+}
+#filtro input[type=radio]:checked ~ span {
+  color: #282828;
+  text-decoration: underline;
+}
+
+#single h1 {
+  color: #003a60;
+  margin-bottom: 50px;
+}
+#single p {
+  margin: 20px 0;
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  line-height: 1.65em;
+  font-weight: 400;
+}
+#single .aspas {
+  position: absolute;
+}
+#single quote {
+  font-size: 30px;
+  padding: 25px 0 0 33px;
+  position: relative;
+  display: block;
+  left: 20px;
+  top: 20px;
+  min-width: 310px;
+  line-height: 35px;
+  background: url("../img/aspas.png") no-repeat;
+}
+#single #tag-post {
+  margin: 40px 0 60px;
+}
+#single #tag-post a {
+  color: #003a60;
+  font-size: 0.75em;
+  line-height: 2em;
+  line-height: 1.05em;
+  font-weight: 700;
+  margin-right: 20px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+#midia ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background: #e4e4e4;
+  top: 400px;
+  margin-left: -100px;
+  height: 164px;
+  z-index: 999;
+}
+#midia ol li {
+  height: 41px;
+  width: 67px;
+}
+#midia ol li a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  background: url("../img/icon-midia.png");
+}
+#midia ol li.twitter a {
+  background-position: 67px 0px;
+}
+#midia ol li.twitter:hover a {
+  background-position: 0px 0px;
+}
+#midia ol li.facebook a {
+  background-position: 67px -41px;
+}
+#midia ol li.facebook:hover a {
+  background-position: 0px -41px;
+}
+#midia ol li.email a {
+  background-position: 67px -80px;
+}
+#midia ol li.email:hover a {
+  background-position: 0px -80px;
+}
+#midia ol li.print a {
+  background-position: 67px -120px;
+}
+#midia ol li.print:hover a {
+  background-position: 0px -120px;
+}
+#midia ol li:hover {
+  background-color: #003a60;
+}
+#midia.stop-scroll ol {
+  position: absolute;
+  top: auto;
+  bottom: 40px;
+}
+
+.filtro-servicos {
+  background: #dce7ee;
+  height: 110px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  padding: 35px 25px;
+}
+.filtro-servicos input[type=text] {
+  background-color: #f5f5f5;
+  border: none;
+  color: #282828;
+  margin: 0 0 10px;
+  font-weight: 400;
+  padding: 10px;
+  letter-spacing: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-size: 1.0625em;
+  line-height: 1.41176em;
+  line-height: 1.05em;
+}
+.filtro-servicos input[type=text]::-webkit-input-placeholder {
+  color: #282828;
+}
+.filtro-servicos input[type=text]:-moz-input-placeholder {
+  color: #282828;
+}
+.filtro-servicos input[type=text]:input-placeholder {
+  color: #282828;
+}
+.filtro-servicos input[type=text]:focus {
+  background-color: #FFFFFF;
+}
+.filtro-servicos button {
+  width: 120px;
+}
+
+.btn-download {
+  background: url("../img/icon-download-blue.png") no-repeat;
+  display: block;
+  padding: 4px 35px;
+  color: #003a60;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn-download.btn-download-green {
+  background: url("../img/icon-download-green.png") no-repeat;
+  color: #009a4e;
+  text-decoration: none;
+}
+.btn-download.margin-btn {
+  margin: 40px 0;
+}
+
+.card.inherit {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+#fale-com-ocb {
+  background: url("../img/banner-fale-com-ocb.jpg") center no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+#fale-conosco {
+  background: url("../img/fale-com-ocb.jpg") center no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-top: 35px;
+}
+#fale-conosco h4 {
+  color: #FFFFFF;
+  margin: 40px 0 20px;
+}
+#fale-conosco a {
+  text-decoration: none;
+  background: transparent;
+  color: #FFFFFF;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+  padding: 5px 45px;
+}
+
+#organizacao {
+  padding: 0px 0;
+  background: white;
+  margin: 40px 0;
+}
+#organizacao.green-organizacao .tabs-organizacao a.active:before {
+  background: #009a4e;
+}
+#organizacao.yellow-organizacao .tabs-organizacao a.active:before {
+  background: #f6a723;
+}
+#organizacao ul {
+  margin: 0 0 40px;
+  list-style: none;
+  padding: 0;
+}
+#organizacao .area-unidade {
+  padding: 80px 0 40px;
+  background: url("../img/icon-panel.png") no-repeat 10% top;
+}
+#organizacao .tab-pane li {
+  font-size: 1.4375em;
+  line-height: 2.08696em;
+  line-height: 1.8em;
+}
+#organizacao .tabs-organizacao a {
+  font-size: 1.9375em;
+  line-height: 1.54839em;
+  line-height: 1.05em;
+  font-weight: 400;
+  font-family: "Exo", sans-serif;
+  color: #282828;
+  text-transform: uppercase;
+  padding: 5px 0px;
+  margin: 8px 0 25px;
+  position: relative;
+}
+#organizacao .tabs-organizacao a.active {
+  font-weight: 700;
+}
+#organizacao .tabs-organizacao a.active:before {
+  width: 4px;
+  background: #006aaf;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -33px;
+  z-index: 99;
+}
+#organizacao .tab-content {
+  border-left: 2px solid black;
+  padding: 0px 30px;
+}
+
+#localize-unidade {
+  margin: 80px 0;
+}
+#localize-unidade.green-localize .area-unidade {
+  background-color: #009a4e;
+}
+#localize-unidade.green-localize .area-unidade a.btn-white {
+  color: #009a4e;
+}
+#localize-unidade.green-localize .area-unidade .panel-form {
+  background: #ebf7e5;
+}
+#localize-unidade.yellow-localize .area-unidade {
+  background: url("../img/line.jpg") repeat-x;
+  background-color: #fff;
+}
+#localize-unidade.yellow-localize .area-unidade a.btn-white {
+  color: #f6a800;
+}
+#localize-unidade.yellow-localize .area-unidade .panel-form {
+  background: #f4ecda;
+}
+#localize-unidade .area-unidade {
+  background-color: #3e68aa;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 40px;
+  min-height: 440px;
+  position: relative;
+}
+#localize-unidade .area-unidade h3, #localize-unidade .area-unidade h5 {
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  line-height: 1.05em;
+  color: #FFFFFF;
+  font-family: "Exo", sans-serif;
+}
+#localize-unidade .area-unidade p {
+  color: #FFFFFF;
+}
+#localize-unidade .area-unidade .panel-form {
+  overflow: hidden;
+  padding: 40px 20px 40px 30px;
+  background: #e5f0f7;
+}
+#localize-unidade .area-unidade .panel-form h3 {
+  color: #282828;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+}
+#localize-unidade .area-unidade .panel-form p {
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  line-height: 0.9em;
+  color: #282828;
+}
+#localize-unidade .area-unidade .panel-form p strong {
+  font-size: 17px;
+  font-weight: 600;
+}
+#localize-unidade .area-unidade a.btn-white {
+  position: absolute;
+  bottom: 40px;
+  left: 55px;
+}
+#localize-unidade #image-unidade{
+  position: absolute;
+}
+#localize-unidade #mapa-local{
+  position: relative;
+}
+#header-personalizado {
+  background: url("../img/header-cooperado.jpg") top center no-repeat;
+  min-height: 500px;
+}
+#header-personalizado .area-title-header h2 {
+  margin-top: 150px;
+}
+#header-personalizado .area-title-header h2 strong {
+  display: initial;
+}
+#header-personalizado .area-title-header p {
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin: 5px 0 50px;
+  font-weight: 500;
+  line-height: 1.35em;
+}
+
+.lt-ie9 a img {
+  border: none;
+  text-decoration: none;
+}
+.lt-ie9 *:active, .lt-ie9 *:focus, .lt-ie9 input:active, .lt-ie9 input:focus {
+  outline: none;
+  outline: 0;
+  noFocusLine: expression(this.onFocus=this.blur());
+}
+
+
+
+
+
+@media (max-width: 50em){
+    table.responsive-table{
+      box-shadow: none;  
+    }
+    table.responsive-table .menu-titulos{
+      display: none; 
+    }
+
+  table.responsive-table tr {
+      max-width: 100% !important;
+  }
+    
+  table.responsive-table td:nth-child(1):before{
+    font-weight: 500;
+    content: 'Obrigação Acessória: ';
+  }
+  table.responsive-table td:nth-child(2):before{
+    content: 'Fundamento: ';
+    font-weight: 500;
+  }
+  table.responsive-table td:nth-child(3):before{
+    content: 'Prazo de Entrega: ';
+    font-weight: 500;
+  }
+  table.responsive-table td:nth-child(4):before{
+    content: 'Cooperativas Sujeitas: ';
+    font-weight: 500;
+  }
+  .modal-dialog .bg-tabela td{
+    border: none !important;
+  }
+    table.responsive-table tr,
+    table.responsive-table td{
+        display: block;
+        font-size: 1em;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+    }
+    table.responsive-table td{
+        border-top: none;
+    }
+    table.responsive-table td.organisationnumber{
+        background: #D5E0CC;
+    }
+    table.responsive-table td.actions{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1480px) {
+  .sou-cooperado .modal-dialog {
+    max-width: 80% !important;
+}
+
+}
