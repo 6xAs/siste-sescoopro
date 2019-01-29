@@ -1,41 +1,41 @@
-<!-- banner -->
-<section class="banner">
-    <div class="callbacks_container">
-        <ul class="rslides" id="slider3">
-            <li>
-                <div class="slider-info bg1">
-                    <div class="banner-text container">
-                        <h4 class="movetxt text-left mb-3 agile-title text-capitalize">Don't Miss Your Perfect House!</h4>
-                        <p class="text-white mb-3">Donec consequat sapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci. Nulla accumsan ac elit in congue.</p>
-                        <a class="bt text-capitalize" href="about.html" role="button"> read more
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div>
+<!-- Banner Slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">Hello</li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+        <div class="carousel-inner">
+            <!-- O loop entrará aqui -->
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="images/bg.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>Uma mensagem para o Sescoop/RO</h2>
+                    <p>subtitle slide01</p>
+                  </div>
                 </div>
-            </li>
-            <li>
-                <div class="slider-info bg2">
-                    <div class="banner-text container">
-                        <h4 class="movetxt text-left mb-3 agile-title text-capitalize">The Fastest Way To Your New Home</h4>
-                        <p class="text-white mb-3">Donec consequat sapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci. Nulla accumsan ac elit in congue.</p>
-                        <a class="bt text-capitalize" href="about.html" role="button"> read more
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/bg3.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>O segundo slide está ativo agora</h2>
+                    <p>subtitle slide02</p>
+                  </div>
                 </div>
-            </li>
-            <li>
-                <div class="slider-info bg3">
-                    <div class="banner-text container">
-                        <h4 class="movetxt text-left mb-3 agile-title text-capitalize">Make Your Dreams Come True</h4>
-                        <p class="text-white mb-3">Donec consequat sapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci. Nulla accumsan ac elit in congue.</p>
-                        <a class="bt text-capitalize" href="about.html" role="button"> read more
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/bg2.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>O terceiro slide está ativo agora</h2>
+                    <p>subtitle slide03</p>
+                  </div>
                 </div>
-            </li>
-        </ul>
-    </div>
-</section>
-<!-- //banner -->
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Voltar</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+</div>

@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('home-site');
+    $date = date('Y');
+    return view('home-site', compact('date'));
 });
 
 Auth::routes();
