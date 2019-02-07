@@ -85,6 +85,11 @@ class BannerController extends Controller
        $link                            = $request->input('link');
        $image                           = $request->file('image');
 
+       // Apagando arquivos existente
+       $file_principal                     = DB::table('banners')->where('id',$id)->value('image');
+
+       // Deletando arquivos existentes na pasta
+       File::delete('images-banner/'.$file_principal);
 
        DB::table('banners')
             ->where('id',$id)
@@ -100,13 +105,14 @@ class BannerController extends Controller
 
     public function destroy($id, Request $request)
     {
-        $file_principal = DB::table('banners')->value('name', 'image');
-        //example it.png, which is located in `public/uploads/masters/logocatagory_Computers` folder
+        // Apagando arquivos existente
+        $file_principal                     = DB::table('banners')->where('id',$id)->value('image');
+        // Deletando arquivos existentes na pasta
+        File::delete('images-banner/'.$file_principal);
         \SescoopRO\Banner::destroy($id);
-        DB::table('banners')->delete($id);
-        File::delete('image-banner/'.$file_principal);
-        $request->session()->flash('message', 'Banner Excluído com sucesso');
+        $request->session()->flash('message', 'Notícia excluída com sucesso');
         return Redirect::to('page-listar-banner');
+
 
     }
 }

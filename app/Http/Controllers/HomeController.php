@@ -3,6 +3,11 @@
 namespace SescoopRO\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class HomeController extends Controller
 {
@@ -34,4 +39,11 @@ class HomeController extends Controller
         $dateDay = date("d/m/y");
         return view('pages-panel.datatable', compact('date', 'dateDay'));
     }
+
+    public function testAvatarUpload(Request $request)
+   {
+       $path = $request->file('avatar')->store('avatars');
+
+        return $path;
+   }
 }

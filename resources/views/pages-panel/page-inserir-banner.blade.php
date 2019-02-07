@@ -4,6 +4,8 @@
 
 @include('template-panel.menu')
 
+@section('title', 'Inserir Banner')
+
 <!-- MAIN -->
 <div class="main">
     <!-- MAIN CONTENT -->
@@ -11,7 +13,7 @@
         <div class="container-fluid">
             <div class="panel panel-headline">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Inserir Banner</h3>
+                    <h3 class="panel-title">@yield('title')</h3>
                     <p class="panel-subtitle">Banner principal do site - Resolução (1600 x 900 px)</p>
                     <p class="text-primary">ATENÇÃO: Campos com * são obrigatórios</p>
                 </div>
@@ -44,9 +46,21 @@
                             {!! Form::text('link', null, ['class' => 'form-control', 'placeholder' => 'Ex:htt:\\exemplo.com.br'] ) !!}
                         </div>
                         <div class="form-group">
+
+                            <div class="row">
+                                        <div class="col-xs-4 col-md-12">
+                                          <a href="#" class="thumbnail">
+
+                                              <img id="visualizar" src="" width="840" height="740" alt="" />
+                                          </a>
+                                        </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
                             {!! Form::label('image', 'Imagem: *' ) !!}
                             <div class="custom-file">
-                                {!! Form::file('image', null, ['class' => 'form-control', 'placeholder' => ''] ) !!}
+                                <input type="file" id="exampleInputFile"  name="image" onchange="imagePrincipal(this);">
                             </div>
                         </div>
 

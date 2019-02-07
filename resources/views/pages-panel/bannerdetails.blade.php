@@ -4,7 +4,7 @@
 
 @include('template-panel.menu')
 
-@section('title', 'Editar Banner')
+@section('title', 'Detalhes do Banner')
 
 <!-- MAIN -->
 <div class="main">
@@ -13,6 +13,8 @@
         <div class="container-fluid">
             <div class="panel panel-headline">
                 <div class="panel-heading">
+                    <p class="panel-subtitle">Banner principal do site - Resolução (1600 x 900 px)</p>
+                    <p class="text-primary">ATENÇÃO: Campos com * são obrigatórios</p>
                     <h3 class="panel-title">@yield('title')</h3>
                     @if(count($errors) > 0)
                           <div class="alert alert-danger">
@@ -32,7 +34,7 @@
                             <div class="alert alert-success">
                                   <button type="button" class="btn btn-success warning_2" data-dismiss="alert" aria-hidden="true">×</button>
                                   {!! Session::get('message') !!}
-                                  <a href="page-inserir-banner" class="alert-link">Inserir outro Banner?</a>
+                                  <a href="{{ route('page-inserir-banner') }}" class="alert-link">Inserir outro Banner?</a>
                             </div>
                         @endif
 

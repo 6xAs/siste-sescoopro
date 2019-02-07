@@ -15,8 +15,8 @@ class CreateTransparenciesTable extends Migration
     {
         Schema::create('transparencies', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('tipo_documento');
-            $table->string('sub_tipo_document');
+            $table->string('docMain');
+            $table->string('subDoc');
             $table->string('document_name');
             $table->string('ano');
             $table->string('file_01');

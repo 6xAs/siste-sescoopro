@@ -20,8 +20,8 @@ function mostraUm(input) {
              reader.onload = function (e) {
                  $('#mostraU')
                      .attr('src', e.target.result)
-                     .width(180)
-                     .height(170);
+                     .width(550)
+                     .height(330);
              };
 
              reader.readAsDataURL(input.files[0]);
@@ -35,38 +35,38 @@ function mostraDois(input) {
              reader.onload = function (e) {
                  $('#mostraD')
                      .attr('src', e.target.result)
-                     .width(180)
-                     .height(170);
+                     .width(550)
+                     .height(330);
              };
 
              reader.readAsDataURL(input.files[0]);
          }
 }
 
-function readTres(input) {
+function mostraTres(input) {
          if (input.files && input.files[0]) {
              var reader = new FileReader();
 
              reader.onload = function (e) {
                  $('#imageTres')
                      .attr('src', e.target.result)
-                     .width(180)
-                     .height(170);
+                     .width(550)
+                     .height(330);
              };
 
              reader.readAsDataURL(input.files[0]);
          }
 }
 
-function readQuatro(input) {
+function mostraQuat(input) {
          if (input.files && input.files[0]) {
              var reader = new FileReader();
 
              reader.onload = function (e) {
                  $('#imageQuatro')
                      .attr('src', e.target.result)
-                     .width(180)
-                     .height(170);
+                     .width(550)
+                     .height(300);
              };
 
              reader.readAsDataURL(input.files[0]);

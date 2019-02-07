@@ -47,7 +47,7 @@
                                                     <td>{{$banner->name}}</td>
                                                     <td>{{$banner->title}}</td>
                                                     <td>{{$banner->link}}</td>
-                                                    <td><img class="img-responsive " src="images-banner/{{$banner->image}}" width="400" height="250" alt="" /></td>
+                                                    <td><img class="img-responsive " src="images-banner/{{$banner->image}}" width="350" height="215" alt="" /></td>
                                                     <td> <a href="{{URL::to('banner/'.$banner->id.'/edit')}}"><h4><i class="lnr lnr-pencil"></i></h4></a> </td>
                                                   </tr>
 
