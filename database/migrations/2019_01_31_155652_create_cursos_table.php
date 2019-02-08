@@ -23,11 +23,11 @@ class CreateCursosTable extends Migration
             $table->string('local');
             $table->text('publico_alvo');
             $table->text('conteudo_programatico');
-            $table->date('data');
-            $table->string('file_01');
-            $table->string('file_02');
-            $table->string('file_03');
-            $table->string('video');
+            $table->date('data', null);
+            $table->string('file_01', null);
+            $table->string('file_02', null);
+            $table->string('file_03', null);
+            $table->string('video', null);
             $table->timestamps();
         });
     }

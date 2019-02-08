@@ -57,3 +57,11 @@ Route::post('/input-transparency', 'TransparencyController@insert');
 Route::resource('/edittransparency', 'TransparencyController');
 Route::resource('/transparency', 'TransparencyController');
 Route::resource('/deletartransparency', 'TransparencyController');
+
+// ##################  ROUTES OF LICITACAO ################
+Route::get('/page-inserir-licitacao', 'LicitacaoController@index')->name('page-inserir-licitacao');
+Route::get('/page-listar-licitacao', 'LicitacaoController@listarTransparency')->name('page-listar-licitacao');
+Route::post('/input-licitacao', 'LicitacaoController@insert');
+Route::resource('/editlicitacao', 'LicitacaoController');
+Route::resource('/licitacao', 'LicitacaoController');
+Route::resource('/deletarlicitacao', 'LicitacaoController');

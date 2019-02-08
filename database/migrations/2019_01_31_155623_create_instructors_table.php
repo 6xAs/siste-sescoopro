@@ -17,17 +17,17 @@ class CreateInstructorsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->date('data_nascimento');
-            $table->char('sexo');
-            $table->string('estado_civil');
-            $table->string('rua');
-            $table->string('bairro');
-            $table->string('number');
-            $table->string('objetivo');
-            $table->string('experiency');
-            $table->string('formation');
-            $table->string('idiomas');
-            $table->string('informatica');
+            $table->date('data_nascimento',  null);
+            $table->char('sexo', null);
+            $table->string('estado_civil', null);
+            $table->string('rua', null);
+            $table->string('bairro', null);
+            $table->string('number', null);
+            $table->string('objetivo', null);
+            $table->string('experiency', null);
+            $table->string('formation', null);
+            $table->string('idiomas', null);
+            $table->string('informatica', null);
             $table->timestamps();
         });
     }
