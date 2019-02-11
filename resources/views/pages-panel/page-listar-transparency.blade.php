@@ -38,8 +38,9 @@
                                               <th scope="col">Subtipo Documento</th>
                                               <th scope="col">Nome Documento</th>
                                               <th scope="col">Ano</th>
-                                              <th scope="col">Arquivo</th>
-                                              <th scope="col">Ações</th>
+                                              <th scope="col">Editar</th>
+                                              <th scope="col">Vizualizar</th>
+
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -51,8 +52,8 @@
                                                     <td>{{$transparency->subDoc}}</td>
                                                     <td>{{$transparency->document_name}}</td>
                                                     <td>{{$transparency->ano}}</td>
-                                                    <td> <a href="document-transparency/{{$transparency->file_01}}" target="_blank">DOWNLOAD</a> </td>
-                                                    <td> <a href="{{URL::to('transparency/'.$transparency->id.'/edit')}}"><h4><i class="lnr lnr-pencil"></i></h4></a> </td>
+                                                    <td> <a href="{{URL::to('transparency/'.$transparency->id.'/edit')}}"><h3><i class="lnr lnr-pencil"></i></h3></a> </td>
+                                                    <td> <a href="{{URL::to('showtransparency/'.$transparency->id.'/show')}}"><h3><i class="lnr lnr-eye"></i></h3></a></a> </td>
                                                   </tr>
 
                                               @endforeach

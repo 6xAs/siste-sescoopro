@@ -39,25 +39,42 @@ class TransparencyController extends Controller
     public function insert(TranspRequest $request)
     {
         // Organização dos POSTS imagens
-        $file_01                           = Input::file('file_01');
-        $destinationPath                   = 'document-transparency/';
-        $fileName_01                       = $file_01->getClientOriginalName();
+        $file_01                     = Input::file('file_01');
+        $file_02                     = Input::file('file_02');
+        $file_03                     = Input::file('file_03');
 
-        // Inserindo
-        Input::file('file_01')->move($destinationPath, $fileName_01);
+        // Destino das imagens
+        $destinationPath             = 'document-transparency/';
+
+        if ($request->hasFile('file_01')) {
+
+            // Pegando nome do arquivo e inserindo na pasta
+            $fileName_01            = $file_01->getClientOriginalName();
+            Input::file('file_01')->move($destinationPath, $fileName_01);
+        }
+        if ($request->hasFile('file_02')) {
+
+            // Pegando nome do arquivo e inserindo na pasta
+            $fileName_02            = $file_02->getClientOriginalName();
+            Input::file('file_02')->move($destinationPath, $fileName_02);
+        }
+        if ($request->hasFile('file_03')) {
+
+            // Pegando nome do arquivo e inserindo na pasta
+            $fileName_03            = $file_03->getClientOriginalName();
+            Input::file('file_03')->move($destinationPath, $fileName_03);
+        }
 
 
         // Validação dos dados
-       $docMain                          = $request->input('docMain');
-       $subDoc                           = $request->input('subDoc');
-       $document_name                    = $request->input('document_name');
-       $ano                              = $request->input('ano');
-       $file_01                          = $request->input('file_01');
-
+       $docMain                      = $request->input('docMain');
+       $subDoc                       = $request->input('subDoc');
+       $document_name                = $request->input('document_name');
+       $ano                          = $request->input('ano');
 
        DB::table('transparencies')->insert(
            ['docMain' => $docMain, 'subDoc' => $subDoc, 'document_name' => $document_name,
-            'ano' => $ano, 'file_01' => $fileName_01]
+            'ano' => $ano, 'file_01' => $fileName_01, 'file_02' => $fileName_02, 'file_03' => $fileName_03]
        );
        // Post Message
        $request->session()->flash('message', 'Documento Inserido com Sucesso');
@@ -81,26 +98,39 @@ class TransparencyController extends Controller
     public function update($id, TranspRequest $request)
     {
 
-        // Apagando arquivos existente
-        $fileName_01                      = DB::table('transparencies')->where('id',$id)->value('file_01');
-
-        File::delete('document-transparency/'.$fileName_01);
-
         // Organização dos POSTS imagens
-        $file_01                           = Input::file('file_01');
-        $destinationPath                   = 'document-transparency/';
-        $fileName_01                       = $file_01->getClientOriginalName();
+        $file_01                     = Input::file('file_01');
+        $file_02                     = Input::file('file_02');
+        $file_03                     = Input::file('file_03');
 
-        // Inserindo
-        Input::file('file_01')->move($destinationPath, $fileName_01);
+        // Destino das imagens
+        $destinationPath             = 'document-transparency/';
+
+        if ($request->hasFile('file_01')) {
+
+            // Pegando nome do arquivo e inserindo na pasta
+            $fileName_01            = $file_01->getClientOriginalName();
+            Input::file('file_01')->move($destinationPath, $fileName_01);
+        }
+        if ($request->hasFile('file_02')) {
+
+            // Pegando nome do arquivo e inserindo na pasta
+            $fileName_02            = $file_02->getClientOriginalName();
+            Input::file('file_02')->move($destinationPath, $fileName_02);
+        }
+        if ($request->hasFile('file_03')) {
+
+            // Pegando nome do arquivo e inserindo na pasta
+            $fileName_03            = $file_03->getClientOriginalName();
+            Input::file('file_03')->move($destinationPath, $fileName_03);
+        }
 
 
         // Validação dos dados
-       $docMain                          = $request->input('docMain');
-       $subDoc                           = $request->input('subDoc');
-       $document_name                    = $request->input('document_name');
-       $ano                              = $request->input('ano');
-       $file_01                          = $request->input('file_01');
+       $docMain                      = $request->input('docMain');
+       $subDoc                       = $request->input('subDoc');
+       $document_name                = $request->input('document_name');
+       $ano                          = $request->input('ano');
 
 
 
@@ -108,7 +138,7 @@ class TransparencyController extends Controller
             ->where('id',$id)
             ->update(
                 ['docMain' => $docMain, 'subDoc' => $subDoc, 'document_name' => $document_name,
-                 'ano' => $ano, 'file_01' => $fileName_01]
+                 'ano' => $ano, 'file_01' => $fileName_01, 'file_02' => $fileName_02, 'file_03' => $fileName_03]
             );
 
 

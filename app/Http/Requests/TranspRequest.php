@@ -29,7 +29,7 @@ class TranspRequest extends FormRequest
             'subDoc'                        => 'required|max:255',
             'document_name'                 => 'required|max:255|',
             'ano'                           => 'required|max:20',
-            'file_01'                       => 'required|max:500000',
+            
 
         ];
     }

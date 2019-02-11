@@ -4,9 +4,9 @@
 
 @include('template-panel.menu')
 
-@include('scripts.script_formselectLicitacao')
+@include('scripts.script_formselect')
 
-@section('title', 'Inserir Licitação')
+@section('title', 'Detalhes Deste Documento - Licitação')
 
 <!-- MAIN -->
 <div class="main">
@@ -15,25 +15,24 @@
         <div class="container-fluid">
             <div class="panel panel-headline">
                 <div class="panel-heading">
+
                     <h3 class="panel-title">@yield('title')</h3>
-                    <p class="text-primary">ATENÇÃO: Campos com * são obrigatórios</p>
-                </div>
                     @if(count($errors) > 0)
-                      <div class="alert alert-danger">
-                          <ul>
-                              @foreach($errors->all() as $error)
+                          <div class="alert alert-danger">
+                              <ul>
+                                  @foreach($errors->all() as $error)
 
-                                  <p><b>{!!$error!!}</b></p>
+                                      <p><b>{!!$error!!}</b></p>
 
-                              @endforeach
-                          </ul>
-                      </div>
-                  @endif
+                                  @endforeach
+                              </ul>
+                          </div>
+              @endif
 
+                </div>
                 <div class="panel-body">
                     <!-- Form Inserir Licitação -->
-                    {!! Form::open(['url' => 'input-licitacao',  'files' => true, 'method' => 'post']) !!}
-                    {{ csrf_field() }}
+                    {!! Form::model($licitacao,['route' =>  ['licitacao.update', $licitacao->id], 'class' => '','method'=>'PUT','files'=>true]) !!}                    {{ csrf_field() }}
                     <div class="form-group">
                         {!! Form::label('number_process', 'Número do Processo:* ' ) !!}
                         {!! Form::number('number_process', null, ['class' => 'form-control', 'placeholder' => 'Nome do Processo'] ) !!}
@@ -113,7 +112,7 @@
                                     <div class="form-group">
                                         {!! Form::label('file_01', 'Arquivo 01: * ' ) !!}
                                         <div class="">
-                                            <input type="file" id="exampleInputFile"  name="file_01" onchange="mostraUm(this);">
+                                            {!! Form::file('file_01', null, ['class' => 'form-control', 'placeholder' => 'File 01'] ) !!}
                                         </div>
                                     </div>
 
@@ -423,14 +422,19 @@
 
                     {!! Form::close() !!}
                 </div>
+                @include('pages-panel.modal-delete-licitacao')
+               <div class="text-fight">
+                   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"><i class="fa fa-trash-o"></i> Deletar este documento</button>
+
+               </div>
             </div>
             <!-- END OVERVIEW -->
         </div>
+
     </div>
     <!-- END MAIN CONTENT -->
 </div>
 <!-- END MAIN -->
 <div class="clearfix"></div>
-
 
 @include('template-panel.footer')

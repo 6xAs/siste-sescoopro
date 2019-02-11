@@ -52,7 +52,7 @@
                                                     <td>{{$noticeDestaque->editoria}}</td>
                                                     <td>{{date('d/m/y', strtotime($noticeDestaque->data))}}</td>
                                                     <td><img class="img-responsive " src="images-destaque_notices/{{$noticeDestaque->image_01}}" width="300" height="125" alt="" /></td>
-                                                    <td> <a href="{{URL::to('noticedestaque/'.$noticeDestaque->id.'/edit')}}"><h4><i class="lnr lnr-pencil"></i></h4></a> </td>
+                                                    <td> <a href="{{URL::to('noticedestaque/'.$noticeDestaque->id.'/edit')}}"><h3><i class="lnr lnr-pencil"></i></h3></a> </td>
                                                   </tr>
 
                                               @endforeach

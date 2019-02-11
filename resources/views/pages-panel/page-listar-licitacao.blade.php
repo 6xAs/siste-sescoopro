@@ -37,9 +37,10 @@
                                               <th scope="col">Número Processo </th>
                                               <th scope="col">Modalidade</th>
                                               <th scope="col">Edital</th>
-                                              <th scope="col">Objeto</th>
+                                              <th scope="col">Data</th>
                                               <th scope="col">Status</th>
-                                              <th scope="col">Ações</th>
+                                              <th scope="col">Editar</th>
+                                              <th scope="col">Vizualizar</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -50,9 +51,10 @@
                                                     <td>{{$licitacao->number_process}}</td>
                                                     <td>{{$licitacao->modalidade}}</td>
                                                     <td>{{$licitacao->edital}}</td>
-                                                    <td>{{$licitacao->objeto}}</td>
+                                                    <td>{{date('d/m/y', strtotime($licitacao->data))}}</td>
                                                     <td>{{$licitacao->status}}</td>
-                                                    <td> <a href="{{URL::to('licitacao/'.$licitacao->id.'/edit')}}"><h4><i class="lnr lnr-pencil"></i></h4></a> </td>
+                                                    <td> <a href="{{URL::to('licitacao/'.$licitacao->id.'/edit')}}"><h3><i class="lnr lnr-pencil"></i></h3></a> </td>
+                                                    <td> <a href="{{URL::to('showlicitacao/'.$licitacao->id.'/show')}}"><h3><i class="lnr lnr-eye"></i></h3></a> </td>
                                                   </tr>
 
                                               @endforeach

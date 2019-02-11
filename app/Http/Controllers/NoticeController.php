@@ -40,19 +40,37 @@ class NoticeController extends Controller
     public function insert(NoticeRequest $request)
     {
 
-        // Organização dos POSTS imagens
-        $file_principal                    = Input::file('image_01');
-        $image_02                          = Input::file('image_02');
-        $image_03                          = Input::file('image_03');
-        $destinationPath                   = 'images-notices/';
-        $fileName_principal                = $file_principal->getClientOriginalName();
-        $fileName_principal_02             = $image_02->getClientOriginalName();
-        $fileName_principal_03             = $image_03->getClientOriginalName();
+        // Destino do arquivo
 
-        // Inserindo
-        Input::file('image_01')->move($destinationPath, $fileName_principal);
-        Input::file('image_02')->move($destinationPath, $fileName_principal_02);
-        Input::file('image_03')->move($destinationPath, $fileName_principal_03);
+        $destinationPath                   = 'images-notices/';
+
+        // Verificando se existe arquivo
+        if ($request->hasFile('image_01')) {
+
+            $file_principal = $request->file('image_01');
+            $fileName_principal                = $file_principal->getClientOriginalName();
+            // Inserindo na pasta
+            Input::file('image_01')->move($destinationPath, $fileName_principal);
+        }
+        // Verificando se existe arquivo
+        if ($request->hasFile('image_02')) {
+
+            $image_02 = $request->file('image_02');
+            $fileName_principal_02                = $image_02->getClientOriginalName();
+            // Inserindo na pasta
+            Input::file('image_02')->move($destinationPath, $fileName_principal_02);
+        }
+        // Verificando se existe arquivo
+        if ($request->hasFile('image_03')) {
+
+            $image_03 = $request->file('image_03');
+            $fileName_principal_03                = $image_03->getClientOriginalName();
+            // Inserindo na pasta
+            Input::file('image_03')->move($destinationPath, $fileName_principal_03);
+        }
+
+
+
 
 
         // Validação dos dados

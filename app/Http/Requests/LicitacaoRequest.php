@@ -35,6 +35,7 @@ class LicitacaoRequest extends FormRequest
             'telefone_celular'                => 'required|max:15',
             'hora_abertura'                   => 'required|max:10',
             'data'                            => 'required|max:12',
+            
 
         ];
     }

@@ -57,6 +57,11 @@ Route::post('/input-transparency', 'TransparencyController@insert');
 Route::resource('/edittransparency', 'TransparencyController');
 Route::resource('/transparency', 'TransparencyController');
 Route::resource('/deletartransparency', 'TransparencyController');
+Route::get('showtransparency/{id}/show', function ($id) {
+    $date = date('Y');
+    $transparency = \SescoopRO\Transparency::find($id);
+    return view('pages-panel.showtransparency', compact('transparency', 'date'));
+})->name('show');
 
 // ##################  ROUTES OF LICITACAO ################
 Route::get('/page-inserir-licitacao', 'LicitacaoController@index')->name('page-inserir-licitacao');
@@ -65,3 +70,8 @@ Route::post('/input-licitacao', 'LicitacaoController@insert');
 Route::resource('/editlicitacao', 'LicitacaoController');
 Route::resource('/licitacao', 'LicitacaoController');
 Route::resource('/deletarlicitacao', 'LicitacaoController');
+Route::get('showlicitacao/{id}/show', function ($id) {
+    $date = date('Y');
+    $licitacao = \SescoopRO\Licitacoes::find($id);
+    return view('pages-panel.showlicitacao', compact('licitacao', 'date'));
+})->name('show');
