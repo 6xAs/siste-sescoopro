@@ -28,9 +28,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $date = date('Y');
-        $dateDay = date("d/m/y");
-        return view('pages-panel.home-panel', compact('date', 'dateDay'));
+        $date                   = date('Y');
+        $dateDay                = date("d/m/y");
+        $notice_count           = \SescoopRO\Notice::All()->count();
+        $banner_count           = \SescoopRO\Banner::All()->count();
+        $transparency_count     = \SescoopRO\Transparency::All()->count();
+        $licitacao_count        = \SescoopRO\Licitacoes::All()->count();
+        return view('pages-panel.home-panel', compact('date',
+        'dateDay', 'notice_count', 'banner_count', 'transparency_count', 'licitacao_count'));
     }
 
     public function datatable()

@@ -66,18 +66,21 @@
                         <div class="form-group">
                             {!! Form::label('image_01', 'Imagem Principal: ' ) !!}
                             <div class="custom-file">
+                                <p>Obs: Essa imagem deve ter: 565 x 552 px </p>
                                 {!! Form::file('image_01', null, ['class' => 'form-control', 'placeholder' => ''] ) !!}
                             </div>
                         </div>
                         <div class="form-group">
                             {!! Form::label('image_02', 'Segunda Imagem: ' ) !!}
                             <div class="custom-file">
+                                <p>Obs: Essa imagem deve ter: 565 x 552 px </p>
                                 {!! Form::file('image_02', null, ['class' => 'form-control', 'placeholder' => ''] ) !!}
                             </div>
                         </div>
                         <div class="form-group">
                             {!! Form::label('image_03', 'Terceira Imagem: ' ) !!}
                             <div class="custom-file">
+                                <p>Obs: Essa imagem deve ter: 565 x 552 px </p>
                                 {!! Form::file('image_03', null, ['class' => 'custom-file-input', 'placeholder' => ''] ) !!}
 
                             </div>

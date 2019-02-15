@@ -78,8 +78,8 @@
                     <a href="#subPages7" data-toggle="collapse" class="collapsed"><i class="lnr lnr-camera-video"></i> <span>Video Site</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                     <div id="subPages7" class="collapse ">
                         <ul class="nav">
-                            <li><a href="#" class="">Inserir</a></li>
-                            <li><a href="#" class="">Listar</a></li>
+                            <li><a href="{{route('page-inserir-video')}}" class="">Inserir</a></li>
+                            <li><a href="{{route('page-listar-video')}}" class="">Listar</a></li>
                         </ul>
                     </div>
                 </li>

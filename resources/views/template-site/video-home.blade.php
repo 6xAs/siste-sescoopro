@@ -11,7 +11,9 @@
 				<!--  video-button-popup -->
 				<div id="small-dialog1" class="mfp-hide">
 					<div class="agileits_modal_body">
-						<iframe src="https://player.vimeo.com/video/83557847"></iframe>
+						@foreach ($video as $video)
+							<iframe width="268" height="180" src="{{$video->link}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						@endforeach
 					</div>
 				</div>
 				<!-- // video-button-popup -->

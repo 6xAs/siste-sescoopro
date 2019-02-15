@@ -6,28 +6,24 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
         <div class="carousel-inner">
-            <!-- O loop entrará aqui -->
+
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/bg.jpg" alt="First slide">
+                  <img class="d-block w-100" src="images/bg3.jpg" alt="First slide">
                   <div class="carousel-caption d-none d-md-block">
-                    <h2>Uma mensagem para o Sescoop/RO</h2>
-                    <p>subtitle slide01</p>
+                    <h3></h3>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bg3.jpg" alt="Second slide">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h2>O segundo slide está ativo agora</h2>
-                    <p>subtitle slide02</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bg2.jpg" alt="Third slide">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h2>O terceiro slide está ativo agora</h2>
-                    <p>subtitle slide03</p>
-                  </div>
-                </div>
+                <!-- O loop entrará aqui -->
+                @foreach ($banner as $banner)
+
+                        <div class="carousel-item">
+                          <a href="{{$banner->link}}"><img class="d-block w-100" src="images-banner/{{$banner->image}}" ></a>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h3>{{$banner->title}}</h3>
+                          </div>
+                        </div>
+
+                @endforeach
         </div>
 
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

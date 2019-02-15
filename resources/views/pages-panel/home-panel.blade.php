@@ -18,84 +18,60 @@
                 <div class="panel-body">
                     <div class="row">
                         <!-- Blocos -->
-                        <a href="#">
+                        <a href="{{route('page-listar-banner')}}">
+                            <div class="col-md-3">
+                                <div class="metric">
+
+                                    <span class="icon"><i class="fa fa-bookmark "></i></span>
+                                    <p>
+                                        <span class="number">Banners</span>
+                                        <span class="title">{{$banner_count}}</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a href="{{route('page-listar-notice')}}">
                             <div class="col-md-3">
                                 <div class="metric">
 
                                     <span class="icon"><i class="fa fa-address-card"></i></span>
                                     <p>
                                         <span class="number">Notícias</span>
-                                        <span class="title">200</span>
+                                        <span class="title">{{$notice_count}}</span>
                                     </p>
                                 </div>
                             </div>
 
                         </a>
-                        <a href="#">
+                        <a href="{{route('page-listar-transparency')}}">
                             <div class="col-md-3">
                                 <div class="metric">
 
-                                    <span class="icon"><i class="fa fa-address-card"></i></span>
+                                    <span class="icon"><i class="fa fa-address-book "></i></span>
                                     <p>
-                                        <span class="number">Notícias</span>
-                                        <span class="title">200</span>
+                                        <span class="number">Transp.</span>
+                                        <span class="title">{{$transparency_count}}</span>
                                     </p>
                                 </div>
                             </div>
 
                         </a>
-                        <a href="#">
+                        <a href="{{route('page-listar-licitacao')}}">
                             <div class="col-md-3">
                                 <div class="metric">
 
-                                    <span class="icon"><i class="fa fa-address-card"></i></span>
+                                    <span class="icon"><i class="fa fa-cart-plus "></i></span>
                                     <p>
-                                        <span class="number">Notícias</span>
-                                        <span class="title">200</span>
+                                        <span class="number">Licitações</span>
+                                        <span class="title">{{$licitacao_count}}</span>
                                     </p>
                                 </div>
                             </div>
 
                         </a>
-                        <a href="#">
-                            <div class="col-md-3">
-                                <div class="metric">
 
-                                    <span class="icon"><i class="fa fa-address-card"></i></span>
-                                    <p>
-                                        <span class="number">Notícias</span>
-                                        <span class="title">200</span>
-                                    </p>
-                                </div>
-                            </div>
 
-                        </a>
-                        <a href="#">
-                            <div class="col-md-3">
-                                <div class="metric">
-
-                                    <span class="icon"><i class="fa fa-address-card"></i></span>
-                                    <p>
-                                        <span class="number">Notícias</span>
-                                        <span class="title">200</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </a>
-                        <a href="#">
-                            <div class="col-md-3">
-                                <div class="metric">
-
-                                    <span class="icon"><i class="fa fa-address-card"></i></span>
-                                    <p>
-                                        <span class="number">Notícias</span>
-                                        <span class="title">200</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </a>
                         <!--// Blocos -->
 
                     </div>

@@ -1,4 +1,4 @@
-<!-- Nossa equipe-->
+<!-- Nossa
 <section class="team py-5">
     <div class="container py-md-4 mt-md-3">
         <h3 class="heading-agileinfo">Nossa Equipe <span>Conheça nossos colaboradores</span></h3>
@@ -87,4 +87,5 @@
 </a>
     </div>
 </section>
+equipe-->
 <!-- //about-team -->

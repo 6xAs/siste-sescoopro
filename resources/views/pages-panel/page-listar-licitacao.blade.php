@@ -13,6 +13,13 @@
     <!-- MAIN CONTENT -->
     <div class="main-content">
         <div class="container-fluid">
+            <div class="text-right Right aligned text">
+
+                <a href="{{route('page-inserir-licitacao')}}">
+
+                    <button type="button" class="btn btn-primary">Nova Licitacao</button>
+                </a>
+            </div>
             <div class="panel panel-headline">
                 <div class="panel-heading">
                     <h3 class="panel-title">@yield('title')</h3>

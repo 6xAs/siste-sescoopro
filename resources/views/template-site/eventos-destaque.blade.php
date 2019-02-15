@@ -1,4 +1,4 @@
-<!-- Eventos em Destaque -->
+<!-- Eventos em Destaque
 	<section class="wthree-row w3-about py-1">
 		<div class="container py-md-4 mt-md-3">
 			<h3 class="heading-agileinfo">Eventos em Destaque <span>Confira nosos eventos em destaque!</span></h3>
@@ -37,4 +37,5 @@
 				</div>
             </div>
         </section>
-<!-- //news -->
+		-->
+<!-- //Eventos em Destaque-->

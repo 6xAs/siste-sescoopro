@@ -26,7 +26,7 @@
                 <a href="#">
                     <div class="new_top">
 
-                        <h3 class="mb-3 mt-3">Transparência Sescoop/RO</h3>
+                        <h3 class="mb-3 mt-3">Diretrizes e Atuação Sescoop e OCB</h3>
                         <p>Nossa transparência Sescoop/RO </p>
                     </div>
                 </a>

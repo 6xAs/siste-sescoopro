@@ -32,6 +32,14 @@
 	<!-- body -->
 	<link href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
 
+
+	<!-- Datatable JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- Datatable CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
 	<!-- Scripts essenciais -->
 
 	<!-- //Modal -->

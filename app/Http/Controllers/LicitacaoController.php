@@ -243,7 +243,7 @@ class LicitacaoController extends Controller
 
     }
 
-    public function listarTransparency()
+    public function listarLicitacao()
     {
         $date = date('Y');
         $licitacao = \SescoopRO\Licitacoes::All();
@@ -269,67 +269,65 @@ class LicitacaoController extends Controller
     {
 
         // Apagando arquivos existente
-        if ($request->input('file_01') != NULL) {
-            // File_01
+
             $fileName_01    = DB::table('licitacoes')->where('id',$id)->value('file_01');
             File::delete('document-licitacao/'.$fileName_01);
-        }
-        if ($request->input('file_02') != NUL) {
+
+
             // File_02
             $fileName_02    = DB::table('licitacoes')->where('id',$id)->value('file_02');
             File::delete('document-licitacao/'.$fileName_02);
-        }
-        if ($request->input('file_03') != NULL) {
+
+
             // File_03
             $fileName_03    = DB::table('licitacoes')->where('id',$id)->value('file_03');
             File::delete('document-licitacao/'.$fileName_03);
-        }
-        if ($request->input('file_04') != NULL) {
+
+
             // File_04
             $fileName_04    = DB::table('licitacoes')->where('id',$id)->value('file_04');
             File::delete('document-licitacao/'.$fileName_04);
-        }
-        if ($request->input('file_05') != NULL) {
+
             // File_05
             $fileName_05    = DB::table('licitacoes')->where('id',$id)->value('file_05');
             File::delete('document-licitacao/'.$fileName_05);
-        }
-        if ($request->input('file_06') != NULL) {
+
+
             // File_06
             $fileName_06    = DB::table('licitacoes')->where('id',$id)->value('file_06');
             File::delete('document-licitacao/'.$fileName_06);
-        }
-        if ($request->input('file_07') != NULL) {
+
+
             // File_07
             $fileName_07    = DB::table('licitacoes')->where('id',$id)->value('file_07');
             File::delete('document-licitacao/'.$fileName_07);
-        }
-        if ($request->input('file_08') != NULL) {
+
+
             // File_08
             $fileName_08    = DB::table('licitacoes')->where('id',$id)->value('file_08');
             File::delete('document-licitacao/'.$fileName_08);
-        }
-        if ($request->input('file_09') != NULL) {
+
+
             // File_09
             $fileName_09    = DB::table('licitacoes')->where('id',$id)->value('file_09');
             File::delete('document-licitacao/'.$fileName_09);
-        }
 
-        if ($request->input('file_010') != NULL) {
+
+
             // File_010
             $fileName_010    = DB::table('licitacoes')->where('id',$id)->value('file_010');
             File::delete('document-licitacao/'.$fileName_010);
-        }
-        if ($request->input('file_011') != NULL) {
+
+
             // File_011
             $fileName_011    = DB::table('licitacoes')->where('id',$id)->value('file_011');
             File::delete('document-licitacao/'.$fileName_011);
-        }
-        if ($request->input('file_012') != NULL) {
+
+
             // File_012
             $fileName_012    = DB::table('licitacoes')->where('id',$id)->value('file_012');
             File::delete('document-licitacao/'.$fileName_012);
-        }
+
 
         // Validação dos dados
        $number_process                     = $request->input('number_process');

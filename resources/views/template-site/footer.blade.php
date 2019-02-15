@@ -1,6 +1,6 @@
 	<!--footer-->
 	<div class="pre-footer">
-		<img src="images/rodape-img.png" alt="">
+		<img src="/../images/rodape-img.png" alt="">
 	</div>
 	<footer>
 			<div class="container py-md-4 mt-md-3">
@@ -61,7 +61,7 @@
 				<div class="copyrighttop">
 					<ul>
 						<li>
-							<h4>Nos acompanhe nas redes sociais</h4>
+							<h4></h4>
 						</li>
 						<li>
 							<a class="facebook" href="#">
@@ -77,7 +77,7 @@
 					</ul>
 				</div>
 				<div class="copyrightbottom">
-					<p>© {{ $date }} Todos os direitos reservados |  by Sescoop/RO
+					<p>© {{ $date }} Todos os direitos reservados |  by SESCOOP/RO - Developer: Anderson Seixas -- Analista de TI
 
 					</p>
 				</div>
