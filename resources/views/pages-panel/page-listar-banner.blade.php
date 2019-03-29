@@ -35,7 +35,7 @@
 
                         	<div class="row">
 
-                                <table class="table table-striped" id="listar" >
+                                <table class="table table-striped table-bordered" id="listar" >
                                           <thead>
                                             <tr>
                                               <th scope="col">#</th>

@@ -62,7 +62,7 @@ class TransparencyController extends Controller
             Input::file('file_02')->move($destinationPath, $fileName_02);
         }
         else {
-             $fileName_01           = $request->input('file_02');
+             $fileName_02          = $request->input('file_02');
         }
         if ($request->hasFile('file_03')) {
 
@@ -131,7 +131,7 @@ class TransparencyController extends Controller
             Input::file('file_02')->move($destinationPath, $fileName_02);
         }
         else {
-             $fileName_01           = $request->input('file_02');
+             $fileName_02           = $request->input('file_02');
         }
         if ($request->hasFile('file_03')) {
 
@@ -150,6 +150,15 @@ class TransparencyController extends Controller
        $document_name                = $request->input('document_name');
        $ano                          = $request->input('ano');
 
+       // Apagando arquivos existente
+       $file_01                = DB::table('transparencies')->where('id',$id)->value('file_01');
+       $file_02                = DB::table('transparencies')->where('id',$id)->value('file_02');
+       $file_03                = DB::table('transparencies')->where('id',$id)->value('file_03');
+
+       // Deletando arquivos existentes na pasta
+       File::delete('document-transparency/'.$file_01);
+       File::delete('document-transparency/'.$file_02);
+       File::delete('document-transparency/'.$file_03);
 
        DB::table('transparencies')
             ->where('id',$id)

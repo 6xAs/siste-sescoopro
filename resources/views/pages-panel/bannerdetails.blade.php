@@ -45,7 +45,7 @@
                                 {{ csrf_field() }}
                                     <div class="form-group">
                                         {!! Form::label('name', 'Nome: ' ) !!}
-                                        {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => ''] ) !!}
+                                        {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => '', 'required' => 'required'] ) !!}
                                     </div>
                                     <div class="form-group">
                                         {!! Form::label('title', 'Title: ' ) !!}

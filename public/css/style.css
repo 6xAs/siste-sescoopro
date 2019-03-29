@@ -1,8 +1,8 @@
 
 html,
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
     overflow-x: hidden;
 	background:#f5f7f8;
 }
@@ -24,7 +24,7 @@ h5,
 h6 {
     margin: 0;
 	font-weight: 600;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -55,6 +55,14 @@ body a:hover {
     font-size: 1em;
     color: #000;
 }
+
+.height {
+    margin-right: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    float: right;
+}
+
 
 header h1 a span {
     color: #fff;
@@ -134,7 +142,8 @@ header h1 a span {
     width: 30px;
     height: 30px;
 }
-.top-middle i.fab.fa-facebook-f:hover {
+.top-middle i.fab.fa-facebook-f:
+ {
     color: #527dbd;
 }
 .top-middle i.fab.fa-twitter {
@@ -181,6 +190,7 @@ header h1 a span {
 /* -- //TOP HEADER */
 .navbar {
     padding: 0.5rem 0.5rem;
+    font-size: 17px;
 }
 /* banner */
 
@@ -221,7 +231,7 @@ h4.agile-title {
     color: #fff;
     font-size: 2.8em;
     text-shadow: 3px 1px 1px #000;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 1.5em;
     letter-spacing: 2px;
     width: 57%;
@@ -233,6 +243,23 @@ h4.agile-title {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     margin: 0 auto;
+}
+
+figure { width: 90%; min-width: 17.5em; margin:0 auto;}
+figcaption { font: 120% sans-serif; text-align: center;}
+.boxVideo {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin:0 auto;
+}
+.boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .rslides_tabs {
@@ -551,11 +578,17 @@ p.sub-para {
     color: #777;
 }
 .new_top {
-    padding: 55px 40px;
-    -webkit-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+    padding: 55px 60px;
+    box-shadow: 0px 0px 5px;
     background: #fff;
+
 }
+
+.new_top:hover{
+    background-color: #ADD8E6;
+}
+
+
 /*-- details --*/
 h3.w3ls-title {
     font-size: 2.7em;
@@ -1161,7 +1194,7 @@ a.facebook:hover {
     font-size: 17px;
     line-height: 1.8;
     margin: 15px 0;
-	    font-weight: 700;
+
     letter-spacing: 1px;
 }
 .welcome-left p {
@@ -1637,7 +1670,7 @@ table.table.table-striped,.table-bordered,.bs-docs-example {
 
 /*--/contact--*/
 .address-left {
-	width: 80px;
+	  width: 80px;
     height: 80px;
     text-align: center;
     background:#006AB3;
@@ -1673,9 +1706,9 @@ table.table.table-striped,.table-bordered,.bs-docs-example {
 .contact_grid_right textarea {
     outline: none;
     padding: 15px 15px;
-    font-size: 14px;
+    font-size: 16px;
     color: #777;
-    background: #f7f7f7;
+    background: #ffffff;
     width: 100%;
     letter-spacing: 1px;
     border: 1px solid #ebeeef;

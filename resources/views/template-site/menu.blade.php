@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/">
-          <img src="/../images/sescoop-ocb.png"  class="d-inline-block align-top" alt="">
+          <img src="/../images/logo-site.png" width="280" height="48" class="d-inline-block align-top" alt="">
 
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,13 +13,13 @@
                     Instituições
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Ouvidoria</a>
-                    <a class="dropdown-item" href="#">História do Cooperativismo</a>
-                    <a class="dropdown-item" href="#">Ramos de Cooperativismo</a>
-                    <a class="dropdown-item" href="#">Legislação</a>
-                    <a class="dropdown-item" href="#">Como funciona uma cooperativa</a>
-                    <a class="dropdown-item" href="#">Frenecoop</a>
-                    <a class="dropdown-item" href="#">Fecoop Norte</a>
+                    <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSerXJGAPLJvPtpytYahfe8pAfbigTeEP6gCTtpZjAI2gKDmaQ/viewform">Ouvidoria</a>
+                    <a class="dropdown-item" href="/historia-cooperativismo">História do Cooperativismo</a>
+                    <a class="dropdown-item" href="/ramos-cooperativismo">Ramos de Cooperativismo</a>
+                    <a class="dropdown-item" href="/legislacao-cooperativismo">Legislação</a>
+                    <a class="dropdown-item" href="/como-funciona-cooperativa">Como funciona uma cooperativa</a>
+                    <a class="dropdown-item" href="/frenecoop">Frenecoop</a>
+                    <a class="dropdown-item" href="/fe">Fecoop Norte</a>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -27,10 +27,9 @@
                     OCB
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Sistema OCB</a>
-                    <a class="dropdown-item" href="#">História do sistema OCB</a>
-                    <a class="dropdown-item" href="#">Sescoop</a>
-                    <a class="dropdown-item" href="#">Lista de Cooperativas</a>
+                    <a class="dropdown-item" href="/sistema-ocb">Sistema OCB</a>
+                    <a class="dropdown-item" href="/historia-sistema-ocb">História Sistema OCB</a>
+                    <a class="dropdown-item" href="/lista-cooperativas">Lista de Cooperativas</a>
 
                   </div>
                 </li>
@@ -39,8 +38,8 @@
                     SESCOOP/RO
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Nossa História</a>
-                    <a class="dropdown-item" href="#">Missão e Visão</a>
+                    <a class="dropdown-item" href="historia-sescoop">Nossa História</a>
+                    <a class="dropdown-item" href="missao-visao">Missão e Visão</a>
                     <a class="dropdown-item" href="#">Capacitação Cooperativista</a>
                     <a class="dropdown-item" href="#">Objetivos e Metas</a>
                     <a class="dropdown-item" href="#">Programas</a>
@@ -59,11 +58,18 @@
                   </a>
 
                 </li>
+                <li class="nav-item mr-3">
+                  <a class="nav-link " href="/noticias-sescoopro" id="navbarDropdownMenuLink" role="button"  aria-haspopup="true" aria-expanded="false">
+                    Notícias
+                  </a>
+
+                </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Cursos e Eventos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/cursos-sescoopro">Cursos Disponíveis</a>
                   <a class="dropdown-item" href="#">Agenda de Eventos</a>
                   <a class="dropdown-item" href="#">Fotos de Eventos</a>
                   <a class="dropdown-item" href="#">Emisão de Certificados</a>
@@ -74,8 +80,8 @@
                   Contato
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Fale Conosco</a>
-                  <a class="dropdown-item" href="#">Trabalhe Conosco</a>
+                  <a class="dropdown-item" href="/contato-sescoop">Fale Conosco</a>
+
                 </div>
                 </li>
         </ul>

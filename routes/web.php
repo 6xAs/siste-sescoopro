@@ -24,7 +24,70 @@ Route::get('/', function () {
 
 });
 
+// historia cooperativismo
+Route::get('/historia-cooperativismo', function () {
 
+    $date = date('Y');
+    return view('pages-site.historia-cooperativismo', compact('date'));
+});
+// ramos-cooperativismo
+Route::get('/ramos-cooperativismo', function () {
+
+    $date = date('Y');
+    return view('pages-site.ramos-cooperativismo', compact('date'));
+});
+
+// legislacao-cooperativismo
+Route::get('/legislacao-cooperativismo', function () {
+
+    $date = date('Y');
+    return view('pages-site.legislacao-cooperativismo', compact('date'));
+});
+// como-funciona-cooperativa
+Route::get('/como-funciona-cooperativa', function () {
+
+    $date = date('Y');
+    return view('pages-site.como-funciona-cooperativa', compact('date'));
+});
+// frenecoop
+Route::get('/frenecoop', function () {
+
+    $date = date('Y');
+    return view('pages-site.frenecoop', compact('date'));
+});
+// Sistema OCB
+Route::get('/sistema-ocb', function () {
+
+    $date = date('Y');
+    return view('pages-site.sistema-ocb', compact('date'));
+});
+// historia-sistema-ocb
+Route::get('/historia-sistema-ocb', function () {
+
+    $date = date('Y');
+    return view('pages-site.historia-sistema-ocb', compact('date'));
+});
+// lista-cooperativas
+Route::get('/lista-cooperativas', function () {
+
+    $date = date('Y');
+    return view('pages-site.lista-cooperativas', compact('date'));
+});
+// historia-sescoop
+Route::get('/historia-sescoop', function () {
+
+    $date = date('Y');
+    return view('pages-site.historia-sescoop', compact('date'));
+});
+// missao-visao
+Route::get('/missao-visao', function () {
+
+    $date = date('Y');
+    return view('pages-site.missao-visao', compact('date'));
+});
+
+
+// Notices Pages
 Route::get('notice/{id}/details', ['as' => 'details', function ($id) {
     //
 
@@ -34,6 +97,24 @@ Route::get('notice/{id}/details', ['as' => 'details', function ($id) {
 
     //  $categoria = DB::table('categoria')->lists('nome_categoria','nome_categoria');
 }]);
+
+Route::get('/cursos-sescoopro', function () {
+
+    $date = date('Y');
+    $curso = \SescoopRO\Curso::orderBy('id','created_at', 'desc')->paginate(10);
+    return view('pages-site.page-cursos', compact('curso', 'date'));
+
+});
+
+Route::get('nossoscursos/{id}/details',['as' => 'details', function ($id) {
+
+    $date = date('Y');
+    $curso = \SescoopRO\Curso::find($id);
+    return view('pages-site.curso-detalhes-sescoop', compact('curso', 'date'));
+
+}]);
+
+
 
 //Site-Licitações
 Route::get('/page-licitacoes', function () {
@@ -82,6 +163,53 @@ Route::get('/trasparencies', function () {
 
 });
 
+Route::get('/ouvidoria', function () {
+
+    $date = date('Y');
+
+    return view('pages-site.ouvidoria', compact('date'));
+
+});
+Route::post('post-ouvidoria', 'ContactController@sendContato');
+
+Route::get('/contato-sescoop', function () {
+
+    $date = date('Y');
+
+    return view('pages-site.contato-sescoop', compact('date'));
+
+});
+Route::post('post-contato', 'ContactController@sendContato');
+
+Route::get('/noticias-sescoopro', function () {
+
+    $date = date('Y');
+    $notice = \SescoopRO\Notice::orderBy('id','created_at', 'desc')->paginate(10);
+    return view('pages-site.page-noticeall', compact('notice', 'date'));
+
+});
+
+Route::get('noticedestaque/{id}/details',['as' => 'details', function ($id) {
+
+    $date = date('Y');
+    $noticeDestaque = \SescoopRO\DestaqueNotice::find($id);
+    return view('pages-site.noticia-destaque-sescoop', compact('noticeDestaque', 'date'));
+
+}]);
+
+// Teste mascara
+Route::get('/teste-mascara', function () {
+
+    $date = date('Y');
+    return view('exemplo-mascara', compact('date'));
+});
+
+// Login Participante
+Route::get('/login-participante', function () {
+
+    $date = date('Y');
+    return view('pages-site.login-participante', compact('date'));
+});
 
 
 
@@ -154,4 +282,57 @@ Route::get('showvideo/{id}/show', function ($id) {
     $date = date('Y');
     $video = \SescoopRO\Video::find($id);
     return view('pages-panel.showvideo', compact('video', 'date'));
+})->name('show');
+
+// ##################  ROUTES OF CURSO ################
+Route::get('/page-inserir-curso', 'CursosController@index')->name('page-inserir-curso');
+Route::get('/page-listar-curso', 'CursosController@listarCurso')->name('page-listar-curso');
+Route::post('/input-curso', 'CursosController@insert');
+Route::resource('/curso', 'CursosController');
+Route::resource('/curso', 'CursosController');
+Route::resource('/deletarcurso', 'CursosController');
+Route::get('showcurso/{id}/show', function ($id) {
+    $date = date('Y');
+    $curso = \SescoopRO\Curso::find($id);
+    return view('pages-panel.show-curso', compact('curso', 'date'));
+})->name('show');
+
+// ##################  ROUTES OF INSTRUTOR ################
+Route::get('/page-inserir-instrutor', 'InstrutorController@index')->name('page-inserir-instrutor');
+Route::get('/page-listar-instrutor', 'InstrutorController@listarInstrutor')->name('page-listar-instrutor');
+Route::post('/input-instrutor', 'InstrutorController@insert');
+Route::resource('/instrutor', 'InstrutorController');
+Route::resource('/instrutor', 'InstrutorController');
+Route::resource('/deletarinstrutor', 'InstrutorController');
+Route::get('showinstrutor/{id}/show', function ($id) {
+    $date = date('Y');
+    $instrutor = \SescoopRO\Curso::find($id);
+    return view('pages-panel.show-instrutor', compact('instrutor', 'date'));
+})->name('show');
+
+// ##################  COOPERATIVA ################
+Route::get('/page-inserir-cooperativa', 'CooperativasController@index')->name('page-inserir-cooperativa');
+Route::post('/input-cooperativa', 'CooperativasController@insert');
+Route::get('/page-listar-cooperativa', 'CooperativasController@listarCoop')->name('page-listar-cooperativa');
+Route::resource('/cooperativa', 'CooperativasController');
+Route::resource('/cooperativa', 'CooperativasController');
+Route::resource('/deletarcooperativa', 'CooperativasController');
+Route::get('showcooperativa/{id}/show', function ($id) {
+    $date = date('Y');
+    $cooperativa = \SescoopRO\ListaCoop::find($id);
+    return view('pages-panel.show-cooperativa', compact('cooperativa', 'date'));
+})->name('show');
+
+// ##################  PROCESSO SELETIVO ################
+Route::get('/page-inserir-proSeletivo', 'SeletivoController@index')->name('page-inserir-proSeletivo');
+Route::post('/input-proSeletivo', 'SeletivoController@insert');
+Route::get('/page-listar-proSeletivo', 'SeletivoController@listarSeletivo')->name('page-listar-proSeletivo');
+Route::resource('/proSeletivo', 'SeletivoController');
+Route::resource('/proSeletivo', 'SeletivoController');
+Route::resource('/deletarproSeletivo', 'SeletivoController');
+Route::get('showproSeletivo/{id}/show', function ($id) {
+    $date = date('Y');
+    $proSeletivo = \SescoopRO\ProcessoSeletivo::find($id);
+    return view('pages-panel.showproSeletivo', compact('proSeletivo', 'date'));
+
 })->name('show');

@@ -35,7 +35,7 @@
                     {!! Form::model($licitacao,['route' =>  ['licitacao.update', $licitacao->id], 'class' => '','method'=>'PUT','files'=>true]) !!}                    {{ csrf_field() }}
                     <div class="form-group">
                         {!! Form::label('number_process', 'Número do Processo:* ' ) !!}
-                        {!! Form::number('number_process', null, ['class' => 'form-control', 'placeholder' => 'Nome do Processo'] ) !!}
+                        {!! Form::number('number_process', null, ['class' => 'form-control', 'placeholder' => 'Nome do Processo', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('modalidade', 'Modalidade: * ' ) !!}
@@ -48,15 +48,15 @@
                              'Concurso'                     => 'Concurso',
                              'Leilão'                       => 'Leilão',
 
-                         ], null, ['class' => 'form-control','placeholder' => 'Selecionar Modalidade']) !!}
+                         ], null, ['class' => 'form-control', 'placeholder' => 'Selecionar Modalidade', 'required' => 'required']) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('edital', 'Edital:* ' ) !!}
-                        {!! Form::text('edital', null, ['class' => 'form-control', 'placeholder' => 'Edital'] ) !!}
+                        {!! Form::text('edital', null, ['class' => 'form-control', 'placeholder' => 'Edital', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('objeto', 'Objeto:* ' ) !!}
-                        {!! Form::textarea('objeto', null, ['class' => 'form-control', 'placeholder' => 'Descreva o Objeto'] ) !!}
+                        {!! Form::textarea('objeto', null, ['class' => 'form-control', 'placeholder' => 'Descreva o Objeto', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('status', 'Status: * ' ) !!}
@@ -67,7 +67,7 @@
                              'Cancelado'                           => 'Cancelado',
                              'Anulado'                             => 'Anulado'
 
-                         ], null, ['class' => 'form-control','placeholder' => 'Escolha o status da licitação']) !!}
+                         ], null, ['class' => 'form-control','placeholder' => 'Escolha o status da licitação', 'required' => 'required']) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('telefone_fixo', 'Telefone Fixo: ' ) !!}
@@ -79,16 +79,16 @@
                     </div>
                     <div class="form-group">
                         {!! Form::label('email', 'Emial:* ' ) !!}
-                        {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Ex:mail@mail.com'] ) !!}
+                        {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Ex:mail@mail.com', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('hora_abertura', 'Hora Abertura:* ' ) !!}
-                        {!! Form::time('hora_abertura', null, ['class' => 'form-control', 'placeholder' => 'Ex:00:00'] ) !!}
+                        {!! Form::time('hora_abertura', null, ['class' => 'form-control', 'placeholder' => 'Ex:00:00', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
                     <div class="form-group">
                         {!! Form::label('data', 'Data:* ' ) !!}
-                        {!! Form::date('data', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
+                        {!! Form::date('data', null, ['class' => 'form-control', 'placeholder' => '00/00/00', 'required' => 'required'] ) !!}
                     </div>
 
                         <table class="table table-condensed">

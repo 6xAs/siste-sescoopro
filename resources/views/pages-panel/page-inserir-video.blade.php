@@ -39,10 +39,9 @@
                         </div>
 
                         <div class="form-group">
-                            {!! Form::label('link', 'Link: ' ) !!}
-                            {!! Form::text('link', null, ['class' => 'form-control', 'placeholder' => 'Ex:https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG'] ) !!}
+                            {!! Form::label('link', 'Link: * ' ) !!}
+                            {!! Form::text('link', null, ['class' => 'form-control', 'placeholder' => 'Ex:https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG', 'required' => 'requird'] ) !!}
                         </div>
-
 
 
                         {!!Form::submit('INSERIR', ['class' => 'btn btn-primary'])!!}

@@ -8,22 +8,17 @@
 </section>
 <!-- Notice Details -->
 <section class="welcome py-5">
-    <div class="container py-md-4 mt-md-3">
-        <h2 class="heading-agileinfo">Transparência
-            <span> <br><br>
-                <a href="/trasparencies" target="_blank"> <button type="button" class="btn btn-success" name="button">DOCUMENTO DE TRANSPARÊNCIA</button> </a>
-            </span></h2>
+    <div class="container py-md-8 mt-md-8">
+        <div class="col-md-12">
 
-        <span class="w3-line black"></span>
-        <div class="row about-tp mt-md-5 pt-5">
-
-
+                <div class="new_top">
+                    <h2 class="heading-agileinfo">Transparência
+                        <span> <br><br>
+                            <a href="/trasparencies" target="_blank"> <button type="button" class="btn btn-success" name="button">DOCUMENTO DE TRANSPARÊNCIA</button> </a>
+                        </span></h2>
+                </div>
 
         </div>
-    </div>
-
-
-
 
 </section>
 

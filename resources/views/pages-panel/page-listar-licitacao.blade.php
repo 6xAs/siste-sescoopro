@@ -37,7 +37,7 @@
 
                         	<div class="row">
 
-                                <table class="table table-striped" id="listar" >
+                                <table class="table table-striped table-bordered" id="listar" >
                                           <thead>
                                             <tr>
                                               <th scope="col">#Codid-Doc</th>
@@ -47,7 +47,7 @@
                                               <th scope="col">Data</th>
                                               <th scope="col">Status</th>
                                               <th scope="col">Editar</th>
-                                              <th scope="col">Vizualizar</th>
+                                              <th scope="col">Visualizar</th>
                                             </tr>
                                           </thead>
                                           <tbody>

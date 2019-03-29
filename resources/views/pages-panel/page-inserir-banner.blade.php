@@ -27,7 +27,7 @@
                                       @endforeach
                                   </ul>
                               </div>
-                  @endif
+                        @endif
 
                 <div class="panel-body">
                     <!-- Form Inserir Banner -->
@@ -35,7 +35,7 @@
                     {{ csrf_field() }}
                         <div class="form-group">
                             {!! Form::label('name', 'Nome: ' ) !!}
-                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nome do Banner'] ) !!}
+                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nome do Banner', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('title', 'Title: ' ) !!}
@@ -60,7 +60,7 @@
                         <div class="form-group">
                             {!! Form::label('image', 'Imagem: *' ) !!}
                             <div class="custom-file">
-                                <input type="file" id="exampleInputFile"  name="image" onchange="imagePrincipal(this);">
+                                <input type="file" id="exampleInputFile" requered="required"  name="image" onchange="imagePrincipal(this);">
                             </div>
                         </div>
 

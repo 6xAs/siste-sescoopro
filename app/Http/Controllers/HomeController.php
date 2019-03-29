@@ -34,8 +34,14 @@ class HomeController extends Controller
         $banner_count           = \SescoopRO\Banner::All()->count();
         $transparency_count     = \SescoopRO\Transparency::All()->count();
         $licitacao_count        = \SescoopRO\Licitacoes::All()->count();
+        $curso_count            = \SescoopRO\Curso::All()->count();
+        $instrutor_count        = \SescoopRO\Instructor::All()->count();
+        $cooperativa_count      = \SescoopRO\ListaCoop::All()->count();
+        $patrimonio_count       = \SescoopRO\Patrimonio::All()->count();
+        $proSeletivo_count      = \SescoopRO\ProcessoSeletivo::All()->count();
         return view('pages-panel.home-panel', compact('date',
-        'dateDay', 'notice_count', 'banner_count', 'transparency_count', 'licitacao_count'));
+        'dateDay', 'notice_count', 'banner_count', 'transparency_count',
+        'licitacao_count', 'curso_count', 'instrutor_count', 'cooperativa_count', 'patrimonio_count', 'proSeletivo_count'));
     }
 
     public function datatable()

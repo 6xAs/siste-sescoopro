@@ -36,7 +36,7 @@
                     {{ csrf_field() }}
                     <div class="form-group">
                         {!! Form::label('ano', 'Tipo de Documento: * ' ) !!}
-                        <select class="form-control" id="docMain" onchange="selectDocument(this.value)" name="docMain">
+                        <select class="form-control" id="docMain" onchange="selectDocument(this.value)" name="docMain" required="required">
                            <option value="" disabled selected>Selecione um documento</option>
 
                            <option value="Contratos">Contratos</option>
@@ -54,7 +54,7 @@
                     </div>
                         <div class="form-group">
                             {!! Form::label('ano', 'Subtipo de Documento: * ' ) !!}
-                            <select class="form-control" id="subDoc" name="subDoc">
+                            <select class="form-control" id="subDoc" name="subDoc" required="required">
 
                                     <option value="" disabled selected>Selecione um sub documento</option>
 
@@ -83,15 +83,14 @@
                                  '2019'                        => '2019'
 
 
-                             ], null, ['class' => 'form-control','placeholder' => 'Escolha o ano']) !!}
+                             ], null, ['class' => 'form-control','placeholder' => 'Escolha o ano', 'required' => 'required']) !!}
                         </div>
-
 
                         <table>
                             <tr>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('file_01', 'Arquivo 01: * ' ) !!}
+                                        {!! Form::label('file_01', 'Arquivo 01:  ' ) !!}
                                         <div class="">
                                             <input type="file" id="exampleInputFile"  name="file_01" onchange="mostraUm(this);">
                                         </div>

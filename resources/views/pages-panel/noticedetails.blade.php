@@ -72,7 +72,14 @@
                                     </div>
                                     <div class="form-group">
                                         {!! Form::label('description', 'Descrição:* ' ) !!}
-                                        {!! Form::textarea('description', null, ['class' => 'form-control', 'placeholder' => 'Descreva o conteúdo da notícia...'] ) !!}
+                                        {!! Form::textarea('description', null, ['class' => 'form-control', 'id' => 'editor', 'placeholder' => 'Descreva o conteúdo da notícia...'] ) !!}
+                                        <script>
+                                               ClassicEditor
+                                                   .create( document.querySelector( '#editor' ) )
+                                                   .catch( error => {
+                                                       console.error( error );
+                                                   } );
+                                         </script>
                                     </div>
 
                                     <table>

@@ -16,16 +16,16 @@ class CreateDestaqueNoticesTable extends Migration
         Schema::create('destaque_notices', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('subtitle');
-            $table->string('editoria');
-            $table->date('data');
-            $table->text('description');
-            $table->string('image_01');
-            $table->string('image_02');
-            $table->string('image_03');
-            $table->string('video');
+            $table->string('subtitle')->nullable();
+            $table->string('editoria')->nullable();
+            $table->date('data')->nullable();
+            $table->text('description')->nullable();
+            $table->string('image_01')->nullable();
+            $table->string('image_02')->nullable();
+            $table->string('image_03')->nullable();
+            $table->string('video')->nullable();
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }

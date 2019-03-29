@@ -35,7 +35,7 @@
                             <div class="alert alert-success">
                                   <button type="button" class="btn btn-success warning_2" data-dismiss="alert" aria-hidden="true">×</button>
                                   {!! Session::get('message') !!}
-                                  <a href="{{ route('page-inserir-transparency') }}" class="alert-link">Inserir outro Notícia?</a>
+                                  <a href="{{ route('page-inserir-transparency') }}" class="alert-link">Inserir outro Documento?</a>
                             </div>
                         @endif
 

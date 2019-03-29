@@ -63,13 +63,67 @@
 
                                     <span class="icon"><i class="fa fa-cart-plus "></i></span>
                                     <p>
-                                        <span class="number">Licitações</span>
+                                        <span class="number">Licitação</span>
                                         <span class="title">{{$licitacao_count}}</span>
                                     </p>
                                 </div>
                             </div>
 
                         </a>
+                        <a href="{{route('page-listar-curso')}}">
+                            <div class="col-md-3">
+                                <div class="metric">
+
+                                    <span class="icon"><i class="fa fa-book "></i></span>
+                                    <p>
+                                        <span class="number">Cursos</span>
+                                        <span class="title">{{$curso_count}}</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a href="{{route('page-listar-instrutor')}}">
+                            <div class="col-md-3">
+                                <div class="metric">
+
+                                    <span class="icon"><i class="fa fa-book "></i></span>
+                                    <p>
+                                        <span class="number">Instrutor</span>
+                                        <span class="title">{{$instrutor_count}}</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <a href="{{route('page-listar-cooperativa')}}">
+                            <div class="col-md-3">
+                                <div class="metric">
+
+                                    <span class="icon"><i class="fa fa-users "></i></span>
+                                    <p>
+                                        <span class="number">List Coop</span>
+                                        <span class="title">{{$cooperativa_count}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="{{route('page-listar-proSeletivo')}}">
+                            <div class="col-md-3">
+                                <div class="metric">
+
+                                    <span class="icon"><i class="fa fa-thumbs-up "></i></span>
+                                    <p>
+                                        <span class="number">Pro Seletivo</span>
+                                        <span class="title">{{$proSeletivo_count}}</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </a>
+
 
 
                         <!--// Blocos -->

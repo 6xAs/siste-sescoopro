@@ -61,7 +61,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_01', 'Arquivo 01: * ' ) !!}</h3>
                                         <div class="">
-                                             <a href="/../document-transparency/{{ $transparency->file_01 }}" target="_blank">DOWNLOAD</a>
+                                             <a href="/../document-transparency/{{ $transparency->file_01 }}" target="_blank">{{ $transparency->file_01 }}</a>
 
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_02', 'Arquivo 02: * ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-transparency/{{ $transparency->file_02 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-transparency/{{ $transparency->file_02 }}" target="_blank">{{ $transparency->file_02 }}</a>
 
                                         </div>
                                     </div>
@@ -91,7 +91,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_03', 'Arquivo 03: * ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-transparency/{{ $transparency->file_03 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-transparency/{{ $transparency->file_03 }}" target="_blank">{{ $transparency->file_03 }}</a>
                                         </div>
                                     </div>
 

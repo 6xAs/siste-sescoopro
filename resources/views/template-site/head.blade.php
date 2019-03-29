@@ -13,13 +13,18 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
-
+	<link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="favico">
 
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
 	<!-- Bootstrap Core CSS -->
 	<link href="{{ asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 	<link href="{{ asset('css/style.css') }}" rel='stylesheet' type='text/css' />
+	<!-- Menu Color -->
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/default-menucolor.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/component-menucolor.css') }}" />
+	<script src="{{ asset('js/modernizr.custom.js') }}"></script>
+
 
 	<!-- pop up box -->
 	<link href="{{ asset('css/popuo-box.css') }}" rel="stylesheet" type="text/css" media="all" />
@@ -28,9 +33,11 @@
 	<!-- //Custom Theme files -->
 	<!-- online fonts -->
 	<!-- titles -->
-	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
 	<!-- body -->
-	<link href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	<!-- CK EDITOR -->
+	<script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
 
 
 	<!-- Datatable JS -->

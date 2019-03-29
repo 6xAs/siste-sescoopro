@@ -26,6 +26,9 @@
               @endif
 
                 </div>
+                <div class="container py-md-8 mt-md-8">
+                <h2 class="heading-agileinfo">Documentos Transparência<span></span></h2>
+                </div>
 
                 <div class="panel-body">
                     <!-- Form Inserir Licitação -->

@@ -16,16 +16,16 @@ class CreateNoticesTable extends Migration
         Schema::create('notices', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('subtitle', null);
-            $table->string('editoria', null);
-            $table->date('data', null);
-            $table->text('description', null);
-            $table->string('image_01', null);
-            $table->string('image_02', null);
-            $table->string('image_03', null);
-            $table->string('video', null);
-            $table->integer('user_id', null)->unsigned();
-            $table->foreign('user_id', null)->references('id')->on('users')->onDelete('cascade');
+            $table->string('subtitle')->nullable();
+            $table->string('editoria')->nullable();
+            $table->date('data')->nullable();
+            $table->text('description')->nullable();
+            $table->string('image_01')->nullable();
+            $table->string('image_02')->nullable();
+            $table->string('image_03')->nullable();
+            $table->string('video');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }

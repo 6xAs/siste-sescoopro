@@ -4,6 +4,12 @@
 @include('template-site.topo')
 
 @include('template-site.menu')
+<script type="text/javascript">
+    window.onload = function()
+    {
+        CKEDITOR.replace( 'texto' );
+    };
+</script>
 <section class="banner-1">
 </section>
 <!-- Notice Details -->
@@ -12,34 +18,58 @@
         <h2 class="heading-agileinfo">{{$notice->title}} <span>{{$notice->subtitle}}</span></h2>
         <span class="w3-line black"></span>
         <div class="row about-tp mt-md-5 pt-5">
-            <div class="col-lg-6 welcome-left">
+            <div class="col-lg-12 welcome-left">
                 <h3>{{$notice->editoria}}</h3>
                 <p>{{date('d/m/y', strtotime($notice->data))}}</p>
-                <h4>{{$notice->description}}</h4>
+                {!!$notice->description!!}
+                <script>
+                    var data = CKEDITOR.instances.editor.getData();
 
+                    // Your code to save "data", usually through Ajax.
+                </script>
             </div>
-            <div class="col-lg-6 welcome-right">
+            <div class="col-lg-12 welcome-right">
+                <div class="boxVideo">
+
+                    <iframe  src="{{$notice->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <h2 class="heading-agileinfo">Imagens</h2>
+
+            <div class="col-lg-12 welcome-right">
                 <div class="welcome-right-top">
+
                     <img src="/../images-notices/{{$notice->image_01}}" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-12 welcome-right">
+                <div class="boxVideo">
+                    <iframe  src="{{$notice->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
         </div>
     </div>
-    <h2 class="heading-agileinfo">Mais imagens</h2>
+
     <table>
         <tr>
             <td>
                 <div class="col-lg-8">
-                    <img src="/../images-notices/{{$notice->image_02}}" alt="" class="img-fluid">
+                    <img src="/../images-notices/{{$notice->image_02}}" alt="Imagem" class="img-fluid">
                 </div>
 
             </td>
             <td>
                 <div class="col-lg-8">
-                    <img src="/../images-notices/{{$notice->image_03}}" alt="" class="img-fluid">
+                    <img src="/../images-notices/{{$notice->image_03}}" alt="Imagem" class="img-fluid">
                 </div>
             </td>
+
+                <div class="col-lg-8">
+
+                </div>
+
+
         </tr>
     </table>
 

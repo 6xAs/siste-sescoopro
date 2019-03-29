@@ -15,12 +15,12 @@ class CreateBannersTable extends Migration
     {
         Schema::create('banners', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('title', null);
-            $table->string('link', null);
-            $table->string('image', null);
+            $table->string('name')->nullable();
+            $table->string('title')->nullable();
+            $table->string('link')->nullable();
+            $table->string('image')->nullable();
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }

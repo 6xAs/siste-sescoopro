@@ -97,7 +97,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_01', 'Arquivo 01:  ' ) !!}</h3>
                                         <div class="">
-                                             <a href="/../document-licitacao/{{ $licitacao->file_01 }}" target="_blank">DOWNLOAD</a>
+                                             <a href="/../document-licitacao/{{ $licitacao->file_01 }}" target="_blank">{{ $licitacao->file_01 }}</a>
 
                                         </div>
                                     </div>
@@ -125,7 +125,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_02', 'Arquivo 02: ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_02 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_02 }}" target="_blank">{{ $licitacao->file_02 }}</a>
 
                                         </div>
                                     </div>
@@ -153,7 +153,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_03', 'Arquivo 03: ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_03 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_03 }}" target="_blank">{{ $licitacao->file_03 }}</a>
                                         </div>
                                     </div>
 
@@ -180,7 +180,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_04', 'Arquivo 04: ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_04 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_04 }}" target="_blank">{{ $licitacao->file_04 }}</a>
                                         </div>
                                     </div>
 
@@ -207,7 +207,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_05', 'Arquivo 05: ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_05 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_05 }}" target="_blank">{{ $licitacao->file_05 }}</a>
 
                                         </div>
                                     </div>
@@ -235,7 +235,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_06', 'Arquivo 06:  ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_06 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_06 }}" target="_blank">{{ $licitacao->file_06 }}</a>
                                         </div>
                                     </div>
 
@@ -262,7 +262,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_07', 'Arquivo 07:  ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_07 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_07 }}" target="_blank">{{ $licitacao->file_07 }}</a>
                                         </div>
                                     </div>
 
@@ -289,7 +289,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_08', 'Arquivo 08: ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_08 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_08 }}" target="_blank">{{ $licitacao->file_08 }}</a>
                                         </div>
                                     </div>
 
@@ -314,7 +314,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_09', 'Arquivo 09: ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_09 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_09 }}" target="_blank">{{ $licitacao->file_09 }}</a>
                                         </div>
                                     </div>
 
@@ -341,7 +341,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_010', 'Arquivo 010:  ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_010 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_010 }}" target="_blank">{{ $licitacao->file_010 }}</a>
 
                                         </div>
                                     </div>
@@ -369,7 +369,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_011', 'Arquivo 011:  ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_011 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_011 }}" target="_blank">{{ $licitacao->file_011 }}</a>
                                         </div>
                                     </div>
 
@@ -396,7 +396,7 @@
                                     <div class="form-group">
                                         <h3>{!! Form::label('file_012', 'Arquivo 012:  ' ) !!}</h3>
                                         <div class="">
-                                            <a href="/../document-licitacao/{{ $licitacao->file_012 }}" target="_blank">DOWNLOAD</a>
+                                            <a href="/../document-licitacao/{{ $licitacao->file_012 }}" target="_blank">{{ $licitacao->file_012 }}</a>
                                         </div>
                                     </div>
 
