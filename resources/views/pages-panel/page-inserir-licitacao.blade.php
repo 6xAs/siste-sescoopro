@@ -37,29 +37,56 @@
                     {!! Form::open(['url' => 'input-licitacao',  'files' => true, 'method' => 'post']) !!}
                     {{ csrf_field() }}
                     <div class="form-group">
-                        {!! Form::label('number_process', 'Número do Processo:* ' ) !!}
-                        {!! Form::number('number_process', null, ['class' => 'form-control', 'placeholder' => 'Número do Processo', 'required' => 'required'] ) !!}
+                        {!! Form::label('ano', 'Ano: * ' ) !!}
+                        {!! Form::select('ano',
+                         [
+                             '2019'    =>  '2019',
+                             '2018'    =>  '2018',
+                             '2017'    =>  '2017',
+                             '2016'    =>  '2016',
+                             '2015'    =>  '2015',
+
+
+                         ], null, ['class' => 'form-control','placeholder' => 'Selecionar o Ano', 'required' => 'required']) !!}
                     </div>
                     <div class="form-group">
-                        {!! Form::label('modalidade', 'Modalidade: * ' ) !!}
-                        {!! Form::select('modalidade',
-                         [
-                             'Pregão'                       => 'Pregão',
-                             'concorrência'                 => 'concorrência',
-                             'Tomada de Preços'             => 'Tomada de Preços',
-                             'Convite'                      => 'Convite',
-                             'Concurso'                     => 'Concurso',
-                             'Leilão'                       => 'Leilão',
-
-                         ], null, ['class' => 'form-control','placeholder' => 'Selecionar Modalidade', 'required' => 'required']) !!}
+                        {!! Form::label('modalidade', 'Modalidade:* ' ) !!}
+                        {!! Form::text('modalidade', null, ['class' => 'form-control', 'placeholder' => 'Modalidade', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('edital', 'Edital:* ' ) !!}
                         {!! Form::text('edital', null, ['class' => 'form-control', 'placeholder' => 'Edital', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
+                        {!! Form::label('tipo_licitacao', 'Tipo de Licitação: * ' ) !!}
+                        {!! Form::select('tipo_licitacao',
+                         [
+                             'Menor preço por item'         => 'Menor preço por item',
+                             'Menor preço por lote'         => 'Menor preço por lote',
+                             'Menor preço global'           => 'Menor preço global',
+
+
+                         ], null, ['class' => 'form-control','placeholder' => 'Selecionar o tipo de licitação', 'required' => 'required']) !!}
+                    </div>
+                    <div class="form-group">
+                        {!! Form::label('number_process', 'Número do Processo:* ' ) !!}
+                        {!! Form::text('number_process', null, ['class' => 'form-control', 'placeholder' => 'Número do Processo', 'required' => 'required'] ) !!}
+                    </div>
+
+                    <div class="form-group">
                         {!! Form::label('objeto', 'Objeto:* ' ) !!}
-                        {!! Form::textarea('objeto', null, ['class' => 'form-control', 'placeholder' => 'Descreva o Objeto', 'required' => 'required'] ) !!}
+                        {!! Form::textarea('objeto', null, ['class' => 'form-control', 'id' => 'editor', 'placeholder' => 'Descreva o Objeto...'] ) !!}
+                        <script>
+                               ClassicEditor
+                                   .create( document.querySelector( '#editor' ) )
+                                   .catch( error => {
+                                       console.error( error );
+                                   } );
+                         </script>
+                    </div>
+                    <div class="form-group">
+                        {!! Form::label('local', 'Local da Licitação:* ' ) !!}
+                        {!! Form::text('local', null, ['class' => 'form-control', 'placeholder' => 'Descreva o Endereço', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('status', 'Status: * ' ) !!}
@@ -68,7 +95,8 @@
                              'Em Andamento'                        => 'Em Andamento',
                              'Concluído'                           => 'Concluído',
                              'Cancelado'                           => 'Cancelado',
-                             'Anulado'                             => 'Anulado'
+                             'Anulado'                             => 'Anulado',
+                             'Suspenso'                            => 'Suspenso',
 
                          ], null, ['class' => 'form-control','placeholder' => 'Escolha o status da licitação', 'required' => 'required']) !!}
                     </div>
@@ -81,18 +109,19 @@
                         {!! Form::text('telefone_celular', null, ['class' => 'form-control', 'id' => 'celular', 'placeholder' => '(00)0000-0000'] ) !!}
                     </div>
                     <div class="form-group">
-                        {!! Form::label('email', 'Emial:* ' ) !!}
-                        {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Ex:mail@mail.com', 'required' => 'required'] ) !!}
+                        {!! Form::label('email', 'E-mail:* ' ) !!}
+                        {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Ex: mail@mail.com', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
-                        {!! Form::label('hora_abertura', 'Hora Abertura:* ' ) !!}
+                        {!! Form::label('data', 'Data de Abertura:* ' ) !!}
+                        {!! Form::date('data', null, ['class' => 'form-control', 'placeholder' => '00/00/00', 'required' => 'required'] ) !!}
+                    </div>
+                    <div class="form-group">
+                        {!! Form::label('hora_abertura', 'Hora da Sessão:* ' ) !!}
                         {!! Form::time('hora_abertura', null, ['class' => 'form-control', 'placeholder' => 'Ex:00:00', 'required' => 'required'] ) !!}
                     </div>
                     <div class="form-group">
-                    <div class="form-group">
-                        {!! Form::label('data', 'Data:* ' ) !!}
-                        {!! Form::date('data', null, ['class' => 'form-control', 'placeholder' => '00/00/00', 'required' => 'required'] ) !!}
-                    </div>
+
 
                         <table class="table table-condensed">
                             <!-- File_01 -->
@@ -106,7 +135,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_01', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_01', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_01', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -133,7 +162,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_02', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_02', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_02', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -160,7 +189,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_03', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_03', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_03', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -187,7 +216,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_04', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_04', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_04', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -214,7 +243,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_05', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_05', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_05', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -241,7 +270,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_06', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_06', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_06', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -268,7 +297,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_07', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_07', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_07', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -295,7 +324,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_08', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_08', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_08', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -320,7 +349,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_09', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_09', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_09', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -347,7 +376,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_010', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_010', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_010', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -374,7 +403,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_011', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_011', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_011', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 
@@ -401,7 +430,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        {!! Form::label('data_file_012', 'Data:* ' ) !!}
+                                        {!! Form::label('data_file_012', 'Data da Publicação:* ' ) !!}
                                         {!! Form::date('data_file_012', null, ['class' => 'form-control', 'placeholder' => '00/00/00'] ) !!}
                                     </div>
 

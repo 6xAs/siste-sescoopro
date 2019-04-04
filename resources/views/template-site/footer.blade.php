@@ -43,13 +43,10 @@
 						<div class="footer-title">
 							<h3>Contato</h3>
 						</div>
-						<p>Mantenha-se informado e deixe seu contato.</p>
-						<form action="#" method="post" class="newsletter">
-							<input class="email" type="email" placeholder="Seu email..." required="">
-							<button class="btn1">
-								<i class="far fa-envelope"></i>
-							</button>
-						</form>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSerXJGAPLJvPtpytYahfe8pAfbigTeEP6gCTtpZjAI2gKDmaQ/viewform"> <p>Ouvidoria</p> </a>
+
+						<p>Telefone: (69) 3214-6116</p>
+						
 						<div class="clearfix"></div>
 					</div>
 				</div>

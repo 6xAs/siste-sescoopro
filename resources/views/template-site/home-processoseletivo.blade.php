@@ -7,7 +7,7 @@
         <span class="w3-line black"></span>
         <div class="row inner_w3l_agile_grids-1 mt-md-5 pt-4">
             <div class="col-md-12 col-sm-12 gallery-grids">
-                <a href="images/processo-seletivo.jpg" class="" data-lightbox="example-set" data-title="">
+                <a href="/processo-seletivo-sescoopro" class="" data-title="">
                     <img src="images/processo-seletivo.jpg" alt="" class="img-fluid zoom-img">
                 </a>
             </div>

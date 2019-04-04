@@ -87,7 +87,7 @@ Route::get('/missao-visao', function () {
 });
 
 
-// Notices Pages
+// Notices Pages detais
 Route::get('notice/{id}/details', ['as' => 'details', function ($id) {
     //
 
@@ -204,12 +204,25 @@ Route::get('/teste-mascara', function () {
     return view('exemplo-mascara', compact('date'));
 });
 
-// Login Participante
-Route::get('/login-participante', function () {
+
+// Processo Seletivo Page-Site
+Route::get('/processo-seletivo-sescoopro', function () {
 
     $date = date('Y');
-    return view('pages-site.login-participante', compact('date'));
+    $proSeletivo = \SescoopRO\ProcessoSeletivo::orderBy('id','created_at', 'desc')->paginate(25);
+    return view('pages-site.processo-seletivo', compact('proSeletivo','date'));
 });
+
+// Processo Seletivo Page-Site Details
+Route::get('proseletivo/{id}/details', ['as' => 'details', function ($id) {
+    //
+
+    $proSeletivo = \SescoopRO\ProcessoSeletivo::find($id);
+    $date = date('Y');
+    return view('pages-site.proseletivodetails', compact('proSeletivo', 'date'));
+
+    //  $categoria = DB::table('categoria')->lists('nome_categoria','nome_categoria');
+}]);
 
 
 

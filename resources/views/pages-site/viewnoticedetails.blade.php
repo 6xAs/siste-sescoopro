@@ -28,56 +28,36 @@
                     // Your code to save "data", usually through Ajax.
                 </script>
             </div>
+
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
-
-                    <iframe  src="{{$notice->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <h2 class="heading-agileinfo">Imagens</h2>
-
-            <div class="col-lg-12 welcome-right">
-                <div class="welcome-right-top">
 
                     <img src="/../images-notices/{{$notice->image_01}}" alt="" class="img-fluid">
                 </div>
             </div>
+
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
+                    <img src="/../images-notices/{{$notice->image_02}}" alt="Imagem" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-12 welcome-right">
+                <div class="boxVideo">
+                    <img src="/../images-notices/{{$notice->image_03}}" alt="Imagem" class="img-fluid">
+
+                </div>
+            </div>
+            <div class="col-lg-12 welcome-right">
+                <div class="boxVideo">
+
                     <iframe  src="{{$notice->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
         </div>
     </div>
-
-    <table>
-        <tr>
-            <td>
-                <div class="col-lg-8">
-                    <img src="/../images-notices/{{$notice->image_02}}" alt="Imagem" class="img-fluid">
-                </div>
-
-            </td>
-            <td>
-                <div class="col-lg-8">
-                    <img src="/../images-notices/{{$notice->image_03}}" alt="Imagem" class="img-fluid">
-                </div>
-            </td>
-
-                <div class="col-lg-8">
-
-                </div>
-
-
-        </tr>
-    </table>
-
-
 </section>
 <!-- //Notice Details -->
-
-
 
 
 @include('template-site.infobar')

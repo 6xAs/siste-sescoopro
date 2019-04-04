@@ -74,7 +74,6 @@ header h1 a span {
 
 .navbar-light .navbar-nav .nav-link {
     font-weight: 500;
-    text-transform: capitalize;
     color: #000;
     letter-spacing: 1px;
     border-bottom: 1px solid #fff;
@@ -545,7 +544,6 @@ p.sub-para {
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: 1em;
-    text-transform: capitalize;
     width: 66%;
 }
 
@@ -945,7 +943,6 @@ p.Lor {
     font-size: 40px;
     text-align: center;
     color: #000;
-    text-transform: capitalize;
     position: relative;
     margin-top: 0;
     padding: 25px;
@@ -955,7 +952,6 @@ p.Lor {
     font-size: 17px!important;
     margin-top: 1em;
     letter-spacing: 4px;
-    text-transform: capitalize;
     color: #000000;
     font-weight: 500;
 }
@@ -1263,7 +1259,6 @@ a.facebook:hover {
     font-size: 15px;
     line-height: 28px;
     letter-spacing: 0.5px;
-    text-transform: capitalize;
     color: #777;
 }
 .Supp {
@@ -1286,7 +1281,7 @@ a.facebook:hover {
     margin: 3em 0;
 }
 .w3-services-right-grid h3 {
-    text-transform: capitalize;
+    
     color: #58575d;
     font-size: 21px;
     font-weight: 600;
@@ -1296,7 +1291,7 @@ a.facebook:hover {
 }
 .w3-services-left-grid a {
     color: #fff;
-    text-transform: capitalize;
+    
     border: 2px solid #fff;
     padding: 10px 20px;
     font-size: 14px;
@@ -1357,7 +1352,7 @@ a.facebook:hover {
     color: #151515;
     letter-spacing: .075em;
     font-weight: 600;
-    text-transform: capitalize;
+    
     margin: 20px 0;
 }
 .about-info-grids i {

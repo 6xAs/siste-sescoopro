@@ -38,25 +38,42 @@
 
                     </div>
                     <br>
-
                     <div class="form-group">
-                        <h3>{!! Form::label('number_process', 'Número do Processo:* ' ) !!}</h3>
-                        <h4>{{$licitacao->number_process}}</h4>
+                        <h3>{!! Form::label('modalidade', 'Ano:  ' ) !!}</h3>
+                        <h4>{{$licitacao->ano}}</h4>
                     </div>
                     <div class="form-group">
-                        <h3>{!! Form::label('modalidade', 'Modalidade: * ' ) !!}</h3>
+                        <h3>{!! Form::label('modalidade', 'Modalidade:  ' ) !!}</h3>
                         <h4>{{$licitacao->modalidade}}</h4>
                     </div>
                     <div class="form-group">
-                        <h3>{!! Form::label('edital', 'Edital:* ' ) !!}</h3>
+                        <h3>{!! Form::label('edital', 'Edital: ' ) !!}</h3>
                         <h4>{{$licitacao->edital}}</h4>
                     </div>
                     <div class="form-group">
-                        <h3>{!! Form::label('objeto', 'Objeto:* ' ) !!}</h3>
-                        <h4>{{$licitacao->objeto}}</h4>
+                        <h3>{!! Form::label('tipo_licitacao', 'Tipo de Licitação: ' ) !!}</h3>
+                        <h4>{{$licitacao->tipo_licitacao}}</h4>
                     </div>
                     <div class="form-group">
-                        <h3>{!! Form::label('status', 'Status: * ' ) !!}</h3>
+                        <h3>{!! Form::label('number_process', 'Número do Processo: ' ) !!}</h3>
+                        <h4>{{$licitacao->number_process}}</h4>
+                    </div>
+                    <div class="form-group">
+                        <h3>{!! Form::label('objeto', 'Objeto: ' ) !!}</h3>
+                        {!!$licitacao->objeto!!}
+                        <script>
+                            var data = CKEDITOR.instances.editor.getData();
+
+                            // Your code to save "data", usually through Ajax.
+                        </script>
+
+                    </div>
+                    <div class="form-group">
+                        <h3>{!! Form::label('local', 'Local da Licitação: ' ) !!}</h3>
+                        <h4>{{$licitacao->local}}</h4>
+                    </div>
+                    <div class="form-group">
+                        <h3>{!! Form::label('status', 'Status:  ' ) !!}</h3>
                         <h4>{{$licitacao->status}}</h4>
                     </div>
                     <div class="form-group">
@@ -68,17 +85,16 @@
                         <h4>{{$licitacao->telefone_celular}}</h4>
                     </div>
                     <div class="form-group">
-                        <h3>{!! Form::label('email', 'Emial:* ' ) !!}</h3>
+                        <h3>{!! Form::label('email', 'E-mail: ' ) !!}</h3>
                         <h4>{{$licitacao->email}}</h4>
                     </div>
                     <div class="form-group">
-                        <h3>{!! Form::label('hora_abertura', 'Hora Abertura:* ' ) !!}</h3>
-                        <h4>{{$licitacao->hora_abertura}}</h4>
+                        <h3>{!! Form::label('data', 'Data da Abertura: ' ) !!}</h3>
+                        <h4>{{date('d/m/y', strtotime($licitacao->data))}}</h4>
                     </div>
                     <div class="form-group">
-                    <div class="form-group">
-                        <h3>{!! Form::label('data', 'Data:* ' ) !!}</h3>
-                        <h4>{{date('d/m/y', strtotime($licitacao->data))}}</h4>
+                        <h3>{!! Form::label('hora_abertura', 'Hora da Abertura: ' ) !!}</h3>
+                        <h4>{{$licitacao->hora_abertura}}</h4>
                     </div>
 
                         <table class="table table-condensed">
@@ -93,7 +109,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_01', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_01', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_01))}}</h4>
                                     </div>
 
@@ -121,7 +137,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_02', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_02', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_02))}}</h4>
                                     </div>
 
@@ -149,7 +165,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_03', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_03', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_03))}}</h4>
                                     </div>
 
@@ -176,7 +192,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_04', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_04', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_04))}}</h4>
                                     </div>
 
@@ -203,7 +219,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_05', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_05', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_05))}}</h4>
                                     </div>
 
@@ -231,7 +247,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_06', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_06', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_06))}}</h4>
                                     </div>
 
@@ -258,7 +274,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_07', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_07', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_07))}}</h4>
                                     </div>
 
@@ -285,7 +301,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_08', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_08', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_08))}}</h4>
                                     </div>
 
@@ -310,7 +326,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_09', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_09', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_09))}}</h4>
                                     </div>
 
@@ -337,7 +353,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_010', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_010', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_010))}}</h4>
                                     </div>
 
@@ -365,7 +381,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_011', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_011', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_011))}}</h4>
                                     </div>
 

@@ -40,10 +40,13 @@ class LicitacaoController extends Controller
 
 
         // Validação dos dados
+       $ano                                = $request->input('ano');
        $number_process                     = $request->input('number_process');
        $modalidade                         = $request->input('modalidade');
        $edital                             = $request->input('edital');
+       $tipo_licitacao                     = $request->input('tipo_licitacao');
        $objeto                             = $request->input('objeto');
+       $local                              = $request->input('local');
        $status                             = $request->input('status');
        $telefone_fixo                      = $request->input('telefone_fixo');
        $telefone_celular                   = $request->input('telefone_celular');
@@ -214,9 +217,10 @@ class LicitacaoController extends Controller
 
 
        DB::table('licitacoes')->insert(
-           ['number_process' => $number_process, 'modalidade' => $modalidade,
-            'edital' => $edital, 'objeto' => $objeto, 'status' => $status,
-            'telefone_fixo' => $telefone_fixo, 'telefone_celular' => $telefone_celular,
+           [
+            'ano' => $ano,'number_process' => $number_process, 'modalidade' => $modalidade,
+            'edital' => $edital, 'tipo_licitacao' => $tipo_licitacao, 'objeto' => $objeto, 'local' => $local,
+            'status' => $status,'telefone_fixo' => $telefone_fixo, 'telefone_celular' => $telefone_celular,
             'email' => $email, 'hora_abertura' => $hora_abertura, 'data' => $data,
 
 
@@ -265,7 +269,7 @@ class LicitacaoController extends Controller
         return view('pages-panel.licitacaodetails', compact('licitacao', 'date'));
     }
 
-    public function update($id, TranspRequest $request)
+    public function update($id, LicitacaoRequest $request)
     {
 
         // Apagando arquivos existente
@@ -330,10 +334,13 @@ class LicitacaoController extends Controller
 
 
         // Validação dos dados
+       $ano                                = $request->input('ano');
        $number_process                     = $request->input('number_process');
        $modalidade                         = $request->input('modalidade');
        $edital                             = $request->input('edital');
+       $tipo_licitacao                     = $request->input('tipo_licitacao');
        $objeto                             = $request->input('objeto');
+       $local                              = $request->input('local');
        $status                             = $request->input('status');
        $telefone_fixo                      = $request->input('telefone_fixo');
        $telefone_celular                   = $request->input('telefone_celular');
@@ -508,11 +515,11 @@ class LicitacaoController extends Controller
             ->where('id',$id)
             ->update(
 
-            [   'number_process' => $number_process, 'modalidade' => $modalidade,
-                 'edital' => $edital, 'objeto' => $objeto, 'status' => $status,
-                 'telefone_fixo' => $telefone_fixo, 'telefone_celular' => $telefone_celular,
-                 'email' => $email, 'hora_abertura' => $hora_abertura, 'data' => $data,
-
+            [
+                'ano' => $ano, 'number_process' => $number_process, 'modalidade' => $modalidade,
+                'edital' => $edital, 'tipo_licitacao' => $tipo_licitacao, 'objeto' => $objeto, 'local' => $local,
+                'status' => $status,'telefone_fixo' => $telefone_fixo, 'telefone_celular' => $telefone_celular,
+                'email' => $email, 'hora_abertura' => $hora_abertura, 'data' => $data,
 
                  'name_file_01' => $name_file_01, 'data_file_01' => $data_file_01, 'file_01' => $fileName_01,
                  'name_file_02' => $name_file_02, 'data_file_02' => $data_file_02, 'file_02' => $fileName_02,

@@ -15,10 +15,12 @@ class CreateLicitacoesTable extends Migration
     {
         Schema::create('licitacoes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('number_process');
+            $table->string('number_process');
             $table->string('modalidade')->nullable();
-            $table->integer('edital')->nullable();
+            $table->string('edital')->nullable();
+            $table->string('tipo_licitacao')->nullable();
             $table->text('objeto')->nullable();
+            $table->string('local')->nullable();
             $table->string('status')->nullable();
             $table->string('telefone_fixo')->nullable();
             $table->string('telefone_celular')->nullable();

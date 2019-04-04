@@ -29,15 +29,15 @@
 
                     <img src="/../images-notices/{{$noticeDestaque->image_01}}" alt="" class="img-fluid">
 
-                    <iframe  src="{{$noticeDestaque->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-
-            <div class="col-lg-6 welcome-right">
-                <div class="welcome-right-top">
-                    <img src="/../images-notices/{{$noticeDestaque->image_01}}" alt="Imagem" class="img-fluid">
-
-                </div>
+            <div class="col-lg-12 welcome-right">
+                <div class="boxVideo">
+                    <img src="/../images-notices/{{$noticeDestaque->image_02}}" alt="Imagem" class="img-fluid">                </div>
+            </div>
+            <div class="col-lg-12 welcome-right">
+                <div class="boxVideo">
+                    <img src="/../images-notices/{{$noticeDestaque->image_03}}" alt="" class="img-fluid">
             </div>
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
@@ -47,23 +47,6 @@
 
         </div>
     </div>
-    <h2 class="heading-agileinfo">Mais imagens</h2>
-    <table>
-        <tr>
-            <td>
-                <div class="col-lg-8">
-                    <img src="/../images-notices/{{$noticeDestaque->image_02}}" alt="Imagem" class="img-fluid">
-                </div>
-
-            </td>
-            <td>
-                <div class="col-lg-8">
-                    <img src="/../images-notices/{{$noticeDestaque->image_03}}" alt="" class="img-fluid">
-                </div>
-            </td>
-
-        </tr>
-    </table>
 
 
 </section>

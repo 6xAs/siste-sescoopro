@@ -16,10 +16,8 @@
                                              <div class="carousel-inner">
                                                  <!-- O loop entrará aqui -->
                                                      <div class="carousel-item active" data-interval="50000">
-                                                       <img class="d-block w-100" src="images/notice-day.jpg" >
-                                                       <div class="carousel-caption d-none d-md-block">
-                                                           <h3>Notíca em Destaque</h3>
-                                                       </div>
+                                                       <img class="d-block w-100" src="images-destaque_notices/{{$noticeDestaque->image_01}}" alt="Second slide">
+
                                                      </div>
 
 
@@ -32,19 +30,20 @@
 
                                                        </div>
                                                      </div>
+                                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                     <span class="sr-only">Voltar</span>
+                                                     </a>
+                                                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                     <span class="sr-only">Next</span>
+                                                     </a>
 
             @endforeach
 
                                              </div>
                             </a>
-                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                 <span class="sr-only">Voltar</span>
-                                 </a>
-                                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                 <span class="sr-only">Next</span>
-                                 </a>
+
                          </div>
                          <!--// noticia destaque -->
                       </div>
