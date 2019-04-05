@@ -35,15 +35,15 @@
                     {{ csrf_field() }}
                         <div class="form-group">
                             {!! Form::label('name', 'Nome: ' ) !!}
-                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nome do Banner', 'required' => 'required'] ) !!}
+                            {!! Form::text('name', null, ['class' => 'form-control input-lg', 'placeholder' => 'Nome do Banner', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('title', 'Title: ' ) !!}
-                            {!! Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Titulo do Banner'] ) !!}
+                            {!! Form::text('title', null, ['class' => 'form-control input-lg', 'placeholder' => 'Titulo do Banner'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('link', 'Link: ' ) !!}
-                            {!! Form::text('link', null, ['class' => 'form-control', 'placeholder' => 'Ex:htt:\\exemplo.com.br'] ) !!}
+                            {!! Form::text('link', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:htt:\\exemplo.com.br'] ) !!}
                         </div>
                         <div class="form-group">
 
@@ -83,12 +83,12 @@
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control input-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control input-lg" id="exampleInputPassword1" placeholder="Password">
   </div>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">

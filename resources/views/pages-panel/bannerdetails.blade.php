@@ -45,15 +45,15 @@
                                 {{ csrf_field() }}
                                     <div class="form-group">
                                         {!! Form::label('name', 'Nome: ' ) !!}
-                                        {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => '', 'required' => 'required'] ) !!}
+                                        {!! Form::text('name', null, ['class' => 'form-control input-lg', 'placeholder' => '', 'required' => 'required'] ) !!}
                                     </div>
                                     <div class="form-group">
                                         {!! Form::label('title', 'Title: ' ) !!}
-                                        {!! Form::text('title', null, ['class' => 'form-control', 'placeholder' => ''] ) !!}
+                                        {!! Form::text('title', null, ['class' => 'form-control input-lg', 'placeholder' => ''] ) !!}
                                     </div>
                                     <div class="form-group">
                                         {!! Form::label('link', 'Link: ' ) !!}
-                                        {!! Form::text('link', null, ['class' => 'form-control', 'placeholder' => ''] ) !!}
+                                        {!! Form::text('link', null, ['class' => 'form-control input-lg', 'placeholder' => ''] ) !!}
                                     </div>
 
 

@@ -46,12 +46,12 @@
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     {!! Form::label('name', 'Nome: ' ) !!}
-                                    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nome do Vídeo'] ) !!}
+                                    {!! Form::text('name', null, ['class' => 'form-control input-lg', 'placeholder' => 'Nome do Vídeo'] ) !!}
                                 </div>
 
                                 <div class="form-group">
                                     {!! Form::label('link', 'Link: ' ) !!}
-                                    {!! Form::text('link', null, ['class' => 'form-control', 'placeholder' => 'Ex:https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG'] ) !!}
+                                    {!! Form::text('link', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG'] ) !!}
                                 </div>
 
                                      <div class="form-group">

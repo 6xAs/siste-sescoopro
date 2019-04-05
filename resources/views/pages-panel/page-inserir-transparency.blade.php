@@ -36,7 +36,7 @@
                     {{ csrf_field() }}
                     <div class="form-group">
                         {!! Form::label('ano', 'Tipo de Documento: * ' ) !!}
-                        <select class="form-control" id="docMain" onchange="selectDocument(this.value)" name="docMain" required="required">
+                        <select class="form-control input-lg" id="docMain" onchange="selectDocument(this.value)" name="docMain" required="required">
                            <option value="" disabled selected>Selecione um documento</option>
 
                            <option value="Contratos">Contratos</option>
@@ -54,7 +54,7 @@
                     </div>
                         <div class="form-group">
                             {!! Form::label('ano', 'Subtipo de Documento: * ' ) !!}
-                            <select class="form-control" id="subDoc" name="subDoc" required="required">
+                            <select class="form-control input-lg" id="subDoc" name="subDoc" required="required">
 
                                     <option value="" disabled selected>Selecione um sub documento</option>
 
@@ -63,7 +63,7 @@
 
                         <div class="form-group">
                             {!! Form::label('document_name', 'Nome do Documento:* ' ) !!}
-                            {!! Form::text('document_name', null, ['class' => 'form-control', 'placeholder' => 'Nome do Documento'] ) !!}
+                            {!! Form::text('document_name', null, ['class' => 'form-control input-lg', 'placeholder' => 'Nome do Documento'] ) !!}
                         </div>
 
 
@@ -83,7 +83,7 @@
                                  '2019'                        => '2019'
 
 
-                             ], null, ['class' => 'form-control','placeholder' => 'Escolha o ano', 'required' => 'required']) !!}
+                             ], null, ['class' => 'form-control input-lg','placeholder' => 'Escolha o ano', 'required' => 'required']) !!}
                         </div>
 
                         <table class="table table-striped table-bordered">
