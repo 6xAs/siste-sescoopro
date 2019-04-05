@@ -53,7 +53,7 @@
                     </div>
 
 
-                        <table class="table table-condensed">
+                        <table class="table table-striped table-bordered">
                             <!-- File_01 -->
                             <tr>
 

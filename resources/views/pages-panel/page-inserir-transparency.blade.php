@@ -86,7 +86,7 @@
                              ], null, ['class' => 'form-control','placeholder' => 'Escolha o ano', 'required' => 'required']) !!}
                         </div>
 
-                        <table>
+                        <table class="table table-striped table-bordered">
                             <tr>
                                 <td>
                                     <div class="form-group">

@@ -97,7 +97,7 @@
                         <h4>{{$licitacao->hora_abertura}}</h4>
                     </div>
 
-                        <table class="table table-condensed">
+                        <table class="table table-striped table-bordered">
                             <!-- File_01 -->
                             <tr>
                                 <td>
@@ -408,7 +408,7 @@
                                 </td>
                                 <td>
                                     <div class="form-group">
-                                        <h3>{!! Form::label('data_file_012', 'Data: ' ) !!}</h3>
+                                        <h3>{!! Form::label('data_file_012', 'Data da Publicação: ' ) !!}</h3>
                                         <h4>{{date('d/m/y', strtotime($licitacao->data_file_012))}}</h4>
                                     </div>
 
@@ -424,13 +424,224 @@
                                 </td>
 
                             </tr>
+                            <!-- File_013 -->
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('name_file_013', 'Nome Arquivo 013: ' ) !!}</h3>
+                                        <h4>{{$licitacao->name_file_013}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('data_file_013', 'Data da Publicação: ' ) !!}</h3>
+                                        <h4>{{date('d/m/y', strtotime($licitacao->data_file_013))}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('file_013', 'Arquivo 013:  ' ) !!}</h3>
+                                        <div class="">
+                                            <a href="/../document-licitacao/{{ $licitacao->file_013 }}" target="_blank">{{ $licitacao->file_012 }}</a>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <!-- File_014 -->
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('name_file_014', 'Nome Arquivo 014: ' ) !!}</h3>
+                                        <h4>{{$licitacao->name_file_014}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('data_file_014', 'Data da Publicação: ' ) !!}</h3>
+                                        <h4>{{date('d/m/y', strtotime($licitacao->data_file_014))}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('file_014', 'Arquivo 014:  ' ) !!}</h3>
+                                        <div class="">
+                                            <a href="/../document-licitacao/{{ $licitacao->file_014 }}" target="_blank">{{ $licitacao->file_012 }}</a>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <!-- File_015 -->
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('name_file_015', 'Nome Arquivo 015: ' ) !!}</h3>
+                                        <h4>{{$licitacao->name_file_015}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('data_file_015', 'Data da Publicação: ' ) !!}</h3>
+                                        <h4>{{date('d/m/y', strtotime($licitacao->data_file_015))}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('file_015', 'Arquivo 015:  ' ) !!}</h3>
+                                        <div class="">
+                                            <a href="/../document-licitacao/{{ $licitacao->file_015 }}" target="_blank">{{ $licitacao->file_012 }}</a>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <!-- File_016 -->
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('name_file_016', 'Nome Arquivo 016: ' ) !!}</h3>
+                                        <h4>{{$licitacao->name_file_016}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('data_file_016', 'Data da Publicação: ' ) !!}</h3>
+                                        <h4>{{date('d/m/y', strtotime($licitacao->data_file_016))}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('file_016', 'Arquivo 016:  ' ) !!}</h3>
+                                        <div class="">
+                                            <a href="/../document-licitacao/{{ $licitacao->file_016 }}" target="_blank">{{ $licitacao->file_012 }}</a>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <!-- File_017 -->
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('name_file_017', 'Nome Arquivo 017: ' ) !!}</h3>
+                                        <h4>{{$licitacao->name_file_017}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('data_file_017', 'Data da Publicação: ' ) !!}</h3>
+                                        <h4>{{date('d/m/y', strtotime($licitacao->data_file_017))}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('file_017', 'Arquivo 017:  ' ) !!}</h3>
+                                        <div class="">
+                                            <a href="/../document-licitacao/{{ $licitacao->file_017 }}" target="_blank">{{ $licitacao->file_012 }}</a>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <!-- File_018 -->
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('name_file_018', 'Nome Arquivo 018: ' ) !!}</h3>
+                                        <h4>{{$licitacao->name_file_018}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('data_file_018', 'Data da Publicação: ' ) !!}</h3>
+                                        <h4>{{date('d/m/y', strtotime($licitacao->data_file_018))}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('file_018', 'Arquivo 018:  ' ) !!}</h3>
+                                        <div class="">
+                                            <a href="/../document-licitacao/{{ $licitacao->file_018 }}" target="_blank">{{ $licitacao->file_012 }}</a>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <!-- File_019 -->
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('name_file_019', 'Nome Arquivo 019: ' ) !!}</h3>
+                                        <h4>{{$licitacao->name_file_019}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('data_file_019', 'Data da Publicação: ' ) !!}</h3>
+                                        <h4>{{date('d/m/y', strtotime($licitacao->data_file_019))}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('file_019', 'Data da Publicação:  ' ) !!}</h3>
+                                        <div class="">
+                                            <a href="/../document-licitacao/{{ $licitacao->file_019 }}" target="_blank">{{ $licitacao->file_012 }}</a>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <!-- File_020 -->
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('name_file_020', 'Nome Arquivo 020: ' ) !!}</h3>
+                                        <h4>{{$licitacao->name_file_020}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('data_file_020', 'Data da Publicação: ' ) !!}</h3>
+                                        <h4>{{date('d/m/y', strtotime($licitacao->data_file_020))}}</h4>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <h3>{!! Form::label('file_020', 'Arquivo 020:  ' ) !!}</h3>
+                                        <div class="">
+                                            <a href="/../document-licitacao/{{ $licitacao->file_020 }}" target="_blank">{{ $licitacao->file_012 }}</a>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
 
                         </table>
-
-
                 </div>
-
-
             </div>
             <!-- END OVERVIEW -->
         </div>

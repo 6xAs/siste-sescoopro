@@ -98,7 +98,7 @@
                                     </div>
 
 
-                                    <table>
+                                    <table class="table table-striped table-bordered">
                                         <tr>
                                             <td>
                                                 <div class="form-group">
