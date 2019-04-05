@@ -39,55 +39,55 @@
                         {{ csrf_field() }}
                         <div class="form-group">
                             {!! Form::label('nome_fantasia', 'Nome da Cooperativa: * ' ) !!}
-                            {!! Form::text('nome_fantasia', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Nome Fantasia da Cooperativa', 'required' => 'required'] ) !!}
+                            {!! Form::text('nome_fantasia', null, ['class' => 'form-control input-lg', 'placeholder' => 'Nome Fantasia da Cooperativa', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('nome_cooperativa', 'Nome Fantasia: * ' ) !!}
-                            {!! Form::text('nome_cooperativa', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Nome da Cooperativa', 'required' => 'required'] ) !!}
+                            {!! Form::text('nome_cooperativa', null, ['class' => 'form-control input-lg', 'placeholder' => 'Nome da Cooperativa', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('cnpj', 'CNPJ: * ' ) !!}
-                            {!! Form::text('cnpj', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Ex:000.000/0000-00', 'id' => 'cnpj', 'required' => 'required'] ) !!}
+                            {!! Form::text('cnpj', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:000.000/0000-00', 'id' => 'cnpj', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('numero_registro', 'Número de Registro:* ' ) !!}
-                            {!! Form::text('numero_registro', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Número Registro', 'required' => 'required'] ) !!}
+                            {!! Form::text('numero_registro', null, ['class' => 'form-control input-lg', 'placeholder' => 'Número Registro', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('data_registro', 'Data de Registro:* ' ) !!}
-                            {!! Form::date('data_registro', null, ['class' => 'form-control form-control-lg', 'placeholder' => '', 'required' => 'required'] ) !!}
+                            {!! Form::date('data_registro', null, ['class' => 'form-control input-lg', 'placeholder' => '', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('data_contribuicao', 'Data Constituição: * ' ) !!}
-                            {!! Form::date('data_contribuicao', null, ['class' => 'form-control form-control-lg', 'placeholder' => '', 'required' => 'required'] ) !!}
+                            {!! Form::date('data_contribuicao', null, ['class' => 'form-control input-lg', 'placeholder' => '', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('mandato', 'Mandato:* ' ) !!}
-                            {!! Form::text('mandato', null, ['class' => 'form-control form-control-lg', 'placeholder' => '', 'required' => 'required'] ) !!}
+                            {!! Form::text('mandato', null, ['class' => 'form-control input-lg', 'placeholder' => '', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('numero_cooperados', 'Número de Cooperados:* ' ) !!}
-                            {!! Form::number('numero_cooperados', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Número de Cooperados', 'required' => 'required'] ) !!}
+                            {!! Form::number('numero_cooperados', null, ['class' => 'form-control input-lg', 'placeholder' => 'Número de Cooperados', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('numero_funcionarios', 'Número de Funcionários:* ' ) !!}
-                            {!! Form::number('numero_funcionarios', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Número de Funcionários', 'required' => 'required'] ) !!}
+                            {!! Form::number('numero_funcionarios', null, ['class' => 'form-control input-lg', 'placeholder' => 'Número de Funcionários', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('email', 'Email: ' ) !!}
-                            {!! Form::text('email', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'exemplo@mail.com'] ) !!}
+                            {!! Form::text('email', null, ['class' => 'form-control input-lg', 'placeholder' => 'exemplo@mail.com'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('cidade', 'Cidade: ' ) !!}
-                            {!! Form::text('cidade', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Digite a cidade'] ) !!}
+                            {!! Form::text('cidade', null, ['class' => 'form-control input-lg', 'placeholder' => 'Digite a cidade'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('estado', 'Estado: ' ) !!}
-                            {!! Form::text('estado', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Digite o Estado', 'required' => 'required'] ) !!}
+                            {!! Form::text('estado', null, ['class' => 'form-control input-lg', 'placeholder' => 'Digite o Estado', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('atividade_economica', 'Atividade Econômica: ' ) !!}
-                            {!! Form::textarea('atividade_economica', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Descreva a atividade econômica'] ) !!}
+                            {!! Form::textarea('atividade_economica', null, ['class' => 'form-control input-lg', 'placeholder' => 'Descreva a atividade econômica'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('status_cooperativa', 'Status Cooperativa: ' ) !!}
@@ -97,44 +97,44 @@
                                  'Inadimplente'              => 'Inadimplente',
                                  'Inativo'                   => 'Inativo',
 
-                             ], null, ['class' => 'form-control form-control-lg','placeholder' => 'Escolha o estatus da cooperativa', 'required' => 'required']) !!}
+                             ], null, ['class' => 'form-control input-lg','placeholder' => 'Escolha o estatus da cooperativa', 'required' => 'required']) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('nome_presidente', 'Nome Presidente:* ' ) !!}
-                            {!! Form::text('nome_presidente', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Nome Presidente', 'required' => 'required'] ) !!}
+                            {!! Form::text('nome_presidente', null, ['class' => 'form-control input-lg', 'placeholder' => 'Nome Presidente', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('cpf_presidente', 'CPF Presidente: ' ) !!}
-                            {!! Form::text('cpf_presidente', null, ['class' => 'form-control form-control-lg cpf-mask', 'placeholder' => 'Ex:000.000.000-00', 'id' => 'cpf'] ) !!}
+                            {!! Form::text('cpf_presidente', null, ['class' => 'form-control input-lg cpf-mask', 'placeholder' => 'Ex:000.000.000-00', 'id' => 'cpf'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('cel_presidente', 'Celular Presidente: ' ) !!}
-                            {!! Form::text('cel_presidente', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Ex:99999-9999', 'id' => 'celular'] ) !!}
+                            {!! Form::text('cel_presidente', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:99999-9999', 'id' => 'celular'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('rua', 'Rua: ' ) !!}
-                            {!! Form::text('rua', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Endereço da Cooperativa'] ) !!}
+                            {!! Form::text('rua', null, ['class' => 'form-control input-lg', 'placeholder' => 'Endereço da Cooperativa'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('bairro', 'Bairro: ' ) !!}
-                            {!! Form::text('bairro', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Endereço da Cooperativa'] ) !!}
+                            {!! Form::text('bairro', null, ['class' => 'form-control input-lg', 'placeholder' => 'Endereço da Cooperativa'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('numero', 'Número: ' ) !!}
-                            {!! Form::number('numero', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Ex:1234'] ) !!}
+                            {!! Form::number('numero', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:1234'] ) !!}
                         </div>
                         <div class="form-group">
 
                             {!! Form::label('cep', 'CEP: ' ) !!}
-                            {!! Form::text('cep', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Ex:00.000-000', 'id' => 'cep'] ) !!}
+                            {!! Form::text('cep', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:00.000-000', 'id' => 'cep'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('telefone_empresarial_1', 'Telefone Empresarial 1: ' ) !!}
-                            {!! Form::text('telefone_empresarial_1', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Ex:3333-3333', 'id' => 'telefone'] ) !!}
+                            {!! Form::text('telefone_empresarial_1', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:3333-3333', 'id' => 'telefone'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('telefone_empresarial_2', 'Telefone Empresarial 2: ' ) !!}
-                            {!! Form::text('telefone_empresarial_2', null, ['class' => 'form-control form-control-lg', 'placeholder' => 'Ex:3333-3333'] ) !!}
+                            {!! Form::text('telefone_empresarial_2', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:3333-3333'] ) !!}
                         </div>
 
 
@@ -157,7 +157,7 @@
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control input-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">

@@ -34,11 +34,11 @@
                     {{ csrf_field() }}
                         <div class="form-group">
                             {!! Form::label('title', 'Título Principal da Notícia: * ' ) !!}
-                            {!! Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Título Principal da Notícia', 'required' => 'required'] ) !!}
+                            {!! Form::text('title', null, ['class' => 'form-control input-lg', 'placeholder' => 'Título Principal da Notícia', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('subtitle', 'Subtitulo da Notícia: ' ) !!}
-                            {!! Form::text('subtitle', null, ['class' => 'form-control', 'placeholder' => 'Subtitulo'] ) !!}
+                            {!! Form::text('subtitle', null, ['class' => 'form-control input-lg', 'placeholder' => 'Subtitulo'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('editoria', 'Editoria: * ' ) !!}
@@ -53,15 +53,15 @@
                                  'Saúde'            => 'Saúde',
                                  'Legislativo'      => 'Legislativo'
 
-                             ], null, ['class' => 'form-control','placeholder' => 'Escolha uma editoria...', 'required' => 'required']) !!}
+                             ], null, ['class' => 'form-control input-lg','placeholder' => 'Escolha uma editoria...', 'required' => 'required']) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('date', 'Escolher Data: * ' ) !!}
-                            {!! Form::date('data', null, ['class' => 'form-control', 'placeholder' => '', 'required' => 'required'] ) !!}
+                            {!! Form::date('data', null, ['class' => 'form-control input-lg', 'placeholder' => '', 'required' => 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('description', 'Descrição:* ' ) !!}
-                            {!! Form::textarea('description', null, ['class' => 'form-control', 'id' => 'editor', 'placeholder' => 'Descreva o conteúdo da notícia...'] ) !!}
+                            {!! Form::textarea('description', null, ['class' => 'form-control input-lg', 'id' => 'editor', 'placeholder' => 'Descreva o conteúdo da notícia...'] ) !!}
                             <script>
                                    ClassicEditor
                                        .create( document.querySelector( '#editor' ) )

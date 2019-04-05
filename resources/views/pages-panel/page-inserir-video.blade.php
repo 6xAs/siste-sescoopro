@@ -35,12 +35,12 @@
                     {{ csrf_field() }}
                         <div class="form-group">
                             {!! Form::label('name', 'Nome: ' ) !!}
-                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nome do Vídeo'] ) !!}
+                            {!! Form::text('name', null, ['class' => 'form-control input-lg', 'placeholder' => 'Nome do Vídeo'] ) !!}
                         </div>
 
                         <div class="form-group">
                             {!! Form::label('link', 'Link: * ' ) !!}
-                            {!! Form::text('link', null, ['class' => 'form-control', 'placeholder' => 'Ex:https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG', 'required' => 'requird'] ) !!}
+                            {!! Form::text('link', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG', 'required' => 'requird'] ) !!}
                         </div>
 
 
@@ -63,12 +63,12 @@
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control input-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control input-lg" id="exampleInputPassword1" placeholder="Password">
   </div>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">

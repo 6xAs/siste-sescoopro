@@ -36,23 +36,23 @@
                     {{ csrf_field() }}
                         <div class="form-group">
                             {!! Form::label('number_edital', 'Número do Edital:* ' ) !!}
-                            {!! Form::text('number_edital', null, ['class' => 'form-control', 'placeholder' => 'Ex:111/2018', 'required'] ) !!}
+                            {!! Form::text('number_edital', null, ['class' => 'form-control input-lg', 'placeholder' => 'Ex:111/2018', 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('title', 'Título Principal:* ' ) !!}
-                            {!! Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Descreva o Título Principal', 'required'] ) !!}
+                            {!! Form::text('title', null, ['class' => 'form-control input-lg', 'placeholder' => 'Descreva o Título Principal', 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('subtitle', 'Sub Título:* ' ) !!}
-                            {!! Form::text('subtitle', null, ['class' => 'form-control', 'placeholder' => 'Descreva o sub título'] ) !!}
+                            {!! Form::text('subtitle', null, ['class' => 'form-control input-lg', 'placeholder' => 'Descreva o sub título'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('data', 'Data:* ' ) !!}
-                            {!! Form::date('data', null, ['class' => 'form-control', 'placeholder' => 'data', 'required'] ) !!}
+                            {!! Form::date('data', null, ['class' => 'form-control input-lg', 'placeholder' => 'data', 'required'] ) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('observacao', 'Observação:* ' ) !!}
-                            {!! Form::textarea('observacao', null, ['class' => 'form-control', 'placeholder' => 'Descreva a observação'] ) !!}
+                            {!! Form::textarea('observacao', null, ['class' => 'form-control input-lg', 'placeholder' => 'Descreva a observação'] ) !!}
                         </div>
 
                         <table>
