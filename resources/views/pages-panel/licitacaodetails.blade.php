@@ -48,8 +48,16 @@
                          ], null, ['class' => 'form-control input-lg','placeholder' => 'Selecionar o Ano', 'required' => 'required']) !!}
                     </div>
                     <div class="form-group">
-                        {!! Form::label('modalidade', 'Modalidade:* ' ) !!}
-                        {!! Form::text('modalidade', null, ['class' => 'form-control input-lg', 'placeholder' => 'Modalidade', 'required' => 'required'] ) !!}
+                        {!! Form::label('modalidade', 'Modalidade: ' ) !!}
+                        {!! Form::select('modalidade',
+                         [
+                             'Convite'              =>  'Convite',
+                             'Dispensa'             =>  'Dispensa',
+                             'Inexigibilidade'      =>  'Inexigibilidade',
+                             'Pregão'               =>  'Pregão',
+
+
+                         ], null, ['class' => 'form-control input-lg', 'placeholder' => 'Tipo de Licitação', 'required' => 'required']) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('edital', 'Edital:* ' ) !!}

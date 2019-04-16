@@ -139,6 +139,9 @@ Route::get('/licitacoes', function () {
 
 
 });
+// Encontra licitações no site
+Route::post('/find-licitacao', 'LicitacaoController@findLicitacao');
+
 //Site-Transparency
 Route::get('/page-transparency', function () {
 

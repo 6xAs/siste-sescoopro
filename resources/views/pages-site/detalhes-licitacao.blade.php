@@ -48,7 +48,13 @@
                     </div>
                     <div class="form-group">
                         <h3>{!! Form::label('objeto', 'Objeto:* ' ) !!}</h3>
-                        <h4>{{$licitacao->objeto}}</h4>
+
+                        <h4>{!!$licitacao->objeto!!}</h4>
+                        <script>
+                            var data = CKEDITOR.instances.editor.getData();
+
+                            // Your code to save "data", usually through Ajax.
+                        </script>
                     </div>
                     <div class="form-group">
                         <h3>{!! Form::label('status', 'Status: * ' ) !!}</h3>
@@ -67,14 +73,14 @@
                         <h4>{{$licitacao->email}}</h4>
                     </div>
                     <div class="form-group">
+                        <h3>{!! Form::label('data', 'Data da Abertura:* ' ) !!}</h3>
+                        <h4>{{date('d/m/y', strtotime($licitacao->data))}}</h4>
+                    </div>
+                    <div class="form-group">
                         <h3>{!! Form::label('hora_abertura', 'Hora Abertura:* ' ) !!}</h3>
                         <h4>{{$licitacao->hora_abertura}}</h4>
                     </div>
-                    <div class="form-group">
-                    <div class="form-group">
-                        <h3>{!! Form::label('data', 'Data:* ' ) !!}</h3>
-                        <h4>{{date('d/m/y', strtotime($licitacao->data))}}</h4>
-                    </div>
+
 
                         <table class="table table-condensed">
                             <!-- File_01 -->

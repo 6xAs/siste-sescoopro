@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137901941-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-137901941-1');
+		</script>
+
 	<title>@yield('title')</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -35,7 +45,7 @@
 	<!-- titles -->
 	<!-- body -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	
+
 	<!-- CK EDITOR -->
 	<script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
 

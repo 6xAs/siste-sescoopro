@@ -800,6 +800,26 @@ class LicitacaoController extends Controller
         return Redirect::to('page-listar-licitacao');
     }
 
+    public function findLicitacao(Request $request)
+    {
+
+         $date = date('Y');
+         $modalidade        = $request->input('modalidade');
+         $ano               = $request->input('ano');
+         $status            = $request->input('status');
+
+         $licitacao         = DB::table('licitacoes')
+
+            ->where('modalidade', $request->input('modalidade'))
+            ->where('ano', $request->input('ano'))
+            ->where('status', $request->input('status'))
+            ->get();
+
+
+         return view('pages-site.find-licitacoes', compact('licitacao', 'date'));
+
+    }
+
     public function destroy($id, Request $request)
     {
 

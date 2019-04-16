@@ -40,9 +40,9 @@
                     <table class="table table-striped" id="listar" >
                               <thead>
                                 <tr>
-                                  <th scope="col">#Cod-Doc</th>
-                                  <th scope="col">Número Processo </th>
+                                  <th scope="col">Número Processo</th>
                                   <th scope="col">Modalidade</th>
+                                  <th scope="col">ano</th>
                                   <th scope="col">Edital</th>
                                   <th scope="col">Data</th>
                                   <th scope="col">Status</th>
@@ -53,9 +53,9 @@
                                   @foreach( $licitacao as $licitacao )
 
                                       <tr>
-                                        <th scope="row">{{$licitacao->id}}</th>
                                         <td>{{$licitacao->number_process}}</td>
                                         <td>{{$licitacao->modalidade}}</td>
+                                        <td>{{$licitacao->ano}}</td>
                                         <td>{{$licitacao->edital}}</td>
                                         <td>{{date('d/m/y', strtotime($licitacao->data))}}</td>
                                         <td>{{$licitacao->status}}</td>
