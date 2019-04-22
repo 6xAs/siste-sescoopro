@@ -173,10 +173,37 @@ class TransparencyController extends Controller
         return Redirect::to('page-listar-transparency');
     }
 
+    public function findTransparency(Request $request)
+    {
+
+         $date = date('Y');
+         $docMain                      = $request->input('docMain');
+         $subDoc                       = $request->input('subDoc');
+         $ano                          = $request->input('ano');
+
+         $transparency         = DB::table('transparencies')
+
+            ->where('docMain', $request->input('docMain'))
+            ->where('subDoc', $request->input('subDoc'))
+            ->where('ano', $request->input('ano'))
+            ->get();
+
+
+         return view('pages-site.find-transparency', compact('transparency', 'date'));
+
+    }
+
     public function destroy($id, Request $request)
     {
         // Apagando arquivos existente
-        $file_01                = DB::table('transparencies')->where('id',$id)->value('file_01');
+        $fileName_01    = DB::table('transparencies')->where('id',$id)->value('file_01');
+        File::delete('document-licitacao/'.$fileName_01);
+        // Apagando arquivos existente
+        $fileName_02    = DB::table('transparencies')->where('id',$id)->value('file_02');
+        File::delete('document-licitacao/'.$fileName_02);
+        // Apagando arquivos existente
+        $fileName_03    = DB::table('transparencies')->where('id',$id)->value('file_03');
+        File::delete('document-licitacao/'.$fileName_03);
 
         // Deletando arquivos existentes na pasta
         File::delete('document-transparency/'.$file_01);

@@ -86,6 +86,13 @@ Route::get('/missao-visao', function () {
     return view('pages-site.missao-visao', compact('date'));
 });
 
+// cncoop
+Route::get('/cncoop', function () {
+
+    $date = date('Y');
+    return view('pages-site.cncoop', compact('date'));
+});
+
 
 // Notices Pages detais
 Route::get('notice/{id}/details', ['as' => 'details', function ($id) {
@@ -142,6 +149,8 @@ Route::get('/licitacoes', function () {
 // Encontra licitações no site
 Route::post('/find-licitacao', 'LicitacaoController@findLicitacao');
 
+
+
 //Site-Transparency
 Route::get('/page-transparency', function () {
 
@@ -165,6 +174,8 @@ Route::get('/trasparencies', function () {
     return view('pages-site.table-transparency', compact('transparency', 'date'));
 
 });
+// Encontra Transparency
+Route::post('/find-transparency', 'TransparencyController@findTransparency');
 
 Route::get('/ouvidoria', function () {
 
@@ -208,6 +219,7 @@ Route::get('/teste-mascara', function () {
 });
 
 
+
 // Processo Seletivo Page-Site
 Route::get('/processo-seletivo-sescoopro', function () {
 
@@ -227,6 +239,11 @@ Route::get('proseletivo/{id}/details', ['as' => 'details', function ($id) {
     //  $categoria = DB::table('categoria')->lists('nome_categoria','nome_categoria');
 }]);
 
+// Processo Seletivo Page-Site
+Route::get('/logout', function () {
+
+    return view('auth.login');
+});
 
 
 

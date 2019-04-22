@@ -41,7 +41,6 @@
                                 <table class="table table-striped table-bordered" id="listar" >
                                           <thead>
                                             <tr>
-                                              <th scope="col">#Cod-Doc</th>
                                               <th scope="col">Tipo Documento</th>
                                               <th scope="col">Subtipo Documento</th>
                                               <th scope="col">Nome Documento</th>
@@ -55,7 +54,6 @@
                                               @foreach( $transparency as $transparency )
 
                                                   <tr>
-                                                    <th scope="row">{{$transparency->id}}</th>
                                                     <td>{{$transparency->docMain}}</td>
                                                     <td>{{$transparency->subDoc}}</td>
                                                     <td>{{$transparency->document_name}}</td>

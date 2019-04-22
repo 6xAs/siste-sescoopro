@@ -33,6 +33,7 @@
                 <div class="panel-body">
                     <!-- Form Inserir Licitação -->
                     <div class="col-12">
+
                         <a href="/"><button type="button" class="btn btn-primary"> VOLTAR AO SITE </button></a>
 
                     </div>
@@ -42,7 +43,6 @@
                         <table class="table table-striped" id="listar" >
                                   <thead>
                                     <tr>
-                                      <th scope="col">#Cod-Doc</th>
                                       <th scope="col">Tipo Documento</th>
                                       <th scope="col">Subtipo Documento</th>
                                       <th scope="col">Nome Documento</th>
@@ -55,7 +55,6 @@
                                       @foreach( $transparency as $transparency )
 
                                           <tr>
-                                            <th scope="row">{{$transparency->id}}</th>
                                             <td>{{$transparency->docMain}}</td>
                                             <td>{{$transparency->subDoc}}</td>
                                             <td>{{$transparency->document_name}}</td>
@@ -75,4 +74,4 @@
 
                         </script>
 
-                    </div>
+                </div>

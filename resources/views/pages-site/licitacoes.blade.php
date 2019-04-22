@@ -10,11 +10,10 @@
 
 <section class="banner-1">
 </section>
-<!-- Notice Details -->
+
 <section class="welcome py-5">
     <div class="container py-md-8 mt-md-8">
         <div class="col-md-12">
-
 
                     <h2 class="heading-agileinfo">@yield('title')</h2>
 
@@ -79,7 +78,7 @@
         </div>
 
         <div class="heading-agileinfo">
-            <h2>Clique aqui para ver todas as licitações</h2>
+
             <a href="/licitacoes" target="_blank"> <button type="button" class="btn btn-success" name="button">TODOS OS DOCUMENTOS</button> </a>
         </div>
     </div>
@@ -88,7 +87,7 @@
 
 
 </section>
-<!-- //Notice Details -->
+
 
 
 

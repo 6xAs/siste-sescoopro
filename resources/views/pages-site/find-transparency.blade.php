@@ -16,7 +16,6 @@
     <div class="container py-md-8 mt-md-8">
         <div class="col-md-12">
 
-
                     <h2 class="heading-agileinfo">@yield('title')</h2>
 
 
@@ -89,7 +88,26 @@
                 </div>
             @endif
         </div>
-        
+        <div class="col-md-12">
+            @foreach ($transparency as $transparency)
+                <div class="row inner_w3l_agile_grids-1 mt-md-5 pt-8">
+                    <div class="col-md-12 w3layouts_news_left_grid1">
+                        <a href="{{URL::to('detalhes/'.$transparency->id.'/transparency')}}">
+                            <div class="new_top">
+                                <h3>{!! Form::label('docMain', 'Tipo de Documento: ' ) !!}</h3>
+                                <h4>{{$transparency->docMain}}</h4>
+                                <h3>{!! Form::label('subDoc', 'Sub Tipo de documento:  ' ) !!}</h3>
+                                <h4>{{$transparency->subDoc}}</h4>
+                                <h3>{!! Form::label('ano', 'Ano: ' ) !!}</h3>
+                                <h4>{{$transparency->ano}}</h4>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            @endforeach
+
+        </div>
 
         <div class="heading-agileinfo">
             <a href="/trasparencies" target="_blank"> <button type="button" class="btn btn-success" name="button">TODOS OS DOCUMENTOS</button> </a>

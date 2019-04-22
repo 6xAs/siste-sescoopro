@@ -46,6 +46,10 @@
                         <h3>{!! Form::label('document_name', 'Nome do Documento: ' ) !!}</h3>
                         <h4>{{$transparency->document_name}}</h4>
                     </div>
+                    <div class="form-group">
+                        <h3>{!! Form::label('ano', 'Ano: ' ) !!}</h3>
+                        <h4>{{$transparency->ano}}</h4>
+                    </div>
 
 
                         <table class="table table-condensed">

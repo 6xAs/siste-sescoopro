@@ -17,11 +17,12 @@
                 <div class="alert alert-success">
                       <button type="button" class="btn btn-success warning_2" data-dismiss="alert" aria-hidden="true">×</button>
                       {!! Session::get('message') !!}
-                      <a href="page-inserir-notice" class="alert-link">Inserir outra Notícia?</a>
+                     
                 </div>
             @endif
   					<h6>Preencha o formulário para entrar em cotato.</h6>
-  					<form action="#" method="post">
+  					<form action="post-contato" method="post">
+                        {{ csrf_field() }}
   						<div class="contact_left_grid">
   							<input type="text" name="name" placeholder="Nome" required="">
   							<input type="email" name="email" placeholder="Email" required="">
@@ -38,7 +39,7 @@
         </div>
         <br><br>
         <div class="contact-map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d273690.1704056744!2d-74.59673804968976!3d40.72070782081099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1521532554788" class="map" style="border:0" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.3094580963048!2d-63.90072348521535!3d-8.756926593709881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92325ccfe9306af3%3A0x866291ced44d3642!2sR.+Quintino+Bocai%C3%BAva%2C+1671+-+Olaria%2C+Porto+Velho+-+RO%2C+76801-250!5e0!3m2!1spt-BR!2sbr!4v1555427201679!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 
 

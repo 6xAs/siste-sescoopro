@@ -2,7 +2,7 @@
     <nav id="menu" class="nav">
         <ul>
             <li>
-                <a href="#">
+                <a href="cncoop">
                     <span class="icon">
                         <i aria-hidden="true" class="icon-home"></i>
                     </span>
