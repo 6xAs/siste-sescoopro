@@ -147,7 +147,7 @@ Route::get('/licitacoes', function () {
 
 });
 // Encontra licitações no site
-Route::post('/find-licitacao', 'LicitacaoController@findLicitacao');
+Route::post('/find-licitacao', 'SiteController@findLicitacao');
 
 
 
@@ -175,7 +175,7 @@ Route::get('/trasparencies', function () {
 
 });
 // Encontra Transparency
-Route::post('/find-transparency', 'TransparencyController@findTransparency');
+Route::post('/find-transparency', 'SiteController@findTransparency');
 
 Route::get('/ouvidoria', function () {
 

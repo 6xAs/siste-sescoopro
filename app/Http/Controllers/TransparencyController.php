@@ -173,25 +173,7 @@ class TransparencyController extends Controller
         return Redirect::to('page-listar-transparency');
     }
 
-    public function findTransparency(Request $request)
-    {
-
-         $date = date('Y');
-         $docMain                      = $request->input('docMain');
-         $subDoc                       = $request->input('subDoc');
-         $ano                          = $request->input('ano');
-
-         $transparency         = DB::table('transparencies')
-
-            ->where('docMain', $request->input('docMain'))
-            ->where('subDoc', $request->input('subDoc'))
-            ->where('ano', $request->input('ano'))
-            ->get();
-
-
-         return view('pages-site.find-transparency', compact('transparency', 'date'));
-
-    }
+    
 
     public function destroy($id, Request $request)
     {

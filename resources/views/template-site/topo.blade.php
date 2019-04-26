@@ -24,7 +24,7 @@
                 <div class="height">
                     <ul>
 
-                        <a href="/login-participante" class="facebook"><i class="fa fa-user-circle" aria-hidden="true"></i> Área do Participante</a>
+                        <a href="#" class="facebook"><i class="fa fa-user-circle" aria-hidden="true"></i> Área do Participante</a>
 
 
                     </ul>

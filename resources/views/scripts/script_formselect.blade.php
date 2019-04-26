@@ -20,11 +20,12 @@
               "nome": "Demonstrações Contábeis",
               "subDoc": [
                 "Balanço Patrimonial",
-                "Demonstrações das mutações de Patrimônio Líquido",
+                "Demonstrações de Patrimônio Social DMPS",
                 "Demonstrações do Resultado do Exercício",
                 "Fluxo de Caixa",
                 "Notas Explicativas",
-                "Relatório de Auditoria"
+                "Relatório de Auditoria",
+                "Resultado do Exercício"
               ]
             },
             /* // Demonstrações Contábeis  */
@@ -54,7 +55,8 @@
               "subDoc": [
                 "Orçamento Original",
                 "Orçamento Realizado",
-                "Orçamento Reformulado"
+                "Orçamento Reformulado",
+                "Proposta Orçamentária"
               ]
             },
             /* // Gestão Orçamentária  */
@@ -73,13 +75,27 @@
               "value": "Normativos",
               "nome": "Normativos",
               "subDoc": [
+                "Acordo Coletivo",
                 "Diretrizes Internas",
                 "Pessoal",
+                "Regimento Interno",
                 "Segurança",
                 "Serviços"
               ]
             },
             /* // Normativos  */
+            /* Planejamento  */
+            {
+              "value": "Planejamento",
+              "nome": "Planejamento",
+              "subDoc": [
+                "Mapa Estratégico",
+                "Organograma",
+                "Planejamento Estratégico"
+
+              ]
+            },
+            /* // Planejamento  */
             /* Recursos Humanos  */
             {
               "value": "Recursos Humanos",

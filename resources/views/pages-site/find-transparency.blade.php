@@ -35,6 +35,7 @@
                                <option value="Gestão Orçamentária">Gestão Orçamentária</option>
                                <option value="Integridade e Conduta Ética">Integridade e Conduta Ética</option>
                                <option value="Normativos">Normativos</option>
+                               <option value="Planejamento">Planejamento</option>
                                <option value="Recursos Humanos">Recursos Humanos</option>
                                <option value="Relatório de Gestão">Relatório de Gestão</option>
                                <option value="Transferências">Transferências</option>

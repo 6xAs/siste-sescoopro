@@ -6,7 +6,7 @@
         <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/bg3.jpg" alt="First slide">
+                  <img class="d-block w-100" src="images/banner-home.jpg" alt="First slide">
                   <div class="carousel-caption d-none d-md-block">
                     <h3></h3>
                   </div>
