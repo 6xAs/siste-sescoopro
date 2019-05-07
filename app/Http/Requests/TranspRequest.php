@@ -29,9 +29,9 @@ class TranspRequest extends FormRequest
             'subDoc'                        => 'required|max:255',
             'document_name'                 => 'required|max:255|',
             'ano'                           => 'required|max:20',
-            'file_01'                       => 'max:2000',
-            'file_02'                       => 'max:2000',
-            'file_03'                       => 'max:2000',
+            'file_01'                       => 'max:50000',
+            'file_02'                       => 'max:50000',
+            'file_03'                       => 'max:50000',
 
         ];
     }

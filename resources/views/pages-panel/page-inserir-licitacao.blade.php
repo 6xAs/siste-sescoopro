@@ -59,7 +59,7 @@
                              'Pregão'               =>  'Pregão',
 
 
-                         ], null, ['class' => 'form-control input-lg', 'placeholder' => 'Tipo de Licitação', 'required' => 'required']) !!}
+                         ], null, ['class' => 'form-control input-lg', 'placeholder' => 'Modalidade', 'required' => 'required']) !!}
                     </div>
                     <div class="form-group">
                         {!! Form::label('edital', 'Edital:* ' ) !!}

@@ -109,7 +109,7 @@ class SeletivoController extends Controller
         return view('pages-panel.seletivodetails', compact('proSeletivo', 'date'));
     }
 
-    public function update($id, TranspRequest $request)
+    public function update($id, SeletivoRequest $request)
     {
 
         // Organização dos POSTS imagens

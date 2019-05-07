@@ -35,25 +35,27 @@
                     <img src="/../images-notices/{{$notice->image_01}}" alt="" class="img-fluid">
                 </div>
             </div>
-
+            <br>
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
                     <img src="/../images-notices/{{$notice->image_02}}" alt="Imagem" class="img-fluid">
                 </div>
             </div>
+            <br>
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
                     <img src="/../images-notices/{{$notice->image_03}}" alt="Imagem" class="img-fluid">
 
                 </div>
             </div>
+            <br>
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
 
                     <iframe  src="{{$notice->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-
+            <br>
         </div>
     </div>
 </section>

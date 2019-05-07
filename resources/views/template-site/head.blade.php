@@ -25,11 +25,11 @@
 	</script>
 	<link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="favico">
 
-	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
 	<!-- Bootstrap Core CSS -->
 	<link href="{{ asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
-	<link href="{{ asset('css/style.css') }}" rel='stylesheet' type='text/css' />
+	<link href="{{ asset('css/style-site.css') }}" rel='stylesheet' type='text/css' />
 	<!-- Menu Color -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/default-menucolor.css') }}" />
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/component-menucolor.css') }}" />

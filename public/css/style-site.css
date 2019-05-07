@@ -16,6 +16,13 @@ body a {
     text-decoration: none;
 }
 
+h2 {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
 h1,
 h2,
 h3,
@@ -937,6 +944,8 @@ p.Lor {
 .stat-grids:nth-child(1){
     border-right: 1px solid #e8e8e8;
 }
+
+
 .heading-agileinfo {
     font-weight: 600;
     letter-spacing: 2px;
@@ -944,6 +953,7 @@ p.Lor {
     text-align: center;
     color: #000;
     position: relative;
+    text-transform: none;
     margin-top: 0;
     padding: 25px;
 }
@@ -1281,7 +1291,7 @@ a.facebook:hover {
     margin: 3em 0;
 }
 .w3-services-right-grid h3 {
-    
+
     color: #58575d;
     font-size: 21px;
     font-weight: 600;
@@ -1291,7 +1301,7 @@ a.facebook:hover {
 }
 .w3-services-left-grid a {
     color: #fff;
-    
+
     border: 2px solid #fff;
     padding: 10px 20px;
     font-size: 14px;
@@ -1352,7 +1362,7 @@ a.facebook:hover {
     color: #151515;
     letter-spacing: .075em;
     font-weight: 600;
-    
+
     margin: 20px 0;
 }
 .about-info-grids i {

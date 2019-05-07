@@ -108,7 +108,7 @@
         </div>
         <div class="heading-agileinfo">
             <h2>Clique aqui para ver todas as licitações</h2>
-            <a href="/licitacoes" target="_blank"> <button type="button" class="btn btn-success" name="button">TODOS OS COCUMENTOS</button> </a>
+            <a href="/licitacoes" target="_blank"> <button type="button" class="btn btn-success" name="button">TODOS OS DOCUMENTOS</button> </a>
         </div>
     </div>
 
