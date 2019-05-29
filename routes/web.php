@@ -228,6 +228,13 @@ Route::get('/processo-seletivo-sescoopro', function () {
     return view('pages-site.processo-seletivo', compact('proSeletivo','date'));
 });
 
+// Cadastro-Instrutores
+Route::get('/cadastro-instrutores', function () {
+
+    $date = date('Y');
+    return view('pages-site.cadastramento-instrutores', compact('date'));
+});
+
 // Processo Seletivo Page-Site Details
 Route::get('proseletivo/{id}/details', ['as' => 'details', function ($id) {
     //

@@ -150,10 +150,11 @@ class SeletivoController extends Controller
 
 
         // Validação dos dados
-       $docMain                      = $request->input('docMain');
-       $subDoc                       = $request->input('subDoc');
-       $document_name                = $request->input('document_name');
-       $ano                          = $request->input('ano');
+       $number_edital                      = $request->input('number_edital');
+       $title                              = $request->input('title');
+       $subtitle                           = $request->input('subtitle');
+       $observacao                         = $request->input('observacao');
+       $data                               = $request->input('data');
 
        // Apagando arquivos existente
        $file_01                = DB::table('processo_seletivos')->where('id',$id)->value('file_01');
@@ -168,10 +169,11 @@ class SeletivoController extends Controller
        DB::table('processo_seletivos')
             ->where('id',$id)
             ->update(
-                ['docMain' => $docMain, 'subDoc' => $subDoc, 'document_name' => $document_name,
-                 'ano' => $ano, 'file_01' => $fileName_01, 'file_02' => $fileName_02, 'file_03' => $fileName_03]
+                [
+                    'number_edital' => $number_edital, 'title' => $title, 'subtitle' => $subtitle,
+                    'observacao' => $observacao, 'data' => $data,'file_01' => $fileName_01, 'file_02' => $fileName_02, 'file_03' => $fileName_03
+                ]
             );
-
 
         // Post Message
         $request->session()->flash('message', 'Documento Atualizado com Sucesso');

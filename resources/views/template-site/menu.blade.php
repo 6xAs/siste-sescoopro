@@ -72,7 +72,7 @@
                   <a class="dropdown-item" href="/cursos-sescoopro">Cursos Disponíveis</a>
                   <a class="dropdown-item" href="#">Agenda de Eventos</a>
                   <a class="dropdown-item" href="#">Fotos de Eventos</a>
-                  <a class="dropdown-item" href="#">Emisão de Certificados</a>
+                  <a class="dropdown-item" href="/cadastro-instrutores">Cadastramento de Instrutores</a>
                 </div>
                 </li>
                 <li class="nav-item dropdown">

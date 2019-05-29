@@ -32,7 +32,6 @@
                     <a href="#subPages3" data-toggle="collapse" class="collapsed"><i class="fa fa-star"></i> <span>Notícia Destaque</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                     <div id="subPages3" class="collapse ">
                         <ul class="nav">
-                            <li><a href="{{ route('page-inserir-noticedestaque') }}" class="">Inserir Notícia Destaque</a></li>
                             <li><a href="{{ route('page-listar-noticedestaque') }}" class="">Listar Notícia Destaque</a></li>
 
                         </ul>
