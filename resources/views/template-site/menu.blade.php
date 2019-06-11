@@ -69,9 +69,7 @@
                   Cursos e Eventos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/cursos-sescoopro">Cursos Disponíveis</a>
-                  <a class="dropdown-item" href="#">Agenda de Eventos</a>
-                  <a class="dropdown-item" href="#">Fotos de Eventos</a>
+                  <a class="dropdown-item" href="/eventos-sescoopro">Nossos  Eventos</a>
                   <a class="dropdown-item" href="/cadastro-instrutores">Cadastramento de Instrutores</a>
                 </div>
                 </li>
@@ -81,8 +79,10 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="/contato-sescoop">Fale Conosco</a>
+                  <a class="dropdown-item" href="#">Nossa Equipe</a>
 
                 </div>
+
                 </li>
         </ul>
   </div>

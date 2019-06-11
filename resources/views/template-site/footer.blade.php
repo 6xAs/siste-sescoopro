@@ -46,7 +46,7 @@
 						<a href="https://docs.google.com/forms/d/e/1FAIpQLSerXJGAPLJvPtpytYahfe8pAfbigTeEP6gCTtpZjAI2gKDmaQ/viewform"> <p>Ouvidoria</p> </a>
 
 						<p>Telefone: (69) 3214-6116</p>
-						
+
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="facebook" href="https://www.instagram.com/sescoop_ro/" target="_blank">
+							<a class="facebook" href="https://www.instagram.com/sistemaocbro/?hl=pt-br" target="_blank">
 								<i class="fab fa-instagram"></i>
 							</a>
 						</li>

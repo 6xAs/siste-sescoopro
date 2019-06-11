@@ -38,7 +38,7 @@
                     </div>
                 </li>
                 <!--// Noticia Destaque -->
-                <!-- Eventos -->
+                <!-- Cooperativas -->
                 <li>
                     <a href="#subPages4" data-toggle="collapse" class="collapsed"><i class="lnr lnr-users"></i> <span>Cooperativas</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                     <div id="subPages4" class="collapse ">
@@ -48,7 +48,7 @@
                         </ul>
                     </div>
                 </li>
-                <!--// Eventos -->
+                <!--// Cooperativas -->
                 <!-- Cursos -->
                 <li>
                     <a href="#subPages5" data-toggle="collapse" class="collapsed"><i class="lnr lnr-book"></i> <span>Cursos</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
@@ -74,11 +74,11 @@
 
                 <!-- Galeria Imagens -->
                 <li>
-                    <a href="#subPages7" data-toggle="collapse" class="collapsed"><i class="lnr lnr-picture"></i> <span>Galeria Imagens</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                    <a href="#subPages7" data-toggle="collapse" class="collapsed"><i class="lnr lnr-picture"></i> <span>Eventos Sescoop</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                     <div id="subPages7" class="collapse ">
                         <ul class="nav">
-                            <li><a href="#" class="">Inserir</a></li>
-                            <li><a href="#" class="">Listar</a></li>
+                            <li><a href="page-inserir-evento" class="">Inserir</a></li>
+                            <li><a href="page-listar-evento" class="">Listar</a></li>
                         </ul>
                     </div>
                 </li>

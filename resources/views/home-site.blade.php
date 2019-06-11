@@ -10,8 +10,6 @@
 
 @include('notice-home')
 
-@include('template-site.eventos-destaque')
-
 @include('template-site.video-home')
 
 @include('template-site.home-processoseletivo')
@@ -20,8 +18,6 @@
 
 @include('template-site.programas-services')
 
-@include('template-site.galeria-home')
-
-@include('template-site.nossa-equipe')
+@include('template-site.eventos-destaque')
 
 @include('template-site.footer')

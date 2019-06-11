@@ -20,13 +20,11 @@
 
                                                      </div>
 
-
                                                      <div class="carousel-item">
                                                        <img class="d-block w-100" src="images-destaque_notices/{{$noticeDestaque->image_01}}" alt="Second slide">
                                                        <div class="carousel-caption d-none d-md-block">
                                                          <h3>{{$noticeDestaque->title}}</h3>
-                                                         <h2>{{$noticeDestaque->editoria}}</h2>
-                                                         <h6>{{date('d/m/y', strtotime($noticeDestaque->editoria))}}</h6>
+                                                         <h6>{{date('d/m/y', strtotime($noticeDestaque->data))}}</h6>
 
                                                        </div>
                                                      </div>

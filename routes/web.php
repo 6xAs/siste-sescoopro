@@ -18,9 +18,10 @@ Route::get('/', function () {
     $video = \SescoopRO\Video::All();
     $noticeDestaque = \SescoopRO\DestaqueNotice::All();
     $notice = \SescoopRO\Notice::orderBy('id','created_at', 'desc')->paginate(4);
+    $evento = \SescoopRO\Galery::orderBy('id','created_at', 'desc')->paginate(3);
     //$notice = \SescoopRO\Notice::orderBy('created_at','DESC');
     $date = date('Y');
-    return view('home-site', compact('date', 'banner', 'video', 'noticeDestaque', 'notice'));
+    return view('home-site', compact('date', 'banner', 'video', 'noticeDestaque', 'notice', 'evento'));
 
 });
 
@@ -235,6 +236,14 @@ Route::get('/cadastro-instrutores', function () {
     return view('pages-site.cadastramento-instrutores', compact('date'));
 });
 
+// Eventos
+Route::get('/eventos-sescoopro', function () {
+
+    $date   = date('Y');
+    $evento = \SescoopRO\Galery::orderBy('id','created_at', 'desc')->paginate(25);
+    return view('pages-site.page-all-eventos', compact('date', 'evento'));
+});
+
 // Processo Seletivo Page-Site Details
 Route::get('proseletivo/{id}/details', ['as' => 'details', function ($id) {
     //
@@ -374,5 +383,19 @@ Route::get('showproSeletivo/{id}/show', function ($id) {
     $date = date('Y');
     $proSeletivo = \SescoopRO\ProcessoSeletivo::find($id);
     return view('pages-panel.showproSeletivo', compact('proSeletivo', 'date'));
+
+})->name('show');
+
+// ##################  IMAGENS EVENTOS ################
+Route::get('/page-inserir-evento', 'EventosController@index')->name('page-inserir-evento');
+Route::post('/input-evento', 'EventosController@insert');
+Route::get('/page-listar-evento', 'EventosController@listarGalery')->name('page-listar-evento');
+Route::resource('/evento', 'EventosController');
+Route::resource('/evento', 'EventosController');
+Route::resource('/deletarevento', 'EventosController');
+Route::get('showevento/{id}/show', function ($id) {
+    $date = date('Y');
+    $evento = \SescoopRO\Galery::find($id);
+    return view('pages-site.page-evento', compact('evento', 'date'));
 
 })->name('show');

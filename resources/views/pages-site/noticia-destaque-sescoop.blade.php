@@ -9,7 +9,7 @@
 <!-- Notice Details -->
 <section class="welcome py-5">
     <div class="container py-md-4 mt-md-3">
-        <h2 class="titulo-h2">{{$noticeDestaque->title}} <span>{{$noticeDestaque->subtitle}}</span></h2>
+        <h2 class="heading-agileinfo">{{$noticeDestaque->title}} <span>{{$noticeDestaque->subtitle}}</span></h2>
         <span class="w3-line black"></span>
         <div class="row about-tp mt-md-5 pt-5">
             <div class="col-lg-12 welcome-left">
@@ -27,19 +27,19 @@
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
 
-                    <img src="/../images-notices/{{$noticeDestaque->image_01}}" alt="" class="img-fluid">
+                    <img src="/../images-destaque_notices/{{$noticeDestaque->image_01}}" alt="" class="img-fluid">
 
                 </div>
             </div>
             <br>
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
-                    <img src="/../images-notices/{{$noticeDestaque->image_02}}" alt="Imagem" class="img-fluid">                </div>
+                    <img src="/../images-destaque_notices/{{$noticeDestaque->image_02}}" alt="Imagem" class="img-fluid">                </div>
             </div>
             <br>
             <div class="col-lg-12 welcome-right">
                 <div class="boxVideo">
-                    <img src="/../images-notices/{{$noticeDestaque->image_03}}" alt="" class="img-fluid">
+                    <img src="/../images-destaque_notices/{{$noticeDestaque->image_03}}" alt="" class="img-fluid">
             </div>
             <br>
             <div class="col-lg-12 welcome-right">
