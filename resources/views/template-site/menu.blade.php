@@ -79,7 +79,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="/contato-sescoop">Fale Conosco</a>
-                  <a class="dropdown-item" href="#">Nossa Equipe</a>
+                  <a class="dropdown-item" href="/equipe-sescoop">Nossa Equipe</a>
 
                 </div>
 

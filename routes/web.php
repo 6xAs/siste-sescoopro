@@ -261,6 +261,12 @@ Route::get('/logout', function () {
     return view('auth.login');
 });
 
+// Equipe Sescoop
+Route::get('/equipe-sescoop', function () {
+
+    $date   = date('Y');
+    return view('pages-site.page-nossa-equipe', compact('date'));
+});
 
 
 // ##################  ROUTES OF PANEL ################
