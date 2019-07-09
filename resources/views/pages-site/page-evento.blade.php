@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 gallery-grids">
-                <a href="#" data-lightbox="example-set" data-title="">
+                <a href="#" class="gallery-box" data-lightbox="example-set" data-title="">
                     <img src="/../images-eventos/{{ $evento->image_05 }}" alt="image" class="img-fluid zoom-img">
                 </a>
             </div>

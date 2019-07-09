@@ -123,17 +123,7 @@
                 </div>
             </div>
             <!-- / Imagem -->
-            <!-- Imagem -->
-            <div class="col-lg-3 col-md-6 col-sm-6 team-grids">
-                <div class="thumbnail team-agileits">
-                    <img src="images-colaboradores/cris-editada.jpg" class="img-fluid" alt="" />
-                    <div class="effectd-caption">
-                        <h4 class="mb-3">Cristina Silva</h4>
-
-                    </div>
-                </div>
-            </div>
-            <!-- / Imagem -->
+            
             <!-- Imagem -->
             <div class="col-lg-3 col-md-6 col-sm-6 team-grids">
                 <div class="thumbnail team-agileits">

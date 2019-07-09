@@ -5,22 +5,22 @@
         <span class="w3-line black"></span>
         <div class="row gallery-info mt-md-5 pt-5">
             <div class="col-md-3 col-sm-6 gallery-grids">
-                <a href="images/dia-cooperar-100.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                <a href="http://diac.somoscooperativismo.coop.br/" target="_blank" class="gallery-box"  data-title="">
                     <img src="images/dia-cooperar-100.jpg" alt="" class="img-fluid zoom-img">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 gallery-grids">
-                <a href="images/aprendiz-100.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                <a href="http://www.sescooprs.coop.br/programas/aprendiz-cooperativo/" target="_blank" class="gallery-box"  data-title="">
                     <img src="images/aprendiz-100.jpg" alt="" class="img-fluid zoom-img">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 gallery-grids">
-                <a href="images/pdgc-100.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                <a href="https://www.somos.coop.br/"  class="gallery-box"  data-title="">
                     <img src="images/pdgc-100.jpg" alt="" class="img-fluid zoom-img">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 gallery-grids">
-                <a href="images/instrutores-100.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                <a href="/cadastro-instrutores" class="gallery-box"  data-title="">
                     <img src="images/instrutores-100.jpg" alt="" class="img-fluid zoom-img">
                 </a>
             </div>

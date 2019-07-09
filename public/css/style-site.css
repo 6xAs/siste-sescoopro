@@ -211,7 +211,7 @@ header h1 a span {
 }
 
 .bg2 {
-    background: url(../images/bg3.jpg)no-repeat;
+    background: url(../images/banner-home.jpg)no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -658,7 +658,7 @@ p.stap {
 /* video popup */
 
 .pop-bg {
-    background: url(../images/bg3.jpg)no-repeat center;
+    background: url(../images/banner-home.jpg)no-repeat center;
     background-size: cover;
     min-height: 35vw;
 }
@@ -1162,7 +1162,7 @@ a.facebook:hover {
     height: 18vw;
 }
 .w3layouts_bottom {
-    background:url(../images/bg3.jpg) no-repeat 0px 0px;
+    background:url(../images/banner-home.jpg) no-repeat 0px 0px;
 	text-align: center;
 	background-size: cover;
     -webkit-background-size: cover;

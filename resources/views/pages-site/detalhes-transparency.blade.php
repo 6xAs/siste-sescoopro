@@ -28,10 +28,7 @@
 
                 <div class="panel-body">
                     <!-- Form Inserir Licitação -->
-                    <div class="col-12">
-                        <a href="/trasparencies"><button type="button" class="btn btn-primary"> <i class="fa fa-caret-left"></i> VOLTAR  </button></a>
 
-                    </div>
                     <br>
 
                     <div class="form-group">
