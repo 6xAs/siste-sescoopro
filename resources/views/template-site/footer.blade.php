@@ -33,10 +33,10 @@
 							<h3>Transparência</h3>
 						</div>
 						<div class="footer-text">
-							<a href="/sistema-ocb"> <p>OCB</p> </a>
-							<a href="/historia-sescoop"> <p>Sescoop</p> </a>
+
+							<a href="/page-transparency"> <p>Sescoop</p> </a>
 							<h3>Editais e Licitações</h3>
-							<a href="#"> <p>Entenda sua contribuição OCB Nacional</p> </a>
+							<a href="https://www.ocb.org.br/contribuicoes-cooperativistas"> <p>Entenda sua contribuição OCB Nacional</p> </a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
